@@ -1,0 +1,6234 @@
+[
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Islam Terpadu Ulul Albaab",
+    "npsn": "70029238",
+    "village": "Dusun Buganggeureung RT 04/04",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Bojongloa I",
+    "npsn": "20233787",
+    "village": "Dusun Citaman",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Bojongloa II",
+    "npsn": "20233788",
+    "village": "Dusun Sumber",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Buahdua I",
+    "npsn": "20233790",
+    "village": "Dusun Ciranten RT 07 RW 10",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Buahdua II",
+    "npsn": "20233791",
+    "village": "Jalan Raya Buahdua",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Ciawitali",
+    "npsn": "20233799",
+    "village": "Dusun Ciawitali",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Cibitung",
+    "npsn": "20233808",
+    "village": "Dusun Cibitung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Cigalagah",
+    "npsn": "20233822",
+    "village": "Dusun Cigalagah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Cikurubuk",
+    "npsn": "20233839",
+    "village": "Dusun Cikurubuk",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Cilangkap I",
+    "npsn": "20233841",
+    "village": "Dusun Babakan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Cilangkap II",
+    "npsn": "20233842",
+    "village": "Dusun Cileungsing",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Cilumping",
+    "npsn": "20233846",
+    "village": "Dusun Cilumping",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Cinangsi",
+    "npsn": "20235384",
+    "village": "Desa Citaleus",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Cipatat",
+    "npsn": "20233861",
+    "village": "Dusun Cipatat",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Citaleus I",
+    "npsn": "20233871",
+    "village": "Dusun Ciliang RT 008/002",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Citaleus II",
+    "npsn": "20233872",
+    "village": "Dusun Citunggul",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Darongdong",
+    "npsn": "20233886",
+    "village": "Dusun Darongdong RT 02/08",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Gendereh",
+    "npsn": "20233894",
+    "village": "Dusun Burujul",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Hariang",
+    "npsn": "20233897",
+    "village": "Dusun Hariang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Karangbungur",
+    "npsn": "20233907",
+    "village": "Karangbungur",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Nagrak I",
+    "npsn": "20233942",
+    "village": "Dusun Nagrak",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Nagrak II",
+    "npsn": "20233943",
+    "village": "Dusun Manyintreuk",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Pasiripis",
+    "npsn": "20233962",
+    "village": "Dusun Pasiripis",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Raharja",
+    "npsn": "20233964",
+    "village": "Dusun Gendereh",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Sampora",
+    "npsn": "20246352",
+    "village": "Dusun Sampora",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Sanepa",
+    "npsn": "20233971",
+    "village": "Dusun Cigalagah Girang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SD",
+    "name": "SD Negeri Tonjong",
+    "npsn": "69759858",
+    "village": "Dusun Tonjong",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "MI",
+    "name": "MIS Adzkiya Mansyaul Hikam",
+    "npsn": "69941357",
+    "village": "Dusun Cipatat RT 02/01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Buahdua",
+    "npsn": "20235585",
+    "village": "Jl. Raya Buahdua–Sumedang No.464",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Buahdua",
+    "npsn": "20235594",
+    "village": "Jl. Raya Hariang–Sumedang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SMP",
+    "name": "SMP Islam Plus Assalam",
+    "npsn": "20235609",
+    "village": "Jl. Nagrak",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SMP",
+    "name": "SMP IT Kahuripan Nurul Falah",
+    "npsn": "70054753",
+    "village": "Dusun Hariang RT 01/RW 01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SMP",
+    "name": "SMP IT Ulul Albaab",
+    "npsn": "69988813",
+    "village": "Jl. Sebelas April, Dusun Buganggeureung RT 04/04",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "MTS",
+    "name": "MTs Negeri 7 Sumedang",
+    "npsn": "20278951",
+    "village": "Jl. Veteran RT 01/RW 05",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "MTS",
+    "name": "MTs Terpadu Adzkiya MH",
+    "npsn": "20278952",
+    "village": "Dusun Cipatat RT 02/RW 01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "SMK",
+    "name": "SMK Negeri 1 Buahdua",
+    "npsn": "20251887",
+    "village": "Jl. Raya Buahdua KM 3",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211180",
+    "education_level": "MA",
+    "name": "MA Terpadu Adzkiya MH",
+    "npsn": "20280475",
+    "village": "Dusun Cipatat RT/RW 02/01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Antara I",
+    "npsn": "20233778",
+    "village": "Dusun Antara I RT 02 RW 02 — Tamansari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Antara II",
+    "npsn": "20233779",
+    "village": "Dusun Antara — Tamansari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Babakandesa",
+    "npsn": "20233781",
+    "village": "Dusun Cibugel RT 02 RW 03 — Cibugel",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Cibugel",
+    "npsn": "20233815",
+    "village": "Dusun Simpaywargi — Jaya Mekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Cicadas",
+    "npsn": "20233817",
+    "village": "Dusun Cicadas RT 01 RW 02 — Cipasang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Cidomas",
+    "npsn": "20233819",
+    "village": "Dusun Simpaywargi — Jaya Mekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Cijaha",
+    "npsn": "20233826",
+    "village": "Dusun Sinarasa RT 05/01 — Cibugel",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Cipasang",
+    "npsn": "20233860",
+    "village": "Dusun Cipasang RT 04 RW 05 — Cipasang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Gunungsangiang",
+    "npsn": "20233896",
+    "village": "Dusun Cidomas RT 03/03 — Buana Mekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Kurnia",
+    "npsn": "20233916",
+    "village": "Dusun Cipasang RT 03 RW 05 — Cipasang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Margamulya",
+    "npsn": "20208298",
+    "village": "Dusun Antara — Tamansari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Nagrak",
+    "npsn": "20235469",
+    "village": "Dusun Kebonkopi RT 07 RW 02 — Sukaraja",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Pagelaran",
+    "npsn": "20233951",
+    "village": "Dusun Cisetra RT 05 RW 01 — Sukaraja",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Parakanpanjang",
+    "npsn": "20233960",
+    "village": "Dusun Parakanpanjang RT 03 RW 07 — Cipasang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Sarang Tengah",
+    "npsn": "20233973",
+    "village": "Dusun Cipeureu RT 02 RW 01 — Buana Mekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Sukaraja",
+    "npsn": "20233990",
+    "village": "Dusun Cibanen RT 04 RW 03 — Sukaraja",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SD",
+    "name": "SD Negeri Sukasari",
+    "npsn": "20246357",
+    "village": "Jl. Lemburtengah Patrol — Jayamandiri",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Cibugel",
+    "npsn": "20234050",
+    "village": "Jl. Cibugel–Cipasang — Cibugel",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Cibugel",
+    "npsn": "20251871",
+    "village": "Jl. Raya Cibugel Limbangan — Buana Mekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "SMP",
+    "name": "SMP Negeri Satu Atap Tamansari",
+    "npsn": "20251872",
+    "village": "Dusun Antara, Jl. Darmaraja–Cibugel — Tamansari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "MTS",
+    "name": "MTs Al-Hikmah",
+    "npsn": "69976296",
+    "village": "Dusun Cisetra RT 02 RW 04 — Sukaraja",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211090",
+    "education_level": "MTS",
+    "name": "MTs As-Sarfah Cibugel / MTsS As-Sarfah",
+    "npsn": "20278953",
+    "village": "Dusun Simpaywargi RT 01 RW 03 — Jaya Mekar",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cibeureum I",
+    "npsn": "20233803",
+    "village": "Cibeureum Kulon",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cibeureum II",
+    "npsn": "20233804",
+    "village": "Cibeureum Kulon",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cibeureum III",
+    "npsn": "20233805",
+    "village": "Cibeureum Wetan",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cibeureum IV",
+    "npsn": "20233806",
+    "village": "Cibeureum Kulon",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cikole",
+    "npsn": "20233833",
+    "village": "Cikole",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cilimbangan",
+    "npsn": "20233844",
+    "village": "Naluk",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cimalaka I",
+    "npsn": "20233847",
+    "village": "Cimalaka",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cimalaka II",
+    "npsn": "20233848",
+    "village": "Licin",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cimalaka III",
+    "npsn": "20233849",
+    "village": "Cimalaka",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Cimuja",
+    "npsn": "20233855",
+    "village": "Cimuja",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Citimun I",
+    "npsn": "20233873",
+    "village": "Citimun",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Citimun II",
+    "npsn": "20233874",
+    "village": "Citimun",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Gajahdepa",
+    "npsn": "20233889",
+    "village": "Galudra",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Galudra",
+    "npsn": "20233891",
+    "village": "Galudra",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Karangpawulang",
+    "npsn": "20233909",
+    "village": "Trunamanggala",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Licin",
+    "npsn": "20233921",
+    "village": "Licin",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Malangbong",
+    "npsn": "20233923",
+    "village": "Serang",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Mandalaherang I",
+    "npsn": "20233925",
+    "village": "Mandalaherang",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Mandalaherang II",
+    "npsn": "20233926",
+    "village": "Mandalaherang",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Mandalaherang III",
+    "npsn": "20233927",
+    "village": "Mandalaherang",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Margamukti",
+    "npsn": "20233931",
+    "village": "Licin",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Margamulya",
+    "npsn": "20253119",
+    "village": "Cimalaka",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Mulyasari",
+    "npsn": "20233939",
+    "village": "Padasari",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Nyalindung I",
+    "npsn": "20235476",
+    "village": "Trunamanggala",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Nyalindung II",
+    "npsn": "20233949",
+    "village": "Trunamanggala",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Palasah",
+    "npsn": "20233952",
+    "village": "Citimun",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Panorama",
+    "npsn": "20233956",
+    "village": "Nyalindung",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Sukalerang I",
+    "npsn": "20233985",
+    "village": "Cikole",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SD",
+    "name": "SD Negeri Sukalerang II",
+    "npsn": "20233986",
+    "village": "Serang",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "MI",
+    "name": "MIS Galudra",
+    "npsn": "60708786",
+    "village": "Galudra",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "MI",
+    "name": "MIS Kubang Alun-Alun",
+    "npsn": "60708787",
+    "village": "Trunamanggala",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "MI",
+    "name": "MIS Pangkalan",
+    "npsn": "60708785",
+    "village": "Trunamanggala",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "MI",
+    "name": "MIS Sukabarang",
+    "npsn": "60708788",
+    "village": "Naluk",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "MTS",
+    "name": "MTs Negeri 1 Sumedang",
+    "npsn": "20278954",
+    "village": "Licin",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "MTS",
+    "name": "MTs Khoerul Umam",
+    "npsn": "20278956",
+    "village": "Mandalaherang",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "MTS",
+    "name": "MTs Ma’arif Cibeureum",
+    "npsn": "20278955",
+    "village": "Cibeureum Kulon",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "MTS",
+    "name": "MTs Terpadu Darul Quran",
+    "npsn": "60727424",
+    "village": "Cimalaka",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SMP",
+    "name": "SMP Al Islam Sumedang",
+    "npsn": "69930519",
+    "village": "Cikole",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Cimalaka",
+    "npsn": "20235587",
+    "village": "Cimalaka",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Cimalaka",
+    "npsn": "20234059",
+    "village": "Citimun",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SMP",
+    "name": "SMP Negeri 3 Cimalaka",
+    "npsn": "20235603",
+    "village": "Trunamanggala",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SMA",
+    "name": "SMA Negeri 1 Cimalaka",
+    "npsn": "20235619",
+    "village": "Licin",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SMA",
+    "name": "SMA Negeri 2 Cimalaka",
+    "npsn": "20235620",
+    "village": "Licin",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SMK",
+    "name": "SMK Al Islam Sumedang",
+    "npsn": "70003658",
+    "village": "Cikole",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SMK",
+    "name": "SMK PP Negeri Sumedang",
+    "npsn": "20254838",
+    "village": "Licin",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "SMK",
+    "name": "SMK Kesehatan SDM",
+    "npsn": "69787186",
+    "village": "Mandalaherang",
+    "status": ""
+  },
+  {
+    "district_code": "3211160",
+    "education_level": "MA",
+    "name": "MA Cimalaka",
+    "npsn": "20280468",
+    "village": "Cimalaka",
+    "status": ""
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Bangkir",
+    "npsn": "20233783",
+    "village": "Dusun Bangkir",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Bunter I",
+    "npsn": "20233792",
+    "village": "Dusun Cijaringao",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Bunter II",
+    "npsn": "20233793",
+    "village": "Dusun Sindangnangoh",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Bunter III",
+    "npsn": "20233794",
+    "village": "Dusun Cijaringao",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Cibenda",
+    "npsn": "20233802",
+    "village": "Dusun Cibenda",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Cikahuripan",
+    "npsn": "20233829",
+    "village": "Jl. Desa Cikahuripan No.27",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Cikandang",
+    "npsn": "20208377",
+    "village": "Dusun Cikandang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Cilaku",
+    "npsn": "20233840",
+    "village": "Dusun Cilaku",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Cimanggung I",
+    "npsn": "20233850",
+    "village": "Parakanmuncang–Sindulang KM 02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Cimanggung II",
+    "npsn": "20233851",
+    "village": "Dusun Bendungan RT 02/03",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Cimanggung III",
+    "npsn": "20233852",
+    "village": "Dusun Awilega RT 01/07",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Cimanggung IV",
+    "npsn": "20233853",
+    "village": "Dusun Pedes",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Cipareuag",
+    "npsn": "20233859",
+    "village": "Dusun Cipareuag",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Lebakgede",
+    "npsn": "20233917",
+    "village": "Dusun Lebakgede RT 04/11",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Leuwiliang",
+    "npsn": "20233920",
+    "village": "Dusun Leuwiliang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Margamulya",
+    "npsn": "20233933",
+    "village": "Dusun Ciparuang RT 003/002",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Pangsor",
+    "npsn": "20233955",
+    "village": "Jl. Bunter No.7",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Parakanmuncang I",
+    "npsn": "20233957",
+    "village": "Parakanmuncang–Simpang KM 22",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Parakanmuncang II",
+    "npsn": "20233958",
+    "village": "Dusun Sindangkasih RT 03/08",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Parakanmuncang III",
+    "npsn": "20233959",
+    "village": "Dusun Taneuhbeureum",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Pasirhuni",
+    "npsn": "20208491",
+    "village": "Dusun Pasirhuni",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Santaka",
+    "npsn": "20233972",
+    "village": "Dusun Santaka",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Sawahdadap I",
+    "npsn": "20233974",
+    "village": "Jl. Desa Sawahdadap",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Sawahdadap II",
+    "npsn": "20233975",
+    "village": "Dusun Babakan Kananga",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Sawahdadap III",
+    "npsn": "20233976",
+    "village": "Dusun Pasung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Sindulang",
+    "npsn": "20233980",
+    "village": "Dusun Ciseupan RT 03/04",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Negeri Tanjungsiang",
+    "npsn": "20233995",
+    "village": "Jl. Pangsor No.03",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Fathimah Azzahra",
+    "npsn": "20234003",
+    "village": "Perum Parakan Muncang Blok A4 No.90–91",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SD",
+    "name": "SD Plus Syania",
+    "npsn": "20234005",
+    "village": "Perum SBG Parakanmuncang Blok A6 No.26–28",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "MI",
+    "name": "MIS Al Huda Cimanggung",
+    "npsn": "60708789",
+    "village": "Dusun Batunangtung RT 02/17",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "MI",
+    "name": "MIS Al Huda II Pasirnanjung",
+    "npsn": "60708790",
+    "village": "Jl. Mayor Masnu, Dusun Pangkalan RT 01/11",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "MI",
+    "name": "MIS Darwatishsholah",
+    "npsn": "60726946",
+    "village": "Jl. Jengkolcondong",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Cimanggung",
+    "npsn": "20235588",
+    "village": "Jl. Raya Parakanmuncang KM 22",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Cimanggung",
+    "npsn": "20234060",
+    "village": "Dusun Jamuju Leuwiliang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Negeri Satu Atap Cimanggung",
+    "npsn": "20252182",
+    "village": "Dusun Awilega",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Islam Sunan Ampel",
+    "npsn": "69979244",
+    "village": "Dusun Babakan Pasirhuni RT 02/05",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP IT Darwatishsholah",
+    "npsn": "69990326",
+    "village": "Dusun Jengkolcondong RT 05/05",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP IT Miftahunnaja",
+    "npsn": "70043114",
+    "village": "Kp. Bunter RT 02/02",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Mazaya Islamic Boarding School",
+    "npsn": "69957089",
+    "village": "Jl. Raya Barat Cicalengka KM 28",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Minhaaju Al Salam",
+    "npsn": "70028963",
+    "village": "Dusun Kolewang RT 04/13",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP PGRI 314 Parakanmuncang",
+    "npsn": "20234075",
+    "village": "Jalan Raya Parakanmuncang KM 23",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Plus Al Amah",
+    "npsn": "20234076",
+    "village": "Jl. Cimanggung–Sindulang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Plus Ganesha",
+    "npsn": "20235614",
+    "village": "Jl. Raya Parakanmuncang Gg. Sukawargi RT 03/01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Plus Guna Cipta",
+    "npsn": "20253928",
+    "village": "Jl. Parakanmuncang KM 01 RT 04/02",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMP",
+    "name": "SMP Yudhistira",
+    "npsn": "20234079",
+    "village": "Jl. Parakanmuncang KM 2",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "MTS",
+    "name": "MTsS Darurohman",
+    "npsn": "20278958",
+    "village": "Kp. Cisurupan RT 02/10",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "MTS",
+    "name": "MTsS Yasta Bunter Cimanggung",
+    "npsn": "20278957",
+    "village": "Jl. Pangsor–Cihanjuang RT 01/03 No.1",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMA",
+    "name": "SMAN Cimanggung",
+    "npsn": "20235621",
+    "village": "Jl. Bunter Cihanjuang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMK",
+    "name": "SMK Al Amah Sindulang",
+    "npsn": "69954809",
+    "village": "Jl. Parakanmuncang–Sindulang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211020",
+    "education_level": "SMK",
+    "name": "SMK Sunan Ampel",
+    "npsn": "70047591",
+    "village": "Dusun Girilaya",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Cikurubuk",
+    "npsn": "20235367",
+    "village": "Cimara",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Cisalak I",
+    "npsn": "20233865",
+    "village": "Cisalak",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Cisalak II",
+    "npsn": "20233866",
+    "village": "Kebonkalapa",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Cisalak III",
+    "npsn": "20233867",
+    "village": "Kebonkalapa",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Cisalak IV",
+    "npsn": "20233868",
+    "village": "Cisalak",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Ciuyah I",
+    "npsn": "20233875",
+    "village": "Cisarua",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Ciuyah II",
+    "npsn": "20233876",
+    "village": "Cisarua",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Ciuyah III",
+    "npsn": "20233877",
+    "village": "Ciuyah",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Jambu",
+    "npsn": "20233899",
+    "village": "Cipandanwangi",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SD",
+    "name": "SD Negeri Pameulah",
+    "npsn": "20233953",
+    "village": "Bantarmara",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Cisarua",
+    "npsn": "20234053",
+    "village": "Cisarua",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "MTS",
+    "name": "MTsS Al-Hikmah",
+    "npsn": "20278959",
+    "village": "Cisarua",
+    "status": ""
+  },
+  {
+    "district_code": "3211161",
+    "education_level": "MTS",
+    "name": "MTSS Uswatun Hasanah",
+    "npsn": "20278960",
+    "village": "Kebonkalapa",
+    "status": ""
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Babakan Cipeundeuy",
+    "npsn": "20233782",
+    "village": "Dusun Cikaso — Cimarga",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Bantarjambe",
+    "npsn": "20233784",
+    "village": "Dusun Karamat — Cigintung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Cigintung",
+    "npsn": "20233823",
+    "village": "Dusun Cigintung — Cigintung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Cilopang",
+    "npsn": "20233845",
+    "village": "Dusun Cilopang Hilir — Cilopang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Cimarga",
+    "npsn": "20233854",
+    "village": "Dusun Cipeundeuy — Cimarga",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Cisitu",
+    "npsn": "20233870",
+    "village": "Dusun Cisitu — Cisitu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Corenda",
+    "npsn": "20233881",
+    "village": "Dusun Corenda — Situmekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Jatiputri",
+    "npsn": "20233902",
+    "village": "Dusun Jatiputri — Cilopang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Kawungluwuk I",
+    "npsn": "20233911",
+    "village": "Dusun Kawungluwuk — Linggajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Kawungluwuk II",
+    "npsn": "20233912",
+    "village": "Dusun Kucing — Linggajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Linggasari",
+    "npsn": "20233922",
+    "village": "Campaka Kaler RT 03 RW 04 — Sundamekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Malingping",
+    "npsn": "20233924",
+    "village": "Dusun Malingping — Situmekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Margaluyu",
+    "npsn": "20251842",
+    "village": "Dusun Cipeuteuy — Cisitu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Nanggerang",
+    "npsn": "20251843",
+    "village": "Dusun Nanggerang — Cinangsi",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Pabuaran",
+    "npsn": "20233950",
+    "village": "Perum Relokasi Linggajaya RT 01/RW 11 — Linggajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Pangluyu",
+    "npsn": "20233954",
+    "village": "Dusun Pangjeleran — Cigintung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Ranjeng",
+    "npsn": "20233966",
+    "village": "Dusun Bakan Asem — Ranjeng",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Sadangsari",
+    "npsn": "20233968",
+    "village": "Ranjeng — Ranjeng",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Salamjajar",
+    "npsn": "20233969",
+    "village": "Dusun Pajagan — Pajagan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Sudapati",
+    "npsn": "20233982",
+    "village": "Dusun Sudapati — Pajagan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Sukajaya",
+    "npsn": "20235512",
+    "village": "Dusun Cisasak — Pajagan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SD",
+    "name": "SD Negeri Tanjungjaya",
+    "npsn": "20235522",
+    "village": "Dusun Bakom — Linggajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "MI",
+    "name": "MIS Cikeusi",
+    "npsn": "60708791",
+    "village": "Dusun Cikeusi — Cinangsi",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Cisitu",
+    "npsn": "20234054",
+    "village": "Jl. Rd. Umar Wirahadikusumah Km 18 — Situmekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Cisitu",
+    "npsn": "20234061",
+    "village": "Jln. Cisasak — Pajagan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "SMP",
+    "name": "SMP Negeri 3 Cisitu",
+    "npsn": "20234068",
+    "village": "Jl. Raya Barat Darmaraja–Sumedang — Cinangsi",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211071",
+    "education_level": "MTS",
+    "name": "MTsS Cibogo Darmaraja",
+    "npsn": "",
+    "village": "Desa Situmekar / Cibogo (perlu konfirmasi)",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Babakanasem",
+    "npsn": "20233780",
+    "village": "Dusun Ciputat RT 04/04 — Babakan Asem",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Cacaban",
+    "npsn": "20233795",
+    "village": "Jln. Sindangsono No. 1 — Cacaban",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Cibapa",
+    "npsn": "20233800",
+    "village": "Dusun Cibapa — Cibubuan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Cibubuan I",
+    "npsn": "20233813",
+    "village": "Dusun Lencang — Cibubuan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Cibubuan II",
+    "npsn": "20233814",
+    "village": "Jalan Tarumanagara No. 57 — Karanglayung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Cidempet",
+    "npsn": "20233818",
+    "village": "Dusun Cidempet RT 09/01 — Cibeureuyeuh",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Conggeang I",
+    "npsn": "20233878",
+    "village": "Jalan Raya Conggeang-Sumedang — Conggeang Wetan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Conggeang II",
+    "npsn": "20233879",
+    "village": "Jl. Cibodas No. 4 — Conggeang Kulon",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Conggeang IV",
+    "npsn": "20233880",
+    "village": "Jl. Conggeang-Ujungjaya — Conggeang Wetan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Kawungluwuk",
+    "npsn": "20233910",
+    "village": "Jalan Desa Conggeang Kulon — Conggeang Kulon",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Margaasih",
+    "npsn": "20233928",
+    "village": "Dusun Tenjolaut — Padaasih",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Margaluyu",
+    "npsn": "20208820",
+    "village": "Dusun Sukaasih — Padaasih",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Margamulya",
+    "npsn": "20251844",
+    "village": "Dusun Cibogo RT 03/07 — Padaasih",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Mekarjaya",
+    "npsn": "20233937",
+    "village": "Dusun Bobojong — Narimbang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Narimbang I",
+    "npsn": "20233945",
+    "village": "Jl. Raya Conggeang-Sumedang No. 16 — Jambu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Narimbang II",
+    "npsn": "20233946",
+    "village": "Dusun Bobojong RT 026 RW 006 — Narimbang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Neglasari",
+    "npsn": "20235475",
+    "village": "Dusun Neglasari RT 01/06 — Babakan Asem",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Sirahcipelang",
+    "npsn": "20208360",
+    "village": "Dusun Sirahcipelang — Cipamekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Negeri Ungkal",
+    "npsn": "20234001",
+    "village": "Dusun Sukaluyu RT 02/01 — Ungkal",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD IT Bintang Gemilang",
+    "npsn": "69888980",
+    "village": "Jl. Raya Legok Conggeang 213A Tagog — Cibeureuyeuh",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD Islam Terpadu Hubbul Qur'an",
+    "npsn": "69981207",
+    "village": "Dusun Jambu Tegal — Jambu",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SD",
+    "name": "SD IT Al Hamiidiyyah",
+    "npsn": "70055871",
+    "village": "Dusun Cipicung RT 012 RW 003 — Conggeang Wetan",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "MI",
+    "name": "MIS Jambu",
+    "npsn": "60708792",
+    "village": "Jl. Jambu Tegal No. 02 — Jambu",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Conggeang",
+    "npsn": "20234055",
+    "village": "Jl. Rumah Sakit 01 — Conggeang Wetan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Conggeang",
+    "npsn": "20235598",
+    "village": "Jalan Tarumanagara — Karanglayung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SMP",
+    "name": "SMP IT Bintang Gemilang",
+    "npsn": "69996250",
+    "village": "Jl. Raya Conggeang Dusun Tagog RT 03/01 — Cibeureuyeuh",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SMP",
+    "name": "SMP IT Hubbul Qur'an",
+    "npsn": "70036858",
+    "village": "Jalan Raya Legok-Conggeang KM 03, Jambu Tegal — Jambu",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "MTS",
+    "name": "MTsS Al-Mubarok",
+    "npsn": "20278961",
+    "village": "Dusun Hambawang 01/02 — Padaasih",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "MTS",
+    "name": "MTsS Asyrofuddin",
+    "npsn": "20278962",
+    "village": "Komplek Pontren Asyrofuddin, Dusun Cipicung RT 12/RW 03 — Conggeang Wetan",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "MTS",
+    "name": "MTsS Rohmatul Ummah",
+    "npsn": "20278963",
+    "village": "Jalan Desa Narimbang RT 10/RW 06 — Narimbang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "SMA",
+    "name": "SMAN Conggeang",
+    "npsn": "20235622",
+    "village": "Jl. Raya Conggeang No. 218 — Cibeureuyeuh",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "MA",
+    "name": "MAS Asyrofuddin Cipicung",
+    "npsn": "20280467",
+    "village": "Komplek Pondok Pesantren Asyrofuddin RT/RW 12/3 — Conggeang Wetan",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211140",
+    "education_level": "MA",
+    "name": "MAS (nama kedua belum teridentifikasi pada daftar resmi yang tersedia)",
+    "npsn": "",
+    "village": "—",
+    "status": "Perlu Verifikasi"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Ancol",
+    "npsn": "20233776",
+    "village": "Dusun Ancol — Karangpakuan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Betok",
+    "npsn": "20233785",
+    "village": "Dusun Betok — (cek desa)",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cakrawati",
+    "npsn": "20233797",
+    "village": "Dusun Pasar — Sukaratu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cibogo",
+    "npsn": "20233811",
+    "village": "Dusun Cibogo — (cek desa)",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Ciduging",
+    "npsn": "20233820",
+    "village": "Dusun Ciduging — Tarunajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cieunteung",
+    "npsn": "20233821",
+    "village": "Jl. Raya Wado Sumedang Km.25 — Cieunteung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cikeusi I",
+    "npsn": "20233831",
+    "village": "Dusun Andir — Cikeusi",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cikeusi II",
+    "npsn": "20233832",
+    "village": "Dusun Andir — Cikeusi",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cipaku",
+    "npsn": "20233858",
+    "village": "Dusun Cipaku — (cek desa)",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cipeundeuy",
+    "npsn": "20208792",
+    "village": "Dusun Cipeundeuy — Sukaratu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cipeuteuy",
+    "npsn": "20235390",
+    "village": "Dusun Kebonjambe — Cipeuteuy",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cipicung",
+    "npsn": "20233863",
+    "village": "Dusun Cipicung — Darmajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Cisema",
+    "npsn": "20233869",
+    "village": "Dusun Cisema Blok Hakulah — Paku Alam",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Darmaraja I",
+    "npsn": "20233882",
+    "village": "Jalan Kaum No. 06 — Darmaraja",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Darmaraja II",
+    "npsn": "20233883",
+    "village": "Jalan Kaum No. 19 — Darmaraja",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Darmaraja III",
+    "npsn": "20233884",
+    "village": "Jl. Cikondang — Darmajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Darmaraja IV",
+    "npsn": "20233885",
+    "village": "Jl. Sirnaraga Cikiray — Darmaraja",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Kamenteng",
+    "npsn": "20233905",
+    "village": "Dusun Kamenteng No.62 — Cieunteung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Karanganyar",
+    "npsn": "20251841",
+    "village": "Dusun Karanganyar — Karangpakuan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Kebonbuah",
+    "npsn": "20233913",
+    "village": "Dusun Kebonbuah — Darmajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Kebonkopi",
+    "npsn": "20233914",
+    "village": "Dusun Cilembu — Paku Alam",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Leuwihideung",
+    "npsn": "20233918",
+    "village": "Dusun Leuwiloa — (cek desa)",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Marongpong",
+    "npsn": "20233936",
+    "village": "Dusun Marongpong — (cek desa)",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Munjul",
+    "npsn": "20233940",
+    "village": "Dusun Munjul RT 06/03 — Sukamenak",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Pataruman",
+    "npsn": "20233963",
+    "village": "Dusun Cinaglang RT 03/02 — Neglasari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Ranggon",
+    "npsn": "20233965",
+    "village": "Dusun Kapunduhan — Ranggon",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Sadang",
+    "npsn": "20233967",
+    "village": "Dusun Sadang — (cek desa)",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Sukahaji",
+    "npsn": "20233983",
+    "village": "Dusun Cileuweung RT 03/05 — Tarunajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Sukamanah",
+    "npsn": "20251865",
+    "village": "Jl. Raya Darmaraja — Cieunteung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Sukanagara",
+    "npsn": "20235517",
+    "village": "Dusun Cipaok RT 04/02 — Tarunajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Sukaratu",
+    "npsn": "20235519",
+    "village": "Dusun Cipeundeuy — Sukaratu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SD",
+    "name": "SD Negeri Tanjungwangi",
+    "npsn": "20233996",
+    "village": "Dusun Tanjungwangi — (cek desa)",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "MI",
+    "name": "MIS Cieunteung",
+    "npsn": "60708793",
+    "village": "Dusun Cieunteung RT 04/02 — Cieunteung",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "MI",
+    "name": "MIS Tarunajaya",
+    "npsn": "60708794",
+    "village": "Jl. Cipaok RT 04/01 — Tarunajaya",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Darmaraja",
+    "npsn": "20234056",
+    "village": "Jl. Raya Darmaraja Km.25 — Tarunajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Darmaraja",
+    "npsn": "20234063",
+    "village": "Jalan Pataruman — Neglasari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SMP",
+    "name": "SMP IT Generasi Unggul",
+    "npsn": "69984297",
+    "village": "Jl. Kaum Kidul RT 02/05 — Darmaraja",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "MTS",
+    "name": "MTs Darmaraja",
+    "npsn": "69888347",
+    "village": "Dusun Kaum Kidul RT/RW 01/04 — Neglasari",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "MTS",
+    "name": "MTsS Maarif Sukanagara",
+    "npsn": "20278965",
+    "village": "Dusun Cipaok RT 04/01 — Tarunajaya",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "MTS",
+    "name": "MTsS YKDC Darmaraja",
+    "npsn": "20278966",
+    "village": "Jalan Sukahaji RT 08/02, Dusun Ancol — Karangpakuan",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "SMA",
+    "name": "SMAN Darmaraja",
+    "npsn": "20235623",
+    "village": "Jl. Cikondang No.90 — Darmaraja",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211080",
+    "education_level": "MA",
+    "name": "MAS YKDC Darmaraja",
+    "npsn": "20280476",
+    "village": "Jl. Sukahaji RT 08/02, Dusun Ancol — Karangpakuan",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI BOJONGKONENG",
+    "npsn": "20233786",
+    "village": "Jl. Rd Umar Wirahadikusumah Km. 02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI CIBOGO",
+    "npsn": "20233812",
+    "village": "Dusun Cibogo",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI CIBUNGUR",
+    "npsn": "20251950",
+    "village": "Dusun Cibungur",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI CIGOBANG",
+    "npsn": "20233824",
+    "village": "Dusun Cigobang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKONDANG II",
+    "npsn": "20233834",
+    "village": "Dusun Cikondang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKONDANG III",
+    "npsn": "20233835",
+    "village": "Dusun Batugara",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKONENG I",
+    "npsn": "20233836",
+    "village": "Jl. Raden Umar Wirahadikusumah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI CILEUWEUNG",
+    "npsn": "20233843",
+    "village": "Jl. Prabu Angkawijaya Km. 01, Dusun Pabuaran",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI DAYEUHLUHUR",
+    "npsn": "20233887",
+    "village": "Dusun Dayeuhluhur",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI GANEAS I",
+    "npsn": "20233892",
+    "village": "Jl. Rd Umar Wirahadikusumah Km. 03",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI GANEAS II",
+    "npsn": "20233893",
+    "village": "Jl. Rd Umar Wirahadikusumah Km. 03",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI HEGARMANAH",
+    "npsn": "20251949",
+    "village": "Jl. Prabu Angkawijaya Km. 02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SD",
+    "name": "SD NEGERI WARGALUYU",
+    "npsn": "20233930",
+    "village": "Dusun Citendo RT 04/01",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 1 GANEAS",
+    "npsn": "20208466",
+    "village": "Jl. Dayeuhluhur Km. 1 Ganeas",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211061",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 2 GANEAS",
+    "npsn": "20235600",
+    "village": "Jalan Desa Tanjunghurip RT 02/RW 02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Ciawi",
+    "npsn": "20246337",
+    "village": "Cisampih",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Cibeber",
+    "npsn": "20208323",
+    "village": "Cintajaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Ciboboko",
+    "npsn": "20233809",
+    "village": "Mekarasih",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Cihideung",
+    "npsn": "20233825",
+    "village": "Kadujaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Cijeungjing I",
+    "npsn": "20233827",
+    "village": "Cijeungjing",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Cijeungjing II",
+    "npsn": "20233828",
+    "village": "Kadujaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Cikandang",
+    "npsn": "20233830",
+    "village": "Ciranggem",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Cimukti",
+    "npsn": "20208370",
+    "village": "Cipicung",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Ciranggem",
+    "npsn": "20208362",
+    "village": "Ciranggem",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Cisampih",
+    "npsn": "20208475",
+    "village": "Cisampih",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Hegarmanah",
+    "npsn": "20208264",
+    "village": "Mekarasih",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Kadu",
+    "npsn": "20208269",
+    "village": "Kadu",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Karedok",
+    "npsn": "20208243",
+    "village": "Karedok",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Lebaksiuh",
+    "npsn": "20208246",
+    "village": "Lebaksiuh",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Leuwihieum",
+    "npsn": "20233919",
+    "village": "Lebaksiuh",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Lontong",
+    "npsn": "20208251",
+    "village": "Jemah",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Pamoyanan",
+    "npsn": "20208283",
+    "village": "Cipicung",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Parakankondang",
+    "npsn": "20208289",
+    "village": "Kadujaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Pasirkaliki",
+    "npsn": "20208495",
+    "village": "Ciranggem",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SD",
+    "name": "SD Negeri Talagadatar",
+    "npsn": "20233993",
+    "village": "Cintajaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "MI",
+    "name": "MIS Al Khairat Jatigede",
+    "npsn": "60726947",
+    "village": "Cijeungjing",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Jatigede",
+    "npsn": "20234057",
+    "village": "Cijeungjing",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Jatigede",
+    "npsn": "20235601",
+    "village": "Ciranggem",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SMP",
+    "name": "SMP Negeri 3 Jatigede",
+    "npsn": "20234069",
+    "village": "Kadu",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SMP",
+    "name": "SMP Bina Harapan Jatigede",
+    "npsn": "69978766",
+    "village": "Mekarasih",
+    "status": ""
+  },
+  {
+    "district_code": "3211111",
+    "education_level": "SMK",
+    "name": "SMK: data nama belum terkonfirmasi pada daftar DIKMEN",
+    "npsn": "",
+    "village": "—",
+    "status": ""
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMA",
+    "name": "SMAN JATINANGOR",
+    "npsn": "20208422",
+    "village": "Hegarmanah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMA",
+    "name": "SMA PLUS AL-AQSHA",
+    "npsn": "69992302",
+    "village": "Cibeusi",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMA",
+    "name": "SMAS AL MASOEM JATINANGOR",
+    "npsn": "20235625",
+    "village": "Cipacing",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMA",
+    "name": "SMAS DARUL FATWA JATINANGOR",
+    "npsn": "20235618",
+    "village": "Jatiroke",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMA",
+    "name": "SMAS PLUS AL-FALAH JATINANGOR",
+    "npsn": "20251886",
+    "village": "Cileles",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMK",
+    "name": "SMKS BAABULKAMIL",
+    "npsn": "69815451",
+    "village": "Hegarmanah",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMK",
+    "name": "SMKS DARUL FATWA",
+    "npsn": "20253021",
+    "village": "Jatiroke",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMK",
+    "name": "SMKS FARMASI BHAKTI SEJAHTERA JATINANGOR",
+    "npsn": "20254177",
+    "village": "Cibeusi",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMK",
+    "name": "SMKS PADJADJARAN JATINANGOR",
+    "npsn": "20271226",
+    "village": "Sayang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMK",
+    "name": "SMKS PASUNDAN JATINANGOR",
+    "npsn": "20254180",
+    "village": "Cikeruh",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMK",
+    "name": "SMKS PGRI JATINANGOR",
+    "npsn": "20271840",
+    "village": "Hegarmanah",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMK",
+    "name": "SMKS PUI JATINANGOR",
+    "npsn": "69939325",
+    "village": "Cipacing",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "MA",
+    "name": "MAS PLUS DARUL HUFADZ",
+    "npsn": "60728084",
+    "village": "Cipacing",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 1 JATINANGOR",
+    "npsn": "20208435",
+    "village": "Hegarmanah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 2 JATINANGOR",
+    "npsn": "20208454",
+    "village": "Cisempur",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 3 JATINANGOR",
+    "npsn": "20208460",
+    "village": "Cilayung",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 4 JATINANGOR",
+    "npsn": "69970240",
+    "village": "Jatimukti",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP AL MASOEM",
+    "npsn": "20208433",
+    "village": "Cipacing",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP DARUL FATWA",
+    "npsn": "20208434",
+    "village": "Jatiroke",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP ISLAM BAITURRAHMAN",
+    "npsn": "70051998",
+    "village": "Mekargalih",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP IT BAABUL KAMIL",
+    "npsn": "70003425",
+    "village": "Hegarmanah",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP IT IMAM BUKHARI",
+    "npsn": "20251878",
+    "village": "Sayang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP IT PADJADJARAN JATINANGOR",
+    "npsn": "69961639",
+    "village": "Sayang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP MUHAMMADIYAH JATINANGOR",
+    "npsn": "20270788",
+    "village": "Cibeusi",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP MUTIARA UMMAH ISLAMIC BOARDING SCHOOL",
+    "npsn": "69988771",
+    "village": "Jatiroke",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP PGRI 1 JATINANGOR",
+    "npsn": "20208415",
+    "village": "Hegarmanah",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP PLUS AL AQSHA",
+    "npsn": "20208432",
+    "village": "Cibeusi",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP PLUS AL HIKMAH",
+    "npsn": "69990979",
+    "village": "Cipacing",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SMP",
+    "name": "SMP PLUS ROUDHOTUL QURAN",
+    "npsn": "70028772",
+    "village": "Cikeruh",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI MEKARSARI",
+    "npsn": "20251957",
+    "village": "Sayang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI CIAWI",
+    "npsn": "20251868",
+    "village": "Cikeruh",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI CIBEUSI",
+    "npsn": "20233807",
+    "village": "Cibeusi",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKERUH I",
+    "npsn": "20208380",
+    "village": "Cikeruh",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKERUH II",
+    "npsn": "20208381",
+    "village": "Cikeruh",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKOPO I",
+    "npsn": "20208383",
+    "village": "Cipacing",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKOPO II",
+    "npsn": "20208594",
+    "village": "Cipacing",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKUDA",
+    "npsn": "20233837",
+    "village": "Hegarmanah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI JATINANGOR",
+    "npsn": "20233901",
+    "village": "Sayang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI SAYANG",
+    "npsn": "20233977",
+    "village": "Sayang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD NEGERI HEGARMANAH I",
+    "npsn": "20208265",
+    "village": "Hegarmanah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD AL MASOEM FULL DAY",
+    "npsn": "20234002",
+    "village": "Cipacing",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD INKLUSI AZADDY AL-GHOZALI",
+    "npsn": "69956772",
+    "village": "Cisempur",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD IT IMAM BUKHARI",
+    "npsn": "20234004",
+    "village": "Sayang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD IT BAITUL IKHLASH",
+    "npsn": "70053191",
+    "village": "Cipacing",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD IT MUTIARA UMMAH",
+    "npsn": "70054201",
+    "village": "Jatiroke",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211010",
+    "education_level": "SD",
+    "name": "SD SEKOLAH ALAM JATINANGOR",
+    "npsn": "69960175",
+    "village": "Cikeruh",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Panganginan",
+    "npsn": "20208285",
+    "village": "Tarikolot",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Sindangasih",
+    "npsn": "20208711",
+    "village": "Sirnasari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Banjarasih",
+    "npsn": "20208331",
+    "village": "Sarimekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Bojongjati",
+    "npsn": "20208559",
+    "village": "Tarikolot",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Bojongsalam",
+    "npsn": "20208560",
+    "village": "Pawenang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Buniasih",
+    "npsn": "20208604",
+    "village": "Cimanintin",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Bunisari",
+    "npsn": "20208320",
+    "village": "Banjarsari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Cibala",
+    "npsn": "20208322",
+    "village": "Sarimekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Cibareubeu",
+    "npsn": "20233801",
+    "village": "Sukamanah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Cimaningting",
+    "npsn": "20208796",
+    "village": "Cimanintin",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Cipeundeuy",
+    "npsn": "20208240",
+    "village": "Cipeundeuy",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Cipeuteuy",
+    "npsn": "20208361",
+    "village": "Cimanintin",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Cirayun",
+    "npsn": "20233864",
+    "village": "Banjarsari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Cisambeng",
+    "npsn": "20208775",
+    "village": "Cipeundeuy",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Jagatapa",
+    "npsn": "20208839",
+    "village": "Kirisik",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Karanganyar",
+    "npsn": "20208845",
+    "village": "Cipeundeuy",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Kebonbaru",
+    "npsn": "20208242",
+    "village": "Sarimekar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Kirisik",
+    "npsn": "20208830",
+    "village": "Kirisik",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Langensari",
+    "npsn": "20208245",
+    "village": "Sukamanah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Nagrak",
+    "npsn": "20208828",
+    "village": "Sukamanah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Pajagan",
+    "npsn": "20208722",
+    "village": "Kirisik",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Palasari",
+    "npsn": "20251838",
+    "village": "Cimanintin",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Pawenang",
+    "npsn": "20208699",
+    "village": "Pawenang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Salado",
+    "npsn": "20208706",
+    "village": "Banjarsari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Sirnasari",
+    "npsn": "20208734",
+    "village": "Sirnasari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Sukaherang",
+    "npsn": "20208479",
+    "village": "Tarikolot",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Sukajaya",
+    "npsn": "20208482",
+    "village": "Pawenang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Sukamaju",
+    "npsn": "20208504",
+    "village": "Sirnasari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SD",
+    "name": "SD Negeri Tarikolot",
+    "npsn": "20208507",
+    "village": "Tarikolot",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Jatinunggal",
+    "npsn": "20208413",
+    "village": "Cipeundeuy",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Jatinunggal",
+    "npsn": "20234066",
+    "village": "Tarikolot",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMP",
+    "name": "SMP Negeri 3 Jatinunggal",
+    "npsn": "20235582",
+    "village": "Cimanintin",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMP",
+    "name": "SMP IT Banimusy arif (SMP IT Banimusyarif)",
+    "npsn": "70051366",
+    "village": "Sarimekar",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMP",
+    "name": "SMP Plus Banjarsari",
+    "npsn": "20251879",
+    "village": "Banjarsari",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "MA",
+    "name": "MAS Al Ikhlas",
+    "npsn": "20280464",
+    "village": "Pawenang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "MA",
+    "name": "MAS Hasanatul Huda",
+    "npsn": "70002889",
+    "village": "Banjarsari",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "MA",
+    "name": "MAS Riyadul Muta'alimin",
+    "npsn": "70002897",
+    "village": "Banjarsari",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMA",
+    "name": "SMAN Jatinunggal",
+    "npsn": "20208423",
+    "village": "Sirnasari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMK",
+    "name": "SMK Agro",
+    "npsn": "69968414",
+    "village": "Sarimekar",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMK",
+    "name": "SMK Al Akram",
+    "npsn": "69888975",
+    "village": "Cipeundeuy",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMK",
+    "name": "SMK Tiyasa",
+    "npsn": "69956573",
+    "village": "Sarimekar",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211101",
+    "education_level": "SMK",
+    "name": "SMK YPIB Jatinunggal",
+    "npsn": "69858466",
+    "village": "Sirnasari",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Ciakar",
+    "npsn": "20208608",
+    "village": "Dusun Ciakar RT 07/02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cigendel",
+    "npsn": "20208615",
+    "village": "Jl. Raya Tanjungsari KM 10",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Ciherang",
+    "npsn": "20208616",
+    "village": "Dusun Hampang RT 03/05",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cijeruk",
+    "npsn": "20208584",
+    "village": "Dusun Cijeruk RT 02/01",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cikawao",
+    "npsn": "20208591",
+    "village": "Jln. Nyampay RT 01 RW 09",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cikubang",
+    "npsn": "20208595",
+    "village": "Dusun Cikubang RT 02/05",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cilembu",
+    "npsn": "20208597",
+    "village": "Jl. Desa Cilembu No.16",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cimasuk",
+    "npsn": "20208798",
+    "village": "Dusun Gamlung RT 04/06",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cinanggerang I",
+    "npsn": "20208801",
+    "village": "Dusun Cinanggerang RT 03/04",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cinanggerang II",
+    "npsn": "20251846",
+    "village": "Dusun Cinanggerang RT 03/04",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cipacing",
+    "npsn": "20208805",
+    "village": "Dusun Cipacing, Jl. Desa Mekarbakti RT 15/04",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Cirengganis",
+    "npsn": "20208363",
+    "village": "Dusun Cirengganis RT 01/02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Citali",
+    "npsn": "20208780",
+    "village": "Dusun Citali",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Haurngombong I",
+    "npsn": "20208832",
+    "village": "Dusun Warungkawat RT 01/03",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Haurngombong II",
+    "npsn": "20208833",
+    "village": "Dusun Cipareuag RT 02/06",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Lembang",
+    "npsn": "20208249",
+    "village": "Dusun Lembang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Mekarbakti",
+    "npsn": "20208826",
+    "village": "Dusun Cipelah RT 24/RW 06",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Pamulihan",
+    "npsn": "20208284",
+    "village": "Dusun Cilengsar RT 03/RW 10",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Sirnasari",
+    "npsn": "20233838",
+    "village": "Dusun Sukamulya RT 01/03",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Sukahurip",
+    "npsn": "69759859",
+    "village": "Dusun Sukahurip RT 3/RW 10",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Sukalilah",
+    "npsn": "20208759",
+    "village": "Dusun Cikohkol RT 01/05",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SD",
+    "name": "SD Negeri Sukawangi",
+    "npsn": "20208741",
+    "village": "Dusun Lamajang RT 02/08",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MI",
+    "name": "MI Riyadlul Muttaqien",
+    "npsn": "69956168",
+    "village": "Dusun Simpang RT 04/01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MI",
+    "name": "MIS Al-Ba’ats",
+    "npsn": "69756227",
+    "village": "Dusun Cimasuk I RT 01/RW 07",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MI",
+    "name": "MIS Boma",
+    "npsn": "60708806",
+    "village": "Jalan Raya Pamulihan–Rancakalong",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MI",
+    "name": "MIS Miftahussa’adah Neglasari",
+    "npsn": "60708807",
+    "village": "Neglasari RT 04/RW 01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MI",
+    "name": "MIS Muhammadiyah Babakanloa",
+    "npsn": "60708805",
+    "village": "Babakanloa RT 02/07, Citali",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Pamulihan",
+    "npsn": "20208405",
+    "village": "Jalan Simpang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Pamulihan",
+    "npsn": "20251873",
+    "village": "Jln. Cikohkol",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMP",
+    "name": "SMP Negeri 3 Pamulihan",
+    "npsn": "20251874",
+    "village": "Cilembu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMP",
+    "name": "SMP Negeri 4 Pamulihan",
+    "npsn": "20251875",
+    "village": "Dusun Cinanggerang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMP",
+    "name": "SMP Negeri Satu Atap Cikawao",
+    "npsn": "20251876",
+    "village": "Dusun Nyampay RT 01/RW 09",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMP",
+    "name": "SMP IT Imam Syafii",
+    "npsn": "69948571",
+    "village": "Dusun Cilembu II RT 02/RW 11",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMP",
+    "name": "SMP Plus Al B aats",
+    "npsn": "69985078",
+    "village": "Jl. Lebakjati–Rancakalong, Dusun Cimasuk I",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMP",
+    "name": "SMP Plus Daarul Furqon",
+    "npsn": "70063153",
+    "village": "Dusun Babakan Sukawangi RT 02/RW 02",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMP",
+    "name": "SMP Plus Ulumul Quran Al Mustofa",
+    "npsn": "69971939",
+    "village": "Lebak Cara Indah",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MTS",
+    "name": "MTs SA Bani Mahfud",
+    "npsn": "20278977",
+    "village": "Jl. Raya Simpang–Cilembu KM 3,5",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MTS",
+    "name": "MTsS Bustanul Wildan",
+    "npsn": "69726359",
+    "village": "Jl. Raya Rancakalong, Dusun Cikeuyeup RT 01/RW 04",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MTS",
+    "name": "MTsS Miftahussaadah",
+    "npsn": "20278974",
+    "village": "Dusun Neglasari RT 04/RW 01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMA",
+    "name": "SMA Plus Ulumul Qur’an Al Mustofa",
+    "npsn": "70008586",
+    "village": "Lebak Cara RT 01/RW 04",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "SMK",
+    "name": "SMK Cipta Karya",
+    "npsn": "69953066",
+    "village": "Jl. Citali–Rancakalong KM 0,5",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MA",
+    "name": "MAS GUPPI Cimasuk",
+    "npsn": "60728085",
+    "village": "Dusun Gamlung RT 03/RW 06",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MA",
+    "name": "MAS Miftahussa’adah",
+    "npsn": "69955709",
+    "village": "Dusun Neglasari RT 04/RW 01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211032",
+    "education_level": "MA",
+    "name": "MAS Persis 40 Sarongge",
+    "npsn": "20280473",
+    "village": "Dusun Sarongge RT 04/RW 04",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Babakanbuah",
+    "npsn": "20208349",
+    "village": "Jl. Mayor Hadi No.35",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Bongkok",
+    "npsn": "20208316",
+    "village": "Dusun Bakanjati RT 25/06",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Cijambe I",
+    "npsn": "20208617",
+    "village": "Dusun Parugpug Kidul",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Cijambe II",
+    "npsn": "20208351",
+    "village": "Jl. Arya Tinggal No.81, Pasireungit Tonggoh RT 007/002",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Cileuksa",
+    "npsn": "20208387",
+    "village": "Jl. Sebelas April No.103, Dusun Cileuksa RT 02/05",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Citepok",
+    "npsn": "20208365",
+    "village": "Dusun Baru RT 03/01",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Haurkuning",
+    "npsn": "20208263",
+    "village": "Jl. Haurkuning No.47",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Legok I",
+    "npsn": "20208247",
+    "village": "Jl. Sebelas April No.19",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Legok II",
+    "npsn": "20208248",
+    "village": "Jl. Sebelas April No.17",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Nyalindung",
+    "npsn": "20208718",
+    "village": "Jl. Raya Nyalindung",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Parumasan",
+    "npsn": "20208291",
+    "village": "Jl. Kantawijaya No.64",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Paseh I",
+    "npsn": "20208488",
+    "village": "Jl. Raya Raden Ali Sadikin No.29",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Paseh II",
+    "npsn": "20208489",
+    "village": "Jl. Nagrak RT 06/03",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Sidaraja",
+    "npsn": "20208710",
+    "village": "Dusun Sidaraja",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Sindangjati",
+    "npsn": "20208484",
+    "village": "Dusun Ciseuti",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Sukamulya",
+    "npsn": "20246354",
+    "village": "Jl. Sukamulya",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Sukasirna",
+    "npsn": "20208534",
+    "village": "Jl. Buyut Lidah Suryadiningrat No.25",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SD",
+    "name": "SD Negeri Talun",
+    "npsn": "20208524",
+    "village": "Jl. Sacaprana No.21",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "MI",
+    "name": "MI Al-Khudamat",
+    "npsn": "69956167",
+    "village": "Dusun Cileuksa",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "MI",
+    "name": "MIS Al-Iman",
+    "npsn": "60708808",
+    "village": "Cibodas RT 33/08",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "MI",
+    "name": "MIS Babakan Kondang",
+    "npsn": "60708809",
+    "village": "Dusun Babakan Kondang",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Paseh",
+    "npsn": "20208436",
+    "village": "Jl. Pajajaran No.148",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Paseh",
+    "npsn": "20208438",
+    "village": "Jalan Sukamulya",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "MTS",
+    "name": "MTs Guppi Cileuksa Paseh",
+    "npsn": "20278978",
+    "village": "Jl. Sebelas April No.101, Cileuksa RT 001/RW 005",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "MTS",
+    "name": "MTsS Amanah Mukhlिशin",
+    "npsn": "69983150",
+    "village": "Dusun Nagrak RT 07/RW 03",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "MTS",
+    "name": "MTsS Assalafiyah",
+    "npsn": "20278980",
+    "village": "Jalan Lemburgede",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "MTS",
+    "name": "MTsS Ma’arif Sidaraja Paseh",
+    "npsn": "20278979",
+    "village": "Jl. Raya Sidaraja No.369",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "SMA",
+    "name": "SMA Negeri 1 Paseh",
+    "npsn": "70062859",
+    "village": "Jalan Raya Sumedang–Cirebon",
+    "status": ""
+  },
+  {
+    "district_code": "3211150",
+    "education_level": "MA",
+    "name": "MA Kalijaga",
+    "npsn": "70058678",
+    "village": "Dusun Nagrak RT 007/RW 003",
+    "status": ""
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD ISLAM AL FURQON",
+    "npsn": "20208837",
+    "village": "Sukahayu",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI BABAKAN",
+    "npsn": "20246336",
+    "village": "Sukasirnarasa",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI CIBUNAR",
+    "npsn": "20208612",
+    "village": "Cibunar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI CIBUNGUR",
+    "npsn": "20208613",
+    "village": "Cibungur",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKEUSIK",
+    "npsn": "20208593",
+    "village": "Pamekaran",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI CISUGAN",
+    "npsn": "20208778",
+    "village": "Pangadegan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI CITUNGKU",
+    "npsn": "20208782",
+    "village": "Nagarawangi",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI CUPUWANGI",
+    "npsn": "20208367",
+    "village": "Cibunar",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI MEKARSARI",
+    "npsn": "20233938",
+    "village": "Cibungur",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI PAKUWANGI",
+    "npsn": "20208277",
+    "village": "Pangadegan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI SIRNALUYU",
+    "npsn": "20208472",
+    "village": "Sirnaluyu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI SUKAHAYU",
+    "npsn": "20208477",
+    "village": "Sukahayu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI PASIRBENTENG II",
+    "npsn": "20208490",
+    "village": "Pasirbenteng",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SD",
+    "name": "SD NEGERI SUKAMANAH I",
+    "npsn": "20208526",
+    "village": "Sukamanah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SMP",
+    "name": "SMP ISLAM AL-FURQON",
+    "npsn": "69889084",
+    "village": "Sukahayu",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 1 RANCAKALONG",
+    "npsn": "20208406",
+    "village": "Nagarawangi",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 2 RANCAKALONG",
+    "npsn": "20208455",
+    "village": "Pasirbiru",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 3 RANCAKALONG",
+    "npsn": "20235606",
+    "village": "Cibungur",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SMP",
+    "name": "SMP PLUS ASSYARIATUL ULUUM",
+    "npsn": "69902978",
+    "village": "Pangadegan",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SMA",
+    "name": "SMAN RANCAKALONG",
+    "npsn": "20208408",
+    "village": "Nagarawangi",
+    "status": "Sma Negeri"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SMK",
+    "name": "SMK BAROKAH BHAKTI RANCAKALONG",
+    "npsn": "69955313",
+    "village": "Rancakalong",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SMK",
+    "name": "SMK PLUS ASSYARI ATUL ULUUM",
+    "npsn": "69954106",
+    "village": "Pangadegan",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211040",
+    "education_level": "SMK",
+    "name": "SMKS CENDIKIA RANCAKALONG",
+    "npsn": "20268578",
+    "village": "Pasirbiru",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SD",
+    "name": "SD Negeri Cicarimanah",
+    "npsn": "20208326",
+    "village": "Dsn Cicarimanah RT 04/02 — Cicarimanah",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SD",
+    "name": "SD Negeri Ambit",
+    "npsn": "20208344",
+    "village": "Dusun Ambit — Ambit",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SD",
+    "name": "SD Negeri Babakanbandung",
+    "npsn": "20208551",
+    "village": "Jalan Malaka No. 29 — Situraja Utara",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SD",
+    "name": "SD Negeri Bangbayang",
+    "npsn": "20208332",
+    "village": "Dusun Sadarayna — Bangbayang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SD",
+    "name": "SD Negeri Cijati",
+    "npsn": "20208352",
+    "village": "Cijati — Cijati",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SD",
+    "name": "SD Negeri Cijeler I",
+    "npsn": "20208353",
+    "village": "Jln. Yudhamanggala Cijeler — Cijeler",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SD",
+    "name": "SD Negeri Cijeler II",
+    "npsn": "20208373",
+    "village": "Jln. Yudhamanggala Cijeler — Cijeler",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SD",
+    "name": "SD Negeri Cijeler III",
+    "npsn": "20208374",
+    "village": "Jl. Cijeler — Cijeler",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "MI",
+    "name": "MIS An Nur",
+    "npsn": "60708810",
+    "village": "Dusun Samoja RT 04 RW 05 — Malaka",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Situraja",
+    "npsn": "20208416",
+    "village": "Jl. Alun-alun Situraja — Situraja",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Situraja",
+    "npsn": "20208461",
+    "village": "Jl. Situraja–Cikadu No.31 — Mekarmulya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SMP",
+    "name": "SMP Negeri 3 Situraja",
+    "npsn": "20235607",
+    "village": "Jl. Tanjung Manunggal V — Sukatali",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SMP",
+    "name": "SMP Negeri 4 Situraja",
+    "npsn": "20208465",
+    "village": "Jalan Cijeler — Cijeler",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "MTS",
+    "name": "MTs Minhajul Karomah",
+    "npsn": "69976298",
+    "village": "Dusun Cikadu RT 02/05 — Cikadu",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "MTS",
+    "name": "MTs Zumrotul Muttaqien",
+    "npsn": "69895096",
+    "village": "Dusun Padasuka RT 03 RW 07 — Situraja Utara",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SMA",
+    "name": "SMAN Situraja",
+    "npsn": "20208391",
+    "village": "Jl. Kaum No.14 Situraja — Situraja",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SMA",
+    "name": "SMA Zumrotul Muttaqien",
+    "npsn": "69953978",
+    "village": "Dusun Padasuka RT 03/07 — Situraja Utara",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "SMK",
+    "name": "SMK Negeri Situraja",
+    "npsn": "20235632",
+    "village": "Tanjung Manunggal V — Sukatali",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211070",
+    "education_level": "MA",
+    "name": "MAS Minhajul Karomah",
+    "npsn": "70006233",
+    "village": "Dusun Cikadu RT 02 RW 05 — Cikadu",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Genteng",
+    "npsn": "20208259",
+    "village": "Dusun Sukamenak RT 11/07",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Manglayang I",
+    "npsn": "20208296",
+    "village": "Jl. Manglayang No.18",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Manglayang II",
+    "npsn": "20208297",
+    "village": "Jl. Manglayang No.18",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Margaluyu",
+    "npsn": "20208379",
+    "village": "Dusun Karasak RT 01/03",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Mulyasari",
+    "npsn": "20246348",
+    "village": "Dusun Patenggeng RT 03/09",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Nanggerang",
+    "npsn": "20235472",
+    "village": "Jl. Pasirbaki RT 01/01 Banyuresmi",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Neglasari",
+    "npsn": "20246349",
+    "village": "Dusun Nanggerang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Padasuka",
+    "npsn": "20246350",
+    "village": "Dusun Padasuka RT 01/06",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Puncak",
+    "npsn": "20208701",
+    "village": "Jl. Genteng",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Sukamulya",
+    "npsn": "20246355",
+    "village": "Dusun Pasirmuncang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SD",
+    "name": "SD Negeri Sukasari",
+    "npsn": "20208533",
+    "village": "Jl. Genteng Km.03 No.60",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "MI",
+    "name": "MIS Zainul Millah Babakanlimus",
+    "npsn": "60708811",
+    "village": "Dusun Babakan Limus RT 01/03",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Sukasari",
+    "npsn": "20208427",
+    "village": "Jl. Genteng Km 3",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SMP",
+    "name": "SMP Bina Juara",
+    "npsn": "70036859",
+    "village": "Jl. Nanggerang–Genteng Dusun Banjaran RT 002/001",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SMP",
+    "name": "SMP Darul Muttaqin Boarding School",
+    "npsn": "70049735",
+    "village": "Kp. Singkup RT 02 RW 05",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SMP",
+    "name": "SMP IT Miftahul Hasanah",
+    "npsn": "69979720",
+    "village": "Jl. Genteng KM 01 Dusun Sukaluyu RT 01/05",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "MTS",
+    "name": "MTs Al Baridji",
+    "npsn": "69928101",
+    "village": "Jl. Genteng Km 3 Dusun Cibogo I RT 03/RW 04",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "MTS",
+    "name": "MTsS As-Sa’adah",
+    "npsn": "20278984",
+    "village": "Jl. Manglayang–Tanjungsari",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "SMK",
+    "name": "SMK Negeri Sukasari",
+    "npsn": "20251889",
+    "village": "Jl. Kiarapayung Km 4,8",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "MA",
+    "name": "MA Plus Miftahul Hasanah",
+    "npsn": "69976354",
+    "village": "Jl. Genteng Km 01 Dusun Sukaluyu",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211031",
+    "education_level": "MA",
+    "name": "MAS As-Sa’adah",
+    "npsn": "20280466",
+    "village": "Jl. Manglayang–Tanjungsari",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SD",
+    "name": "SD NEGERI BABAKAN",
+    "npsn": "20208347",
+    "village": "Mekarrahayu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SD",
+    "name": "SD NEGERI BAGINDA I",
+    "npsn": "20208350",
+    "village": "Baginda",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SD",
+    "name": "SD NEGERI BAGINDA II",
+    "npsn": "20208553",
+    "village": "Baginda",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SD",
+    "name": "SD NEGERI CADASPANGERAN",
+    "npsn": "20208606",
+    "village": "Ciherang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SD",
+    "name": "SD NEGERI CIAWI",
+    "npsn": "20208609",
+    "village": "Gunasari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKAMUNING",
+    "npsn": "20208376",
+    "village": "Mekarrahayu",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKONDANG I",
+    "npsn": "20208382",
+    "village": "Gunasari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SD",
+    "name": "SD NEGERI CILOA",
+    "npsn": "20208388",
+    "village": "Sukajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SD",
+    "name": "SD NEGERI CIPAMEUNGPEUK",
+    "npsn": "20208358",
+    "village": "Cipameungpeuk",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 1 SUMEDANG",
+    "npsn": "20208428",
+    "village": "Regol Wetan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 10 SUMEDANG",
+    "npsn": "20235579",
+    "village": "Sukajaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 3 SUMEDANG",
+    "npsn": "20208462",
+    "village": "Regol Wetan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 4 SUMEDANG",
+    "npsn": "20208448",
+    "village": "Kotakulon",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 7 SUMEDANG",
+    "npsn": "20208430",
+    "village": "Pasanggrahan Baru",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 9 SUMEDANG",
+    "npsn": "20235608",
+    "village": "Regol Wetan",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP 11 APRIL SUMEDANG",
+    "npsn": "20234044",
+    "village": "Baginda",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP IT INSAN SEJAHTERA",
+    "npsn": "69955308",
+    "village": "Sukajaya",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP IT SANGADIPA SUMEDANG",
+    "npsn": "70063919",
+    "village": "Regol Wetan",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP NU SUMEDANG",
+    "npsn": "20208441",
+    "village": "Regol Wetan",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMP",
+    "name": "SMP PLUS YPSA SUMEDANG",
+    "npsn": "20271370",
+    "village": "Ciherang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "MTS",
+    "name": "MTs AL-MUNAWWAROH",
+    "npsn": "69955941",
+    "village": "Ciherang",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "MTS",
+    "name": "MTsS AL-FAJAR SUMEDANG",
+    "npsn": "20278985",
+    "village": "Cipancar",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "MTS",
+    "name": "MTsS ISTIGHFARLAH",
+    "npsn": "60727426",
+    "village": "Margalaksana",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "MTS",
+    "name": "MTsS MIFTAHUL HUDA",
+    "npsn": "20278987",
+    "village": "Mekarrahayu",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "MTS",
+    "name": "MTsS PERSIS SUMEDANG SELATAN",
+    "npsn": "20278986",
+    "village": "Regol Wetan",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMA",
+    "name": "SMAN 1 SUMEDANG",
+    "npsn": "20208419",
+    "village": "Regol Wetan",
+    "status": "Sma Negeri"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMA",
+    "name": "SMA ISLAM TERPADU INSAN SEJAHTERA",
+    "npsn": "70011439",
+    "village": "Sukajaya",
+    "status": "Sma Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMK",
+    "name": "SMK PEMBANGUNAN INDONESIA SUMEDANG",
+    "npsn": "69964868",
+    "village": "Pasanggrahan Baru",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMK",
+    "name": "SMKS BINA HARAPAN SUMEDANG",
+    "npsn": "20235634",
+    "village": "Kotakulon",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMK",
+    "name": "SMKS FAJAR MANDALA",
+    "npsn": "69913940",
+    "village": "Cipameungpeuk",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMK",
+    "name": "SMKS MAARIF 1 SUMEDANG",
+    "npsn": "20235637",
+    "village": "Regol Wetan",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "SMK",
+    "name": "SMKS PUSDAI",
+    "npsn": "20254179",
+    "village": "Kotakulon",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211050",
+    "education_level": "MA",
+    "name": "MAS PLUS AL MUNIR",
+    "npsn": "60728086",
+    "village": "Baginda",
+    "status": "Ma Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MI",
+    "name": "MIS ASSALAM",
+    "npsn": "60708813",
+    "village": "Situ",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MI",
+    "name": "MIS KERTASARI",
+    "npsn": "60708814",
+    "village": "Margamukti",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MI",
+    "name": "MIS KETIB",
+    "npsn": "60708815",
+    "village": "Jatimulya",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MI",
+    "name": "MIS NURROHMAN",
+    "npsn": "60726949",
+    "village": "Sirnamulya",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MI",
+    "name": "MIS PADASUKA",
+    "npsn": "60708816",
+    "village": "Mulyasari",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MTS",
+    "name": "MTs AL-HUSNA",
+    "npsn": "69955942",
+    "village": "Mulyasari",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MTS",
+    "name": "MTs MA’ARIF SUMEDANG",
+    "npsn": "20278989",
+    "village": "Situ",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MTS",
+    "name": "MTs NUROHMAN",
+    "npsn": "69928098",
+    "village": "Rancamulya",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MTS",
+    "name": "MTs PLUS AN-NUUR",
+    "npsn": "20278990",
+    "village": "Situ",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MTS",
+    "name": "MTSS AL-MARZUQIYYAH",
+    "npsn": "20278991",
+    "village": "Girimukti",
+    "status": ""
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 2 SUMEDANG",
+    "npsn": "20208417",
+    "village": "Situ",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 5 SUMEDANG",
+    "npsn": "20208447",
+    "village": "Situ",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 6 SUMEDANG",
+    "npsn": "20208429",
+    "village": "Padasuka",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 8 SUMEDANG",
+    "npsn": "20208431",
+    "village": "Mekarjaya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMP",
+    "name": "SMP AR RAFI BHS",
+    "npsn": "70053221",
+    "village": "Kotakaler",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMP",
+    "name": "SMP BAITUL ARQAM QURANIC SCIENCE SUMEDANG",
+    "npsn": "70036860",
+    "village": "Jatihurip",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMP",
+    "name": "SMP PEMBAHARU MUDA",
+    "npsn": "69987238",
+    "village": "Rancamulya",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MA",
+    "name": "MAN 2 SUMEDANG",
+    "npsn": "20280463",
+    "village": "Sirnamulya",
+    "status": "Ma Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "MA",
+    "name": "MAS DARUSSALAM",
+    "npsn": "20280470",
+    "village": "Situ",
+    "status": "Ma Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMA",
+    "name": "SMAN 2 SUMEDANG",
+    "npsn": "20208420",
+    "village": "Rancamulya",
+    "status": "Sma Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMA",
+    "name": "SMAN 3 SUMEDANG",
+    "npsn": "20208421",
+    "village": "Kotakaler",
+    "status": "Sma Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMK AN-NUUR",
+    "npsn": "69964370",
+    "village": "Situ",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMK INKANAS SUMEDANG",
+    "npsn": "69920115",
+    "village": "Padasuka",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMK LOGISTIK SUMEDANG",
+    "npsn": "70006541",
+    "village": "Mekarjaya",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMKN 1 SUMEDANG",
+    "npsn": "20208393",
+    "village": "Situ",
+    "status": "Smk Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMKN 2 SUMEDANG",
+    "npsn": "20208394",
+    "village": "Situ",
+    "status": "Smk Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMKS BHAKTI NUSANTARA",
+    "npsn": "20253782",
+    "village": "Situ",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMKS INFORMATIKA SUMEDANG",
+    "npsn": "20235636",
+    "village": "Situ",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMKS KORPRI SUMEDANG",
+    "npsn": "20208395",
+    "village": "Mekarjaya",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMKS MAARIF 2 SUMEDANG",
+    "npsn": "20208396",
+    "village": "Situ",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SMK",
+    "name": "SMKS MUHAMMADIYAH 1 SUMEDANG",
+    "npsn": "20208397",
+    "village": "Kotakaler",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SD",
+    "name": "SD NEGERI BABAKANHURIP",
+    "npsn": "20208346",
+    "village": "Kotakaler",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SD",
+    "name": "SD NEGERI BENDUNGAN I",
+    "npsn": "20208314",
+    "village": "Margamukti",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SD",
+    "name": "SD NEGERI BENDUNGAN II",
+    "npsn": "20208558",
+    "village": "Margamukti",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SD",
+    "name": "SD NEGERI CILENGKRANG",
+    "npsn": "20208599",
+    "village": "Kotakaler",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SD",
+    "name": "SD NEGERI GUNUNGSARI",
+    "npsn": "20208262",
+    "village": "Jatimulya",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SD",
+    "name": "SD NEGERI JATIHURIP",
+    "npsn": "20208266",
+    "village": "Jatihurip",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SD",
+    "name": "SD NEGERI KARAPYAK I",
+    "npsn": "20208244",
+    "village": "Situ",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211060",
+    "education_level": "SD",
+    "name": "SD NEGERI KETIB",
+    "npsn": "20208238",
+    "village": "Kotakaler",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Cimuncang",
+    "npsn": "20208799",
+    "village": "Dusun Cimuncang RT 02/07",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Nanggerang",
+    "npsn": "20208812",
+    "village": "Dusun Nanggerang RT 01/02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Pari",
+    "npsn": "20208290",
+    "village": "Dusun Pari RT 06/02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Pasirwareng",
+    "npsn": "20208496",
+    "village": "Dusun Pasirwareng RT 01/01",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Sarwiru",
+    "npsn": "20208708",
+    "village": "Dusun Sarwiru Kidul RT 02/01",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Sindang",
+    "npsn": "20233979",
+    "village": "Dusun Sindang RT 01/03",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Situbatu",
+    "npsn": "20208735",
+    "village": "Dusun Situbatu RT 03/03",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Surian",
+    "npsn": "20233992",
+    "village": "Dusun Surian Kulon RT 02/04",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Tanjung",
+    "npsn": "20246359",
+    "village": "Dusun Songgom RT 04/01",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Wanasari I",
+    "npsn": "20208341",
+    "village": "Dusun Wanasari RT 03/02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SD",
+    "name": "SD Negeri Wanasari II",
+    "npsn": "20208342",
+    "village": "Dusun Cisumur RT 03/02",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Surian",
+    "npsn": "20208412",
+    "village": "Jl. Surianata No.134",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211181",
+    "education_level": "MTS",
+    "name": "MTsS Al-Irsyad Surian",
+    "npsn": "20278992",
+    "village": "Jl. Martani Komp. Medangwangi, Dusun Cilengkrang RT 02/RW 01",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI AWILEGA",
+    "npsn": "20208549",
+    "village": "Dusun Cihayam",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI BOROS",
+    "npsn": "20208581",
+    "village": "Dusun Sukadana RT 01 RW 05",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI BUDIASIH",
+    "npsn": "20208319",
+    "village": "Dusun Babakan Caringin",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI CIBODAS I",
+    "npsn": "20208324",
+    "village": "Dusun Ceuri",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI CIBODAS II",
+    "npsn": "20233810",
+    "village": "Dusun Janggot",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI CIGENTUR",
+    "npsn": "20208329",
+    "village": "Dusun Sukamulya RT 02/02",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI CIMUNCANG",
+    "npsn": "20208354",
+    "village": "Dusun Sukaregang",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI CINARENGTA",
+    "npsn": "20208355",
+    "village": "Dusun Cinarengta RT 02/06",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI CIPANAS",
+    "npsn": "20208359",
+    "village": "Dusun Babakan Caringin RT 01/06",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI GUNUNGDATAR",
+    "npsn": "20233895",
+    "village": "Dusun Gunungdatar RT 02/05",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI KADUJAJAR I",
+    "npsn": "20208847",
+    "village": "Dusun Depok",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI KADUJAJAR II",
+    "npsn": "20208270",
+    "village": "Dusun Sudimampir",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI KADUJAJAR III",
+    "npsn": "20208271",
+    "village": "Jl. Sindangtaman",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI KERTAMULYA",
+    "npsn": "20208239",
+    "village": "Cigalumpit",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI PANIIS",
+    "npsn": "20208286",
+    "village": "Dusun Paniis",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI PASIRHUNI I",
+    "npsn": "20208493",
+    "village": "Jl. Militer No. 25 Sukamantri",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI PASIRHUNI II",
+    "npsn": "20208715",
+    "village": "Jl. Alun-alun Sukamantri No. 01",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI SAMPORA",
+    "npsn": "20233970",
+    "village": "Dusun Sampora",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI SUKADANA",
+    "npsn": "20208756",
+    "village": "Dusun Sukadana RT 01/05",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI TANJUNGKERTA",
+    "npsn": "20208506",
+    "village": "Jl. Kaum No. 1",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI TANJUNGMEKAR",
+    "npsn": "20208748",
+    "village": "Dusun Pondoksereh",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SD",
+    "name": "SD NEGERI TANJUNGMULYA",
+    "npsn": "20208522",
+    "village": "Dusun Liunggunung",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MI",
+    "name": "MIS AL-HIKMAH KALIWANGI",
+    "npsn": "60708817",
+    "village": "Jln. Sukamantri, Dsn. Kaliwangi RT 04/01",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MI",
+    "name": "MIS CIERENG",
+    "npsn": "60708818",
+    "village": "Dusun Ciereng RT 01/09",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MI",
+    "name": "MIS DARUL HIKMAH SUKAWANGI",
+    "npsn": "60708819",
+    "village": "Sukawangi RT 17/07",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MI",
+    "name": "MIS GANDASOLI",
+    "npsn": "60708820",
+    "village": "Dusun Gandasoli RT 002/07",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MI",
+    "name": "MIS KARANGLAYUNG",
+    "npsn": "60708821",
+    "village": "Jalan Raya Tanjungkerta RT 002/001",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MI",
+    "name": "MIS NAGRAK",
+    "npsn": "60726950",
+    "village": "Jln. Nagrak RT 02/03",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MTS",
+    "name": "MTs DARUL FALAH",
+    "npsn": "69976297",
+    "village": "Dusun Bakanjati RT 02/04",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MTS",
+    "name": "MTs DARUL HIKMAH TANJUNGKERTA",
+    "npsn": "20278994",
+    "village": "Jl. Sukawangi No. 04 RT 17/07",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MTS",
+    "name": "MTsS MUHAMMADIYAH SUKADANA",
+    "npsn": "20278995",
+    "village": "Dusun Sukadana RT 03/07",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MTS",
+    "name": "MTsS PLUS AL-HIKAM",
+    "npsn": "20278993",
+    "village": "Jl. Sukamantri No. 85 RT 03/04",
+    "status": ""
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 1 TANJUNGKERTA",
+    "npsn": "20208450",
+    "village": "Jl. Kaum No. 2 Tanjungkerta",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 2 TANJUNGKERTA",
+    "npsn": "20208457",
+    "village": "Jl. Sukamantri",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SMP",
+    "name": "SMP NU SUKAMANTRI",
+    "npsn": "20234074",
+    "village": "Jl. Mesjid No. 07",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SMP",
+    "name": "SMP PLUS AL MAMUN",
+    "npsn": "20253144",
+    "village": "Dusun Gunungdatar RT 01/04",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SMP",
+    "name": "SMP PLUS AL-HIKAM",
+    "npsn": "70063655",
+    "village": "Dusun Leuwikawung RT 004/004",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SMA",
+    "name": "SMAN TANJUNGKERTA",
+    "npsn": "20208407",
+    "village": "Jl. Sukamantri Tanjungkerta Sumedang 45354",
+    "status": "Sma Negeri"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MA",
+    "name": "MAS DARUL HIKMAH",
+    "npsn": "20280469",
+    "village": "Sukawangi No. 02 RT 18/07",
+    "status": "Ma Swasta"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "MA",
+    "name": "MAS PLUS AL HIKAM",
+    "npsn": "20280474",
+    "village": "Jl. Sukamatri No. 85 RT 03/04",
+    "status": "Ma Swasta"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SMK",
+    "name": "SMK AL HIKAM",
+    "npsn": "69955220",
+    "village": "Jl. Sukamantri",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211170",
+    "education_level": "SMK",
+    "name": "SMKS AL MAMUN",
+    "npsn": "20253145",
+    "village": "Gunungdatar",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI CIBURUAN",
+    "npsn": "20208614",
+    "village": "Dusun Ciburuan",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKARAMAS I",
+    "npsn": "20208588",
+    "village": "Dusun Cikaramas",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI CIKARAMAS II",
+    "npsn": "20208589",
+    "village": "Dusun Cikaramas",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI CINANGSI",
+    "npsn": "20208803",
+    "village": "Dusun Cinangsi",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI CIOMAS",
+    "npsn": "20208804",
+    "village": "Dusun Ciomas",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI CIRANJANG",
+    "npsn": "20208773",
+    "village": "Dusun Ciranjang",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI CISEMPAK",
+    "npsn": "20208776",
+    "village": "Dusun Pasirandu",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI JINGKANG",
+    "npsn": "20208848",
+    "village": "Dusun Jingkang",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI KAMAL",
+    "npsn": "20208846",
+    "village": "Dusun Kamal",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI KERTAMUKTI",
+    "npsn": "20208831",
+    "village": "Dusun Sindangjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI NEGLASARI",
+    "npsn": "20251953",
+    "village": "Dsn Neglasari RT 04 RW 02",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI PADAMULYA",
+    "npsn": "20208719",
+    "village": "Dusun Baregbeg",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI RANCAGOONG",
+    "npsn": "20208702",
+    "village": "Dusun Seklok",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI SALAM",
+    "npsn": "20208707",
+    "village": "Dusun Salam",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI SINDANGKERTA",
+    "npsn": "20208712",
+    "village": "Dusun Sindang",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI SUKAMUKTI",
+    "npsn": "20251954",
+    "village": "Dusun Cilutung",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI SUKAMULYA",
+    "npsn": "20251869",
+    "village": "Dusun Panyingkiran",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SD",
+    "name": "SD NEGERI SUKATANI",
+    "npsn": "20208740",
+    "village": "Dusun Ciburulung",
+    "status": ""
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SMP",
+    "name": "SMP NEGERI 1 TANJUNGMEDAR",
+    "npsn": "20208449",
+    "village": "Jl. Sindangsari No. 10, Jingkang",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "MA",
+    "name": "MAS MUHAMMADIYAH CIKARAMAS",
+    "npsn": "69976352",
+    "village": "Jl. Cikaramas–Tanjungmedar KM 01, Cikaramas",
+    "status": "Ma Swasta"
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SMK",
+    "name": "SMK PGRI TANJUNGMEDAR",
+    "npsn": "69880814",
+    "village": "Jl. Raya Jingkang, Jingkang",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211171",
+    "education_level": "SMK",
+    "name": "SMK TERPADU THURSINA",
+    "npsn": "69954729",
+    "village": "Dusun Kamal RT 03/03, Kamal",
+    "status": "Smk Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SD",
+    "name": "SD Negeri Babakan Bandung",
+    "npsn": "20208552",
+    "village": "Jl. Maruyung No.93.A",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SD",
+    "name": "SD Negeri Cijambu I",
+    "npsn": "20208618",
+    "village": "Dusun Pasanggrahan RT 03/03",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SD",
+    "name": "SD Negeri Cijambu II",
+    "npsn": "20208602",
+    "village": "Dusun Cijambu RT 02/03",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SD",
+    "name": "SD Negeri Cijolang",
+    "npsn": "20208585",
+    "village": "Dusun Cijolang RT 01/09",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SD",
+    "name": "SD Negeri Cikandang",
+    "npsn": "20246339",
+    "village": "Jl. Cikandang",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SD",
+    "name": "SD Negeri Cileutik",
+    "npsn": "20208619",
+    "village": "Jl. Cileutik 14",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SD",
+    "name": "SD Negeri Ciluluk I",
+    "npsn": "20208772",
+    "village": "Dusun Ciluluk No.55 RT 001/014",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SD",
+    "name": "SD Negeri Ciluluk II",
+    "npsn": "20208794",
+    "village": "Jalan Pagaden No.26",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MI",
+    "name": "MIS Al Furqon Genteng",
+    "npsn": "60708826",
+    "village": "Simpangparakanmuncang KM 2,2 Dusun Genteng",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MI",
+    "name": "MIS Al Huda Ciluluk",
+    "npsn": "60708828",
+    "village": "Jl. Ciluluk RT 02/14",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MI",
+    "name": "MIS Gunungmanik",
+    "npsn": "60708829",
+    "village": "Jl. Gunungmanik No.18 RT 01 RW 17",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MI",
+    "name": "MIS Nurul Huda Pasirangin",
+    "npsn": "60708830",
+    "village": "Jl. Genteng KM 02 No.60",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MI",
+    "name": "MIS Pasanggrahan",
+    "npsn": "60708827",
+    "village": "Dusun Pasanggrahan RT 02 RW 05",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Tanjungsari",
+    "npsn": "20208451",
+    "village": "Jl. Raya Tanjungsari No.349",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Tanjungsari",
+    "npsn": "20208458",
+    "village": "Pacuan Kuda Tanjungsari",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Negeri 3 Tanjungsari",
+    "npsn": "20208463",
+    "village": "Jalan Desa Kadakajaya KM 06",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Bina Insan Harapan",
+    "npsn": "69970192",
+    "village": "Jln. Pagaden Awisurat",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP IT Asmaul Husna",
+    "npsn": "20253987",
+    "village": "Jl. Dahlia GA 17 Perum Tanjungsari Permai",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP IT Nurul Azmi",
+    "npsn": "69988778",
+    "village": "Jl. Kenanga No.37 Lanjung",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP IT PUI Madani Tanjungsari",
+    "npsn": "69945508",
+    "village": "Jl. Jatimandiri No.9",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Karsa Madya-YKM",
+    "npsn": "20208445",
+    "village": "Jl. Raya Tanjungsari No.398",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Mitra Tanjungsari",
+    "npsn": "69981202",
+    "village": "Jl. Raya Simpang Parakanmuncang, Kp. Sadang RT 05/05",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Muhammadiyah Tanjungsari",
+    "npsn": "20208440",
+    "village": "Jl. Raya Tanjungsari No.189",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Pasundan Tanjungsari",
+    "npsn": "20208442",
+    "village": "Jl. Raya Tanjungsari No.402",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Plus Al-Munawwarah",
+    "npsn": "70013954",
+    "village": "Dusun Gunungmanik RT 001/017",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Plus Persatuan Islam Tanjungsari",
+    "npsn": "20251915",
+    "village": "Jl. Simpang KM 2.2 Dusun Genteng RT 01 RW 09",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMP",
+    "name": "SMP Yadika Tanjungsari",
+    "npsn": "20271299",
+    "village": "Jl. Raya Tanjungsari No.394 A",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MTS",
+    "name": "MTs Nurul Falah Ar-Rahmat",
+    "npsn": "70037032",
+    "village": "Dusun Sirahcai RT/RW 003/003",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MTS",
+    "name": "MTsS Al Amin Tanjungsari",
+    "npsn": "20279005",
+    "village": "Dusun Cibenda RT 01/01 Desa Raharja",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MTS",
+    "name": "MTsS Al-Irfan Tanjungsari",
+    "npsn": "20279000",
+    "village": "Dusun Maruyung",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MTS",
+    "name": "MTsS Al Furqon",
+    "npsn": "20279001",
+    "village": "Dusun Genteng",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MTS",
+    "name": "MTsS Al Huda Ciluluk",
+    "npsn": "20279002",
+    "village": "Jl. Ciluluk",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MTS",
+    "name": "MTsS Gunungmanik",
+    "npsn": "20279003",
+    "village": "Jl. Gunungmanik",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MTS",
+    "name": "MTsS Nurul Huda Pasirangin",
+    "npsn": "20279004",
+    "village": "Jl. Genteng KM 02",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMA",
+    "name": "SMA Plus Al-Munawwarah",
+    "npsn": "69964748",
+    "village": "Dusun Gunungmanik RT 01 RW 17",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMA",
+    "name": "SMAN Tanjungsari",
+    "npsn": "20208392",
+    "village": "Jl. Raya Tanjungsari No.404",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMK",
+    "name": "SMK PPN Tanjungsari",
+    "npsn": "20254188",
+    "village": "Jl. Raya Bandung-Sumedang KM 29",
+    "status": "Negeri"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "SMK",
+    "name": "SMK Bina Insan Harapan",
+    "npsn": "69955375",
+    "village": "Jl. Pagaden Kidul",
+    "status": "Swasta"
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MA",
+    "name": "MAS Al-Irfan",
+    "npsn": "20280465",
+    "village": "Dusun Maruyung RT 001 RW 007",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MA",
+    "name": "MAS Ma'arif Tanjungsari",
+    "npsn": "20280471",
+    "village": "Jl. Nusa Indah No.3",
+    "status": ""
+  },
+  {
+    "district_code": "3211030",
+    "education_level": "MA",
+    "name": "MAS Muhammadiyah Tanjungsari",
+    "npsn": "20280472",
+    "village": "Jl. Raya Tanjungsari No.189",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Darul Faizin",
+    "npsn": "60726341",
+    "village": "Tomo",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Bantargintung",
+    "npsn": "20208556",
+    "village": "Karyamukti",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Bugel",
+    "npsn": "20208603",
+    "village": "Bugel",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Caricangkas",
+    "npsn": "20208607",
+    "village": "Karyamukti",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Cijelag",
+    "npsn": "20208601",
+    "village": "Tomo",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Cipeles",
+    "npsn": "20246342",
+    "village": "Cipeles",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Darmajaya",
+    "npsn": "20208783",
+    "village": "Jembarwangi",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Darmawangi",
+    "npsn": "20208389",
+    "village": "Darmawangi",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Gandawesi",
+    "npsn": "20208258",
+    "village": "Bugel",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Jayagiri",
+    "npsn": "20208840",
+    "village": "Darmawangi",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Marongge",
+    "npsn": "20208823",
+    "village": "Marongge",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Neglasari",
+    "npsn": "20251955",
+    "village": "Tomo",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Sugiharti",
+    "npsn": "20208755",
+    "village": "Cipeles",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Sukaresmi",
+    "npsn": "20246356",
+    "village": "Tolengas",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Tolengas",
+    "npsn": "20208313",
+    "village": "Tolengas",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Tomo",
+    "npsn": "20208334",
+    "village": "Tomo",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SD",
+    "name": "SD Negeri Warungbungur",
+    "npsn": "20208343",
+    "village": "Mekarwangi",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Tomo",
+    "npsn": "20208452",
+    "village": "Tolengas",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Tomo",
+    "npsn": "20208459",
+    "village": "Darmawangi",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "SMA",
+    "name": "SMAN Tomo",
+    "npsn": "20235624",
+    "village": "Tomo",
+    "status": ""
+  },
+  {
+    "district_code": "3211120",
+    "education_level": "MA",
+    "name": "MAS Miftahul Jannah",
+    "npsn": "69941674",
+    "village": "Tolengas",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Cibuluh",
+    "npsn": "20208611",
+    "village": "Cibuluh",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Cimanuk",
+    "npsn": "20208797",
+    "village": "Kebon Cau",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Cipanas",
+    "npsn": "20208806",
+    "village": "Cibuluh",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Cipelang",
+    "npsn": "20251794",
+    "village": "Cipelang",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Girijaya",
+    "npsn": "20208786",
+    "village": "Kebon Cau",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Kramatjaya",
+    "npsn": "20208829",
+    "village": "Ujungjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Kulinyar",
+    "npsn": "20208813",
+    "village": "Kudangwangi",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Margajaya",
+    "npsn": "20208819",
+    "village": "Ujungjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Margamulya",
+    "npsn": "20208821",
+    "village": "Kudangwangi",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Palasari",
+    "npsn": "20208724",
+    "village": "Palasari",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Pande",
+    "npsn": "20208726",
+    "village": "Cibuluh",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Sukamulya",
+    "npsn": "20208767",
+    "village": "Sukamulya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Sukarasa I",
+    "npsn": "20208770",
+    "village": "Kebon Cau",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Sukarasa II",
+    "npsn": "20208754",
+    "village": "Palabuan",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Sukaratu",
+    "npsn": "20208753",
+    "village": "Sukamulya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Trijaya",
+    "npsn": "20208335",
+    "village": "Sakurjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Ujungjaya I",
+    "npsn": "20208336",
+    "village": "Ujungjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Ujungjaya II",
+    "npsn": "20208338",
+    "village": "Sakurjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Ujungjaya III",
+    "npsn": "20208337",
+    "village": "Palasari",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD Negeri Wanajaya",
+    "npsn": "20208340",
+    "village": "Palabuan",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "MI",
+    "name": "MIS Mathlaunnajah",
+    "npsn": "60708832",
+    "village": "Cipelang",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SMP",
+    "name": "SMP Negeri 1 Ujungjaya",
+    "npsn": "20208437",
+    "village": "Ujungjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SMP",
+    "name": "SMP Negeri 2 Ujungjaya",
+    "npsn": "20208439",
+    "village": "Cibuluh",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "MTS",
+    "name": "MTs Negeri 5 Sumedang",
+    "npsn": "20279008",
+    "village": "Ujungjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "MTS",
+    "name": "MTs Mathla’unnajah",
+    "npsn": "69955943",
+    "village": "Ujungjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "MA",
+    "name": "MAS Mathla’unnajah",
+    "npsn": "70006323",
+    "village": "Ujungjaya",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SD",
+    "name": "SD: 20 satuan",
+    "npsn": "",
+    "village": "",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "MI",
+    "name": "MI: 1 satuan",
+    "npsn": "",
+    "village": "",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SMP",
+    "name": "SMP: 2 satuan",
+    "npsn": "",
+    "village": "",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "MTS",
+    "name": "MTs: 2 satuan",
+    "npsn": "",
+    "village": "",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "SMK",
+    "name": "SMK: 2 satuan",
+    "npsn": "",
+    "village": "",
+    "status": ""
+  },
+  {
+    "district_code": "3211130",
+    "education_level": "MA",
+    "name": "MA: 1 satuan",
+    "npsn": "",
+    "village": "",
+    "status": ""
+  }
+]

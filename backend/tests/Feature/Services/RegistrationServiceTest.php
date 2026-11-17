@@ -1,0 +1,517 @@
+<?php
+
+use App\Models\Batch;
+use App\Models\District;
+use App\Models\Registration;
+use App\Services\RegistrationService;
+
+function makeServiceDistrict(string $name, string $code): District
+{
+    return District::query()->create([
+        'name' => $name,
+        'code' => $code,
+    ]);
+}
+
+function makeNikDigits(): string
+{
+    $nik = '';
+    for ($i = 0; $i < 16; $i++) {
+        $nik .= (string) random_int(0, 9);
+    }
+
+    return $nik;
+}
+
+function fillBatchWithRegistrations(
+    Batch $batch,
+    District $district,
+    int $count,
+    string $level,
+    string $edition,
+    string $schoolName,
+): void {
+    $rows = [];
+    $now = now();
+
+    for ($i = 0; $i < $count; $i++) {
+        $rows[] = [
+            'batch_id' => $batch->id,
+            'district_id' => $district->id,
+            'education_level' => $level,
+            'name' => 'Filler '.$i,
+            'phone_number' => '628400000'.str_pad((string) $i, 5, '0', STR_PAD_LEFT),
+            'edition' => $edition,
+            'school_name' => $schoolName,
+            'registration_code' => 'FILL-'.$batch->id.'-'.$i.'-'.random_int(1000, 9999),
+            'page_number' => $i + 1,
+            'base_price' => 10000,
+            'total_payment' => 10000,
+            'payment_status' => 'pending',
+            'created_at' => $now,
+            'updated_at' => $now,
+        ];
+    }
+
+    Registration::query()->insert($rows);
+}
+
+it('places same-school Reguler registrations in the same batch', function () {
+    $district = makeServiceDistrict('Cilandak', '3171030');
+
+    $first = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'SMP',
+        'edition' => 'reguler',
+        'name' => 'Tester A',
+        'phone_number' => '6281000099001',
+        'school_name' => 'SMPN 1 Cilandak',
+    ]);
+
+    $second = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'SMP',
+        'edition' => 'reguler',
+        'name' => 'Tester B',
+        'phone_number' => '6281000099002',
+        'school_name' => 'SMPN 1 Cilandak',
+    ]);
+
+    expect($first->batch_id)->toBe($second->batch_id);
+
+    $batch = Batch::find($first->batch_id);
+    expect($batch->batch_number)->toBe('1')
+        ->and($batch->education_level)->toBe('SMP')
+        ->and($batch->district_id)->toBe($district->id);
+});
+
+it('uses numeric incrementing batch_number even past 10 batches', function () {
+    $district = makeServiceDistrict('Cilandak', '3171030');
+
+    foreach (range(1, 11) as $n) {
+        Batch::query()->create([
+            'name' => "Mushaf SMP J{$n}",
+            'slug' => "mushaf-smp-j{$n}",
+            'district_id' => $district->id,
+            'batch_number' => (string) $n,
+            'education_level' => 'SMP',
+            'max_capacity' => RegistrationService::BATCH_CAPACITY,
+            'is_full' => true,
+        ]);
+    }
+
+    $different = makeServiceDistrict('Pasar Rebo', '3172040'); // kota berbeda → batch baru
+
+    $reg = RegistrationService::register([
+        'district_id' => $different->id,
+        'education_level' => 'SMP',
+        'edition' => 'reguler',
+        'name' => 'Tester X',
+        'phone_number' => '6281000099100',
+        'school_name' => 'SMPN 9 Pasar Rebo',
+    ]);
+
+    $batch = Batch::find($reg->batch_id);
+    expect($batch->batch_number)->toBe('12')
+        ->and((int) $batch->batch_number)->toBe(12);
+});
+
+it('places VIP registrations in a global batch with V-prefix and null scope', function () {
+    $a = makeServiceDistrict('Cilandak', '3171030');
+    $b = makeServiceDistrict('Cengkareng', '3174070');
+
+    // VIP non-UMUM tidak perlu NIK / alamat (verifikasi via institusi sekolah).
+    $first = RegistrationService::register([
+        'district_id' => $a->id,
+        'education_level' => 'SMA',
+        'edition' => 'vip',
+        'name' => 'VIP A',
+        'phone_number' => '6281000099500',
+        'school_name' => 'X-Inst',
+    ]);
+
+    // VIP UMUM tetap mengirim NIK + alamat sesuai kontrak baru.
+    $second = RegistrationService::register([
+        'district_id' => $b->id,
+        'education_level' => 'UMUM',
+        'edition' => 'vip',
+        'name' => 'VIP B',
+        'phone_number' => '6281000099501',
+        'school_name' => 'Y-Inst',
+        'nik' => makeNikDigits(),
+        'address' => 'Jl. VIP 2',
+    ]);
+
+    expect($first->batch_id)->toBe($second->batch_id);
+
+    $batch = Batch::find($first->batch_id);
+    expect($batch->batch_number)->toBe('V1')
+        ->and($batch->district_id)->toBeNull()
+        ->and($batch->education_level)->toBeNull()
+        ->and($batch->name)->toStartWith('Mushaf VIP Global');
+});
+
+it('builds smart codes from registrant district and level even on kota extension', function () {
+    $cilandak = makeServiceDistrict('Cilandak', '3171030');
+    $pasarMinggu = makeServiceDistrict('Pasar Minggu', '3171040');
+
+    RegistrationService::register([
+        'district_id' => $cilandak->id,
+        'education_level' => 'SMP',
+        'edition' => 'reguler',
+        'name' => 'Anchor',
+        'phone_number' => '6281000099700',
+        'school_name' => 'SMPN 1 Cilandak',
+    ]);
+
+    $extension = RegistrationService::register([
+        'district_id' => $pasarMinggu->id,
+        'education_level' => 'SMP',
+        'edition' => 'reguler',
+        'name' => 'Extension',
+        'phone_number' => '6281000099701',
+        'school_name' => 'SMPN 99 Pasar Minggu',
+    ]);
+
+    expect($extension->registration_code)->toStartWith('3171040-REGULER-SMP-');
+});
+
+it('marks the batch as full once capacity is reached', function () {
+    $district = makeServiceDistrict('Cilandak', '3171030');
+
+    $first = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'SMP',
+        'edition' => 'reguler',
+        'name' => 'Anchor',
+        'phone_number' => '6281000099900',
+        'school_name' => 'SMPN 1 Cilandak',
+    ]);
+
+    $batchId = $first->batch_id;
+    $needed = RegistrationService::BATCH_CAPACITY - 2;
+    $now = now();
+    $rows = [];
+    for ($i = 0; $i < $needed; $i++) {
+        $rows[] = [
+            'batch_id' => $batchId,
+            'district_id' => $district->id,
+            'education_level' => 'SMP',
+            'name' => 'Filler '.$i,
+            'phone_number' => '628400000'.str_pad((string) $i, 5, '0', STR_PAD_LEFT),
+            'edition' => 'reguler',
+            'school_name' => 'SMPN 1 Cilandak',
+            'registration_code' => 'FILL-'.$i.'-'.random_int(1000, 9999),
+            'page_number' => 2 + $i,
+            'base_price' => 10000,
+            'total_payment' => 10000,
+            'payment_status' => 'pending',
+            'created_at' => $now,
+            'updated_at' => $now,
+        ];
+    }
+    Registration::query()->insert($rows);
+
+    // Slot ke-603 menutup batch
+    $closer = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'SMP',
+        'edition' => 'reguler',
+        'name' => 'Closer',
+        'phone_number' => '6281000099901',
+        'school_name' => 'SMPN 1 Cilandak',
+    ]);
+
+    expect($closer->batch_id)->toBe($batchId)
+        ->and($closer->page_number)->toBe(RegistrationService::BATCH_CAPACITY)
+        ->and(Batch::find($batchId)->is_full)->toBeTrue();
+});
+
+it('syncs batch fullness when a registration is deleted and restored', function () {
+    $district = makeServiceDistrict('Cilandak', '3171030');
+
+    $batch = Batch::query()->create([
+        'name' => 'Mushaf Reguler SMP Cilandak 1',
+        'district_id' => $district->id,
+        'batch_number' => '1',
+        'education_level' => 'SMP',
+        'max_capacity' => RegistrationService::BATCH_CAPACITY,
+        'is_full' => true,
+    ]);
+
+    fillBatchWithRegistrations(
+        batch: $batch,
+        district: $district,
+        count: RegistrationService::BATCH_CAPACITY,
+        level: 'SMP',
+        edition: 'reguler',
+        schoolName: 'SMPN 1 Cilandak',
+    );
+
+    $registration = Registration::query()->where('batch_id', $batch->id)->firstOrFail();
+    $registration->delete();
+
+    expect($batch->fresh()->is_full)->toBeFalse();
+
+    $registration->restore();
+
+    expect($batch->fresh()->is_full)->toBeTrue();
+});
+
+it('groups masjid registrations into their own batch', function () {
+    $district = makeServiceDistrict('Kebayoran Baru', '3171060');
+
+    $first = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'UMUM',
+        'institution_type' => 'MASJID',
+        'edition' => 'reguler',
+        'name' => 'Jamaah A',
+        'phone_number' => '6281000099101',
+        'school_name' => 'Masjid Al-Azhar',
+        'nik' => makeNikDigits(),
+        'address' => 'Jl. Sisingamangaraja No. 1',
+    ]);
+
+    $second = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'UMUM',
+        'institution_type' => 'MASJID',
+        'edition' => 'reguler',
+        'name' => 'Jamaah B',
+        'phone_number' => '6281000099102',
+        'school_name' => 'Masjid Al-Azhar',
+        'nik' => makeNikDigits(),
+        'address' => 'Jl. Sisingamangaraja No. 2',
+    ]);
+
+    $batch = Batch::findOrFail($first->batch_id);
+
+    expect($first->batch_id)->toBe($second->batch_id)
+        ->and($batch->institution_type)->toBe('MASJID')
+        ->and($batch->name)->toContain('Mushaf Reguler MASJID');
+});
+
+it('uses an admin-created masjid batch instead of creating a duplicate', function () {
+    $district = makeServiceDistrict('Kebayoran Baru', '3171060');
+
+    $batch = Batch::query()->create([
+        'district_id' => $district->id,
+        'name' => 'Mushaf Reguler MASJID Kebayoran Baru 1',
+        'batch_number' => '1',
+        'education_level' => 'UMUM',
+        'institution_type' => 'MASJID',
+        'max_capacity' => RegistrationService::BATCH_CAPACITY,
+        'is_full' => false,
+    ]);
+
+    $registration = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'UMUM',
+        'institution_type' => 'MASJID',
+        'edition' => 'reguler',
+        'name' => 'Jamaah Admin Batch',
+        'phone_number' => '6281000099151',
+        'school_name' => 'Masjid Al-Azhar',
+        'nik' => makeNikDigits(),
+        'address' => 'Jl. Sisingamangaraja No. 1',
+    ]);
+
+    expect($registration->batch_id)->toBe($batch->id);
+});
+
+it('keeps masjid, komunitas, and sekolah registrations in separate batches', function () {
+    $district = makeServiceDistrict('Kebayoran Baru', '3171060');
+
+    $masjid = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'UMUM',
+        'institution_type' => 'MASJID',
+        'edition' => 'reguler',
+        'name' => 'Jamaah Masjid',
+        'phone_number' => '6281000099201',
+        'school_name' => 'Masjid Al-Azhar',
+        'nik' => makeNikDigits(),
+        'address' => 'Jl. Sisingamangaraja No. 1',
+    ]);
+
+    $komunitas = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'UMUM',
+        'institution_type' => 'KOMUNITAS',
+        'edition' => 'reguler',
+        'name' => 'Anggota Komunitas',
+        'phone_number' => '6281000099202',
+        'school_name' => 'Komunitas Literasi Kebayoran',
+        'nik' => makeNikDigits(),
+        'address' => 'Jl. Sisingamangaraja No. 2',
+    ]);
+
+    $sekolah = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'SMA',
+        'institution_type' => 'SEKOLAH',
+        'edition' => 'reguler',
+        'name' => 'Siswa SMA',
+        'phone_number' => '6281000099203',
+        'school_name' => 'SMAN 1 Kebayoran',
+    ]);
+
+    expect($masjid->batch_id)->not->toBe($komunitas->batch_id)
+        ->and($masjid->batch_id)->not->toBe($sekolah->batch_id)
+        ->and($komunitas->batch_id)->not->toBe($sekolah->batch_id)
+        ->and(Batch::findOrFail($sekolah->batch_id)->name)->toContain('Mushaf Reguler SMA');
+});
+
+it('keeps legacy UMUM registrations without institution_type in a UMUM batch', function () {
+    $district = makeServiceDistrict('Kebayoran Baru', '3171060');
+
+    $registration = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'UMUM',
+        'edition' => 'reguler',
+        'name' => 'Peserta Lama',
+        'phone_number' => '6281000099301',
+        'school_name' => 'Yayasan Contoh',
+        'nik' => makeNikDigits(),
+        'address' => 'Jl. Sisingamangaraja No. 3',
+    ]);
+
+    $batch = Batch::findOrFail($registration->batch_id);
+
+    expect($registration->institution_type)->toBe('UMUM')
+        ->and($batch->institution_type)->toBe('UMUM')
+        ->and($batch->name)->toContain('Mushaf Reguler UMUM');
+});
+
+it('groups Mushaf Kampung registrations into a per-district kampung batch', function () {
+    $a = makeServiceDistrict('Cilandak', '3171030');
+    $b = makeServiceDistrict('Cengkareng', '3174070');
+
+    $first = RegistrationService::register([
+        'district_id' => $a->id,
+        'education_level' => 'SD',
+        'edition' => 'kampung',
+        'name' => 'Warga A',
+        'phone_number' => '6281000099601',
+        'school_name' => 'SDN Cilandak 01',
+    ]);
+
+    $second = RegistrationService::register([
+        'district_id' => $a->id,
+        'education_level' => 'SMA',
+        'edition' => 'kampung',
+        'name' => 'Warga B',
+        'phone_number' => '6281000099602',
+        'school_name' => 'SMAN 34',
+    ]);
+
+    $other = RegistrationService::register([
+        'district_id' => $b->id,
+        'education_level' => 'SMP',
+        'edition' => 'kampung',
+        'name' => 'Warga C',
+        'phone_number' => '6281000099603',
+        'school_name' => 'SMPN 1',
+    ]);
+
+    $batch = Batch::findOrFail($first->batch_id);
+
+    expect($first->batch_id)->toBe($second->batch_id)
+        ->and($other->batch_id)->not->toBe($first->batch_id)
+        ->and($batch->district_id)->toBe($a->id)
+        ->and($batch->institution_type)->toBe(RegistrationService::KAMPUNG_BATCH_TYPE)
+        ->and($batch->batch_number)->toBe('K1')
+        ->and($batch->name)->toBe('Mushaf Kampung Cilandak 1')
+        ->and((int) $first->base_price)->toBe(20000)
+        ->and($second->page_number)->toBe(2)
+        ->and($first->registration_code)->toStartWith('3171030-KAMPUNG-SD-MUSHAFK1-001-');
+});
+
+it('fills a kampung fallback when the school name key is absent', function () {
+    $district = makeServiceDistrict('Gambir', '310003');
+
+    $registration = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'SMP',
+        'edition' => 'kampung',
+        'name' => 'Warga Gambir',
+        'phone_number' => '6281000099701',
+    ]);
+
+    expect($registration->school_name)->toBe('Mushaf Kampung Gambir')
+        ->and($registration->registration_code)->toContain('-MUSHAFK1-001-MUSHAF-')
+        ->and(str_contains($registration->registration_code, '--'))->toBeFalse();
+});
+
+it('never places Reguler registrations into a Mushaf Kampung batch', function () {
+    $district = makeServiceDistrict('Cilandak', '3171030');
+
+    $kampung = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'UMUM',
+        'edition' => 'kampung',
+        'name' => 'Warga Kampung',
+        'phone_number' => '6281000099611',
+        'school_name' => 'RW 05',
+        'nik' => makeNikDigits(),
+        'address' => 'Jl. Kampung 1',
+    ]);
+
+    $regulerUmum = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'UMUM',
+        'edition' => 'reguler',
+        'name' => 'Peserta Umum',
+        'phone_number' => '6281000099612',
+        'school_name' => 'RW 05',
+        'nik' => makeNikDigits(),
+        'address' => 'Jl. Kampung 2',
+    ]);
+
+    $regulerSekolah = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'SMP',
+        'edition' => 'reguler',
+        'name' => 'Peserta Sekolah',
+        'phone_number' => '6281000099613',
+        'school_name' => 'SMPN 68',
+    ]);
+
+    expect($regulerUmum->batch_id)->not->toBe($kampung->batch_id)
+        ->and($regulerSekolah->batch_id)->not->toBe($kampung->batch_id)
+        ->and(Batch::findOrFail($regulerUmum->batch_id)->batch_number)->toBe('1')
+        ->and(Batch::findOrFail($regulerSekolah->batch_id)->batch_number)->toBe('1');
+});
+
+it('opens a new kampung batch once the district kampung batch is full', function () {
+    $district = makeServiceDistrict('Cilandak', '3171030');
+
+    $first = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'SD',
+        'edition' => 'kampung',
+        'name' => 'Warga Awal',
+        'phone_number' => '6281000099621',
+        'school_name' => 'SDN 01',
+    ]);
+
+    $batch = Batch::findOrFail($first->batch_id);
+    fillBatchWithRegistrations($batch, $district, RegistrationService::BATCH_CAPACITY - 1, 'SD', 'kampung', 'SDN 01');
+    $batch->syncFullness();
+
+    $next = RegistrationService::register([
+        'district_id' => $district->id,
+        'education_level' => 'SD',
+        'edition' => 'kampung',
+        'name' => 'Warga Baru',
+        'phone_number' => '6281000099622',
+        'school_name' => 'SDN 01',
+    ]);
+
+    $nextBatch = Batch::findOrFail($next->batch_id);
+
+    expect($nextBatch->id)->not->toBe($batch->id)
+        ->and($nextBatch->batch_number)->toBe('K2')
+        ->and($nextBatch->name)->toBe('Mushaf Kampung Cilandak 2');
+});

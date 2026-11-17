@@ -1,0 +1,19 @@
+.DS_Store
+.pnpm-store/
+node_modules/
+
+# Environment files
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.production.example
+
+# Dokumen & QA lokal — tidak pernah di-push
+/docs/
+/qa/
+**/docs/
+.superpowers/
+HANDOFF_PROGRESS.md
+
+# Aset gambar legas (tidak dirujuk script apa pun, ukuran besar)
+frontend/scripts/assets/legacy-thumbnail-details/
