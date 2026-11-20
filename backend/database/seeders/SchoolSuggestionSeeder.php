@@ -11,6 +11,11 @@ class SchoolSuggestionSeeder extends Seeder
     /**
      * Seed sekolah dari data JSON lokal Sumedang (inventaris DOCX resmi).
      *
+     * Sumber: folder "DATA SUMEDANG" — 26 file Inventaris_Sekolah_Kecamatan_*.docx
+     * (plus Daftar_26_Kecamatan & Inventaris_Desa_Kelurahan). Hasil parse:
+     * 858 satuan pendidikan, mencakup 26/26 kecamatan (808 ber-NPSN).
+     * SLB tidak dimasukkan agar setara cakupan jejaka500 (API sd/smp/sma).
+     *
      * Sifat idempoten: aman dijalankan berulang (mis. setiap container boot
      * saat RUN_SEEDERS=true) karena memakai firstOrCreate dan tidak pernah
      * menghapus data yang sudah ada.

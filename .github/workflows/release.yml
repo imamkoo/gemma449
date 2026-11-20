@@ -1,8 +1,8 @@
 name: Release (artefak cPanel)
 
 # Membangun dua ZIP siap-upload untuk hosting cPanel/LiteSpeed:
-#   1. jejaka500-backend-*.zip  -> Laravel + vendor/ + public/build (tanpa Node/PHP di host)
-#   2. jejaka500-frontend-*.zip -> dist SPA + .htaccess (SPA fallback & cache header)
+#   1. gemma449-backend-*.zip  -> Laravel + vendor/ + public/build (tanpa Node/PHP di host)
+#   2. gemma449-frontend-*.zip -> dist SPA + .htaccess (SPA fallback & cache header)
 #
 # Dipicu oleh tag v* (mis. v1.0.0) atau manual dari tab Actions.
 # Tag dipakai karena workflow_dispatch mensyaratkan file ini ada di default branch.
@@ -16,7 +16,7 @@ on:
       api_base_url:
         description: 'URL API yang ditanam ke build SPA'
         required: false
-        default: 'https://api.jejaka500.id/api'
+        default: 'https://gemma449-api.onrender.com/api'
 
 permissions:
   contents: write
@@ -27,7 +27,7 @@ concurrency:
 
 env:
   NODE_VERSION: '22'
-  API_BASE_URL: ${{ github.event.inputs.api_base_url || 'https://api.jejaka500.id/api' }}
+  API_BASE_URL: ${{ github.event.inputs.api_base_url || 'https://gemma449-api.onrender.com/api' }}
 
 jobs:
   backend:
@@ -91,11 +91,11 @@ jobs:
             --exclude 'storage/framework/views/*.php' \
             --exclude 'bootstrap/cache/*.php' \
             --exclude '.phpunit.result.cache' \
-            ./ "$GITHUB_WORKSPACE/staging/jejaka500/"
+            ./ "$GITHUB_WORKSPACE/staging/gemma449/"
 
       - name: Verify artifact contains no secrets
         run: |
-          cd "$GITHUB_WORKSPACE/staging/jejaka500"
+          cd "$GITHUB_WORKSPACE/staging/gemma449"
           test -f vendor/autoload.php || { echo "vendor/ hilang"; exit 1; }
           test -f public/build/manifest.json || { echo "public/build hilang"; exit 1; }
           if find . -maxdepth 2 -name '.env' -print -quit | grep -q .; then
@@ -105,14 +105,14 @@ jobs:
       - name: Create ZIP
         run: |
           cd "$GITHUB_WORKSPACE/staging"
-          zip -qry "$GITHUB_WORKSPACE/jejaka500-backend-${GITHUB_REF_NAME}.zip" jejaka500
-          ls -lh "$GITHUB_WORKSPACE"/jejaka500-backend-*.zip
+          zip -qry "$GITHUB_WORKSPACE/gemma449-backend-${GITHUB_REF_NAME}.zip" gemma449
+          ls -lh "$GITHUB_WORKSPACE"/gemma449-backend-*.zip
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: jejaka500-backend
-          path: jejaka500-backend-*.zip
+          name: gemma449-backend
+          path: gemma449-backend-*.zip
           if-no-files-found: error
           retention-days: 30
 
@@ -130,7 +130,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
-          version: 9
+          version: 12
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
@@ -160,14 +160,14 @@ jobs:
       - name: Create ZIP
         run: |
           cd dist
-          zip -qry "$GITHUB_WORKSPACE/jejaka500-frontend-${GITHUB_REF_NAME}.zip" .
-          ls -lh "$GITHUB_WORKSPACE"/jejaka500-frontend-*.zip
+          zip -qry "$GITHUB_WORKSPACE/gemma449-frontend-${GITHUB_REF_NAME}.zip" .
+          ls -lh "$GITHUB_WORKSPACE"/gemma449-frontend-*.zip
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: jejaka500-frontend
-          path: jejaka500-frontend-*.zip
+          name: gemma449-frontend
+          path: gemma449-frontend-*.zip
           if-no-files-found: error
           retention-days: 30
 

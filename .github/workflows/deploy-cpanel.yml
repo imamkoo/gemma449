@@ -7,14 +7,14 @@ name: Deploy (cPanel via SSH)
 # di Settings → Secrets and variables → Actions → Variables.
 #
 # Variabel (Variables, bukan secret):
-#   CPANEL_HOST            api.jejaka500.id
+#   CPANEL_HOST            HOST-CPANEL-ANDA
 #   CPANEL_PORT            22 (opsional, default 22)
 #   CPANEL_USER            username cPanel
-#   CPANEL_BACKEND_PATH    /home/USER/jejaka500
-#   CPANEL_FRONTEND_PATH   /home/USER/jejaka500-web
+#   CPANEL_BACKEND_PATH    /home/USER/gemma449
+#   CPANEL_FRONTEND_PATH   /home/USER/gemma449-web
 #   CPANEL_PHP_BIN         /opt/cpanel/ea-php84/root/usr/bin/php (opsional)
-#   CPANEL_API_BASE_URL    https://api.jejaka500.id/api (opsional)
-#   CPANEL_PUBLIC_URL      https://api.jejaka500.id (opsional, untuk smoke test)
+#   CPANEL_API_BASE_URL    https://gemma449-api.onrender.com/api (opsional)
+#   CPANEL_PUBLIC_URL      https://DOMAIN-ANDA (opsional, untuk smoke test)
 #
 # Secret (pilih salah satu):
 #   CPANEL_SSH_KEY         private key deploy (disarankan)
@@ -49,7 +49,7 @@ env:
   BACKEND_PATH: ${{ vars.CPANEL_BACKEND_PATH }}
   FRONTEND_PATH: ${{ vars.CPANEL_FRONTEND_PATH }}
   PHP_BIN: ${{ vars.CPANEL_PHP_BIN || 'php' }}
-  API_BASE_URL: ${{ vars.CPANEL_API_BASE_URL || 'https://api.jejaka500.id/api' }}
+  API_BASE_URL: ${{ vars.CPANEL_API_BASE_URL || 'https://gemma449-api.onrender.com/api' }}
   SSH_PORT: ${{ vars.CPANEL_PORT || '22' }}
 
 jobs:
