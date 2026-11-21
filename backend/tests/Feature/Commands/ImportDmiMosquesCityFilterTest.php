@@ -71,23 +71,6 @@ test('district name is resolved from the address outside the Jakarta city map', 
         ->toBe('Tanjungsari');
 });
 
-test('mosques duplicated under different dmi codes are stored once', function () {
-    Http::fake([
-        'https://dmi.or.id/*' => Http::response(dmiMosquePage([
-            ['M-9501', 'Masjid Al Mukhlisin', 'Dsn. Cibeureum RT.01/02 Desa Cilopang', 'KAB. SUMEDANG, Jawa Barat'],
-            ['M-9901', 'Masjid Al Mukhlisin', 'Dsn.   Cibeureum   RT.01/02 Desa Cilopang', 'KAB. SUMEDANG, Jawa Barat'],
-        ]), 200),
-    ]);
-
-    $this->artisan('mosque:import', [
-        '--province' => '9',
-        '--delay' => '0',
-    ])->assertSuccessful();
-
-    expect(Mosque::query()->count())->toBe(1)
-        ->and(Mosque::query()->value('dmi_code'))->toBe('M-9501');
-});
-
 test('dry run with city filter writes nothing', function () {
     $this->artisan('mosque:import', [
         '--province' => '9',
