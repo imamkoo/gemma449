@@ -105,7 +105,10 @@ lalu isi minimal:
 - `APP_URL`, `CORS_ALLOWED_ORIGINS`
 - `DB_*` MySQL cPanel
 - `ADMIN_EMAIL`, `ADMIN_PASSWORD` (min 12 karakter)
-- Midtrans & WhatsApp bila dipakai
+- Midtrans: `MIDTRANS_NOTIFICATION_URL` dan `MIDTRANS_FINISH_REDIRECT_URL` sudah
+  terisi default domain ini — **jangan dikosongkan**, tanpa itu webhook jatuh ke
+  endpoint default Midtrans dan status pembayaran tidak pernah berubah
+- WhatsApp bila dipakai (`WHATSAPP_NOTIFICATIONS_ENABLED`)
 
 `storage/` dan `.env` **tidak pernah** dikirim lewat arsip, jadi aman.
 
