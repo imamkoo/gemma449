@@ -16,7 +16,7 @@ on:
       api_base_url:
         description: 'URL API yang ditanam ke build SPA'
         required: false
-        default: 'https://gemma449-api.onrender.com/api'
+        default: 'https://gemma449.followtheline.id/api'
 
 permissions:
   contents: write
@@ -27,7 +27,7 @@ concurrency:
 
 env:
   NODE_VERSION: '22'
-  API_BASE_URL: ${{ github.event.inputs.api_base_url || 'https://gemma449-api.onrender.com/api' }}
+  API_BASE_URL: ${{ github.event.inputs.api_base_url || 'https://gemma449.followtheline.id/api' }}
 
 jobs:
   backend:

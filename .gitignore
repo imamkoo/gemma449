@@ -17,3 +17,7 @@ HANDOFF_PROGRESS.md
 
 # Aset gambar legas (tidak dirujuk script apa pun, ukuran besar)
 frontend/scripts/assets/legacy-thumbnail-details/
+
+# Python (skrip deploy)
+__pycache__/
+*.pyc
