@@ -75,7 +75,7 @@ export function DistrictCarousel({ districts }: DistrictCarouselProps) {
                     <ArrowRight className="h-4 w-4" />
                   </span>
                   <div className="relative z-10 mt-auto flex w-full flex-col justify-end gap-1 p-5">
-                    <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gold">Wilayah</p>
+                    <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gold-soft">Wilayah</p>
                     <h3 className="text-[24px] font-black leading-[28px] tracking-[-0.04em] text-white">{district.name}</h3>
                     <p className="font-semibold text-white/70">{district.totalBatches}</p>
                   </div>
