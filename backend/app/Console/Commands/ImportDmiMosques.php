@@ -218,7 +218,7 @@ class ImportDmiMosques extends Command
                 'name' => $name,
                 'address' => $row['address'],
                 'village' => $row['village'],
-                'district_name' => $this->resolveDistrictName($row, $districts),
+                'district_name' => $this->resolveDistrictName($row, $districts) ?? $mosque->district_name,
                 'city' => $row['city'],
                 'province' => $row['province'],
                 'latitude' => $row['latitude'],
