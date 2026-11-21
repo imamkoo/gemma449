@@ -7,14 +7,15 @@ use Illuminate\Support\Facades\DB;
 return new class extends Migration
 {
     /**
-     * Snapshot data DMI untuk Sumedang (182 masjid) diimpor sekali saat deploy
-     * produksi, mengikuti pola snapshot DKI di JEJAKA500. Data tidak dimasukkan
-     * pada test/local agar suite tetap cepat dan bersih. Setelah migrasi ini,
-     * sinkronisasi berikutnya memakai `php artisan mosque:import`.
+     * Snapshot data DMI untuk Sumedang (89 masjid unik) diimpor sekali saat
+     * deploy produksi, mengikuti pola snapshot DKI di JEJAKA500. Data tidak
+     * dimasukkan pada test/local agar suite tetap cepat dan bersih. Setelah
+     * migrasi ini, sinkronisasi berikutnya memakai `php artisan mosque:import`.
      *
      * Sumber: https://dmi.or.id/data-masjid/?mdmi_prov=9 (12.664 masjid Jawa
-     * Barat), disaring baris yang menyebut Sumedang. `district_name` diisi dari
-     * pencocokan nama 26 kecamatan Sumedang; 3 baris tidak dapat dipetakan.
+     * Barat), disaring baris yang menyebut Sumedang. Sumber memuat 182 baris
+     * untuk Sumedang, tetapi 93 di antaranya duplikat dengan kode DMI berbeda;
+     * penggabungan menyisakan 89 masjid unik (satu tanpa kecamatan).
      */
     public function up(): void
     {
