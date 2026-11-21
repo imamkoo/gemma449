@@ -18,6 +18,7 @@ class ImportDmiMosques extends Command
         {--dry-run : Ambil dan parse data tanpa menulis ke database}
         {--max-pages=0 : Batasi jumlah halaman (0 = semua)}
         {--delay=0.5 : Jeda antar-request dalam detik}
+        {--city= : Hanya proses baris yang menyebut kota/kabupaten ini (mis. Sumedang)}
         {--with-phone : Ikut menyimpan nomor telepon (default tidak, untuk mengurangi data pribadi)}';
 
     protected $description = 'Impor data masjid dari halaman publik DMI secara idempotent berdasarkan dmi_code';
@@ -29,6 +30,7 @@ class ImportDmiMosques extends Command
         $maxPages = max(0, (int) $this->option('max-pages'));
         $delay = max(0.0, (float) $this->option('delay'));
         $withPhone = (bool) $this->option('with-phone');
+        $city = trim((string) $this->option('city'));
 
         $firstUrl = $this->pageUrl($province, 1);
         $firstResponse = $this->fetch($firstUrl);
@@ -51,6 +53,10 @@ class ImportDmiMosques extends Command
             $pages,
             $dryRun ? ' (dry-run)' : ''
         ));
+
+        if ($city !== '') {
+            $this->info(sprintf('Filter kota: hanya baris yang menyebut "%s".', $city));
+        }
 
         $districts = District::query()
             ->get(['name', 'code'])
@@ -91,7 +97,7 @@ class ImportDmiMosques extends Command
 
             if (! $dryRun) {
                 [$pageCreated, $pageUpdated, $pageSkipped] = DB::transaction(
-                    fn (): array => $this->persist($rows, $this->pageUrl($province, $page), $withPhone, $districts)
+                    fn (): array => $this->persist($rows, $this->pageUrl($province, $page), $withPhone, $districts, $city)
                 );
 
                 $created += $pageCreated;
@@ -99,7 +105,14 @@ class ImportDmiMosques extends Command
                 $skipped += $pageSkipped;
                 $this->output->progressAdvance();
             } else {
-                $skipped += count($rows);
+                $matching = $city === ''
+                    ? $rows
+                    : array_values(array_filter(
+                        $rows,
+                        fn (array $row): bool => $this->rowMatchesCity($row, $city)
+                    ));
+
+                $skipped += count($matching);
             }
 
             if ($page < $pages && $delay > 0) {
@@ -168,13 +181,19 @@ class ImportDmiMosques extends Command
      * @param  array<int, array<string, mixed>>  $rows
      * @return array{0: int, 1: int, 2: int}
      */
-    private function persist(array $rows, string $sourceUrl, bool $withPhone, array $districts): array
+    private function persist(array $rows, string $sourceUrl, bool $withPhone, array $districts, string $city = ''): array
     {
         $created = 0;
         $updated = 0;
         $skipped = 0;
 
         foreach ($rows as $row) {
+            if ($city !== '' && ! $this->rowMatchesCity($row, $city)) {
+                $skipped++;
+
+                continue;
+            }
+
             $code = $row['dmi_code'] ?? null;
             $name = $row['name'] ?? null;
 
@@ -293,6 +312,29 @@ class ImportDmiMosques extends Command
         }
 
         return null;
+    }
+
+    /**
+     * DMI hanya menyediakan filter provinsi, jadi penyaringan kota dilakukan
+     * setelah baris diparse. Nama masjid ikut diperiksa karena sebagian baris
+     * hanya memuat alamat tanpa kabupaten.
+     *
+     * @param  array<string, mixed>  $row
+     */
+    private function rowMatchesCity(array $row, string $city): bool
+    {
+        $haystack = $this->normalizeText(implode(' ', array_filter([
+            $row['name'] ?? null,
+            $row['address'] ?? null,
+            $row['village'] ?? null,
+            $row['district_name'] ?? null,
+            $row['city'] ?? null,
+            $row['province'] ?? null,
+        ])));
+
+        $needle = $this->normalizeText($city);
+
+        return $needle !== '' && str_contains($haystack, $needle);
     }
 
     private function normalizeText(?string $value): string
