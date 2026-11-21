@@ -274,12 +274,12 @@ class ImportDmiMosques extends Command
 
         $cityPrefix = $this->resolveCityPrefix($haystack);
 
-        if ($cityPrefix === null) {
-            return null;
-        }
-
         foreach ($districts as $candidate) {
-            if (! str_starts_with((string) $candidate->code, $cityPrefix)) {
+            // Bila kotanya dikenali (mis. Jakarta), batasi ke kecamatan di kota
+            // itu agar nama jalan tidak salah petakan. Untuk wilayah lain
+            // (mis. Sumedang) pencocokan langsung ke nama kecamatan, karena
+            // peta kota di resolveCityPrefix hanya memuat DKI.
+            if ($cityPrefix !== null && ! str_starts_with((string) $candidate->code, $cityPrefix)) {
                 continue;
             }
 
