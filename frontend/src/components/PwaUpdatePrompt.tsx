@@ -131,12 +131,12 @@ export function PwaUpdatePrompt() {
     >
       <div
         aria-busy={isUpdating}
-        className="pointer-events-auto relative w-full max-w-md overflow-hidden rounded-2xl border border-black/10 bg-[#111111] px-4 py-3 text-white shadow-[0_20px_60px_rgba(0,0,0,0.25)] sm:max-w-lg"
+        className="pointer-events-auto relative w-full max-w-md overflow-hidden rounded-2xl border border-black/10 bg-[#1b5e20] px-4 py-3 text-white shadow-[0_20px_60px_rgba(0,0,0,0.25)] sm:max-w-lg"
       >
         <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start">
           <div className="flex min-w-0 items-start gap-3">
             <div
-              className={`mt-0.5 h-2 w-2 shrink-0 rounded-full bg-[#ed3833] ${
+              className={`mt-0.5 h-2 w-2 shrink-0 rounded-full bg-[#c2410c] ${
                 isUpdating ? 'motion-safe:animate-pulse' : ''
               }`}
               aria-hidden="true"
@@ -170,7 +170,7 @@ export function PwaUpdatePrompt() {
                 disabled={isUpdating}
                 aria-busy={isUpdating}
                 onClick={handlePrimaryAction}
-                className="inline-flex items-center gap-1.5 rounded-full bg-[#ed3833] px-3 py-1.5 text-xs font-black text-white transition hover:bg-[#d92f2a] disabled:cursor-wait disabled:opacity-70"
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#c2410c] px-3 py-1.5 text-xs font-black text-white transition hover:bg-[#9a3412] disabled:cursor-wait disabled:opacity-70"
               >
                 {isUpdating ? <Spinner /> : null}
                 {isUpdating
@@ -199,7 +199,7 @@ export function PwaUpdatePrompt() {
             aria-hidden="true"
             className="absolute inset-x-0 bottom-0 h-0.5 overflow-hidden bg-white/10"
           >
-            <span className="pwa-update-progress block h-full w-1/3 rounded-full bg-[#ed3833]" />
+            <span className="pwa-update-progress block h-full w-1/3 rounded-full bg-[#c2410c]" />
           </div>
         ) : null}
       </div>

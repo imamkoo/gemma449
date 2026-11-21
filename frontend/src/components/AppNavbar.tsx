@@ -26,10 +26,10 @@ export function AppNavbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 border-b border-black/[0.06] backdrop-blur-2xl transition-[background-color,box-shadow,padding] duration-500 ${
+      className={`sticky top-0 z-50 border-b border-white/10 backdrop-blur-2xl transition-[background-color,box-shadow,padding] duration-500 ${
         scrolled
-          ? 'bg-cream/90 shadow-[0_18px_50px_-30px_rgba(17,17,17,0.5)]'
-          : 'bg-cream/75 shadow-[0_10px_40px_-34px_rgba(17,17,17,0.4)]'
+          ? 'bg-primary/95 shadow-[0_18px_50px_-26px_rgba(0,0,0,0.55)]'
+          : 'bg-primary/90 shadow-[0_10px_40px_-30px_rgba(0,0,0,0.45)]'
       }`}
     >
       <div
@@ -48,16 +48,16 @@ export function AppNavbar() {
             className="transition-transform duration-500 group-hover:-rotate-3 group-hover:scale-[1.04]"
           />
           <span className="flex flex-col">
-            <span className="text-[15px] font-black leading-none tracking-[-0.03em] text-ink sm:text-base">
-              GEMMA<span className="text-gold-deep">449</span>
+            <span className="text-[15px] font-black leading-none tracking-[-0.03em] text-white sm:text-base">
+              GEMMA<span className="text-gold">449</span>
             </span>
-            <span className="mt-1 hidden text-[8px] font-black uppercase leading-none tracking-[0.2em] text-ink/55 sm:block">
+            <span className="mt-1 hidden text-[8px] font-black uppercase leading-none tracking-[0.2em] text-white/60 sm:block">
               Gerakan Menulis Al-Qur'an · Sumedang
             </span>
           </span>
         </Link>
 
-        <div className="hidden items-center gap-1 rounded-full border border-white/70 bg-white/50 p-1 shadow-[0_12px_30px_-24px_rgba(17,17,17,0.45)] backdrop-blur-xl lg:flex">
+        <div className="hidden items-center gap-1 rounded-full border border-white/15 bg-white/10 p-1 shadow-[0_12px_30px_-24px_rgba(0,0,0,0.55)] backdrop-blur-xl lg:flex">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -66,8 +66,8 @@ export function AppNavbar() {
               className={({ isActive }) =>
                 `${navLinkBaseClass} ${
                   isActive
-                    ? 'bg-brand !text-white shadow-[0_14px_32px_-16px_rgba(237,56,51,0.8)] hover:!text-white'
-                    : 'text-ink/70 hover:bg-white hover:text-brand'
+                    ? 'bg-brand !text-white shadow-[0_14px_32px_-16px_rgba(194,65,12,0.8)] hover:!text-white'
+                    : 'text-white/75 hover:bg-white/10 hover:text-white'
                 }`
               }
             >
@@ -79,7 +79,7 @@ export function AppNavbar() {
         <div className="flex items-center gap-2">
           <Link
             to="/booking/details"
-            className={`${actionButtonClass} border border-black/[0.08] bg-white/70 text-ink/80 shadow-[0_10px_24px_-22px_rgba(17,17,17,0.5)] backdrop-blur-xl hover:border-gold/60 hover:text-gold-deep`}
+            className={`${actionButtonClass} border border-white/25 bg-white/10 text-white/85 shadow-[0_10px_24px_-22px_rgba(0,0,0,0.5)] backdrop-blur-xl hover:border-gold/60 hover:text-gold`}
           >
             Cek Kode
           </Link>
@@ -87,7 +87,7 @@ export function AppNavbar() {
             href="https://api.whatsapp.com/send/?phone=6287756877484&text&type=phone_number&app_absent=0"
             target="_blank"
             rel="noreferrer noopener"
-            className={`${actionButtonClass} shine-sweep hidden items-center gap-2 bg-brand text-white shadow-[0_16px_36px_-18px_rgba(237,56,51,0.9)] hover:bg-brand-dark sm:flex`}
+            className={`${actionButtonClass} shine-sweep hidden items-center gap-2 bg-brand text-white shadow-[0_16px_36px_-18px_rgba(194,65,12,0.9)] hover:bg-brand-dark sm:flex`}
           >
             <img src={icons.call} className="h-4 w-4 brightness-0 invert" alt="" />
             <span className="relative z-10 text-white">Bantuan</span>

@@ -30,7 +30,7 @@ const BatchDetailsPage = lazy(() =>
 function PageFallback() {
   return (
     <div className="flex min-h-dvh items-center justify-center bg-cream" role="status" aria-live="polite">
-      <span className="h-8 w-8 rounded-full border-2 border-ink/15 border-t-brand motion-safe:animate-spin" />
+      <span className="h-8 w-8 rounded-full border-2 border-primary/20 border-t-brand motion-safe:animate-spin" />
       <span className="sr-only">Memuat halaman</span>
     </div>
   )

@@ -27,7 +27,7 @@ export function HomePage() {
       <header className="relative overflow-hidden bg-cream px-5 pb-4 pt-4 sm:pt-5">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-[radial-gradient(70%_60%_at_12%_0%,rgba(237,56,51,0.08),transparent_62%),radial-gradient(52%_52%_at_92%_10%,rgba(216,180,90,0.13),transparent_62%)]"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(70%_60%_at_12%_0%,rgba(194,65,12,0.08),transparent_62%),radial-gradient(52%_52%_at_92%_10%,rgba(234,179,8,0.13),transparent_62%)]"
         />
         <section
           id="hero"
@@ -87,10 +87,10 @@ export function HomePage() {
           className="mx-auto grid w-full max-w-[1180px] scroll-mt-24 gap-8 px-5 pb-20 lg:grid-cols-[0.72fr_1.28fr] lg:items-start"
         >
           <Reveal className="static z-10 lg:sticky lg:top-[96px]">
-            <div className="relative overflow-hidden rounded-[36px] bg-[linear-gradient(145deg,#ed3833_0%,#dc302c_54%,#b92320_100%)] p-6 text-white shadow-[0_34px_90px_-38px_rgba(237,56,51,0.55)] sm:p-8">
+            <div className="relative overflow-hidden rounded-[36px] bg-[linear-gradient(145deg,#c2410c_0%,#9a3412_54%,#7c2d12_100%)] p-6 text-white shadow-[0_34px_90px_-38px_rgba(194,65,12,0.55)] sm:p-8">
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-[radial-gradient(circle,rgba(216,180,90,0.32),transparent_68%)] blur-2xl"
+                className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-[radial-gradient(circle,rgba(234,179,8,0.32),transparent_68%)] blur-2xl"
               />
               <div
                 aria-hidden="true"
@@ -121,7 +121,7 @@ export function HomePage() {
               </p>
               <Link
                 to="/booking"
-                className="shine-sweep group relative mt-8 inline-flex items-center gap-3 rounded-full bg-ink px-7 py-4 font-black text-white shadow-[0_22px_50px_-24px_rgba(0,0,0,0.8)] transition duration-300 hover:bg-white hover:text-ink focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30"
+                className="shine-sweep group relative mt-8 inline-flex items-center gap-3 rounded-full bg-primary px-7 py-4 font-black text-white shadow-[0_22px_50px_-24px_rgba(0,0,0,0.8)] transition duration-300 hover:bg-white hover:text-ink focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30"
               >
                 <span className="relative z-10">Mulai Pendaftaran</span>
                 <ArrowRight className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -142,7 +142,7 @@ export function HomePage() {
                     <div className="relative flex h-full min-h-[320px] flex-col justify-between overflow-hidden rounded-[28px] border border-dashed border-black/15 bg-white/40 p-6 backdrop-blur-xl">
                       <div
                         aria-hidden="true"
-                        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(11,11,15,0.07)_1px,transparent_0)] [background-size:20px_20px] opacity-40"
+                        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(20,71,26,0.07)_1px,transparent_0)] [background-size:20px_20px] opacity-40"
                       />
                       <div className="relative flex items-start justify-between gap-4">
                         <p className="text-sm font-black uppercase tracking-[0.16em] text-gold-deep">

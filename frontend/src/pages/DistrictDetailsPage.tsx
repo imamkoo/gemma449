@@ -11,26 +11,26 @@ export function DistrictDetailsPage() {
     return (
       <>
         <AppNavbar />
-        <main className="bg-[#f4f0ea] px-5 py-8">
+        <main className="bg-[#f8fafc] px-5 py-8">
           <section className="mx-auto w-full max-w-[1180px]">
-            <header className="rounded-[38px] bg-[#111111] p-6 text-white sm:p-8 lg:p-10">
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ed3833]">Semua Kecamatan</p>
+            <header className="rounded-[38px] bg-[#1b5e20] p-6 text-white sm:p-8 lg:p-10">
+              <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">Semua Kecamatan</p>
               <h1 className="mt-4 max-w-[820px] text-[48px] font-black leading-[0.94] tracking-[-0.06em] sm:text-[76px]">
                 {isLoading ? 'Memuat kecamatan...' : 'Pilih kecamatan sebelum melihat gelombang.'}
               </h1>
             </header>
             {error ? (
-              <p className="mt-6 rounded-2xl bg-[#fff7f7] px-5 py-4 text-sm font-bold text-[#ed3833]">
+              <p className="mt-6 rounded-2xl bg-[#fff7ed] px-5 py-4 text-sm font-bold text-[#c2410c]">
                 Data wilayah belum dapat dimuat. {error}
               </p>
             ) : null}
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {districts.map((district) => (
-                <Link key={district.id} to={district.href} className="group relative min-h-[240px] overflow-hidden rounded-[30px] bg-[#111111] shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
+                <Link key={district.id} to={district.href} className="group relative min-h-[240px] overflow-hidden rounded-[30px] bg-[#1b5e20] shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
                   <img src={district.imageUrl} className="absolute inset-0 h-full w-full object-cover opacity-80 transition duration-500 group-hover:scale-105" alt={district.name} />
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(0,0,0,0)_30%,_rgba(0,0,0,0.84)_100%)]" />
                   <div className="relative z-10 flex h-full min-h-[240px] flex-col justify-between p-5 text-white">
-                    <p className="w-fit rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.14em] text-[#111111]">{district.code}</p>
+                    <p className="w-fit rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.14em] text-[#1e293b]">{district.code}</p>
                     <div>
                       <h2 className="text-[24px] font-black leading-[28px] tracking-[-0.04em]">{district.name}</h2>
                       <p className="mt-2 font-semibold text-white/70">{district.totalBatches}</p>
@@ -51,13 +51,13 @@ export function DistrictDetailsPage() {
     return (
       <>
         <AppNavbar />
-        <main className="bg-[#f4f0ea] px-5 py-8">
+        <main className="bg-[#f8fafc] px-5 py-8">
           <section className="mx-auto rounded-[38px] bg-white p-6 shadow-[0_24px_90px_rgba(0,0,0,0.06)] sm:p-8 lg:max-w-[900px] lg:p-10">
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ed3833]">Data wilayah</p>
-            <h1 className="mt-4 text-[42px] font-black leading-[0.96] tracking-[-0.06em] text-[#111111] sm:text-[64px]">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">Data wilayah</p>
+            <h1 className="mt-4 text-[42px] font-black leading-[0.96] tracking-[-0.06em] text-[#1e293b] sm:text-[64px]">
               {isLoading ? 'Memuat data wilayah...' : error ? 'Data wilayah belum dapat dimuat.' : 'Data kecamatan tidak ditemukan.'}
             </h1>
-            <p className="mt-5 text-base font-medium leading-7 text-[#111111]/62">
+            <p className="mt-5 text-base font-medium leading-7 text-[#1e293b]/62">
               {error || 'Data kecamatan ini belum tersedia atau tautan tidak valid. Silakan pilih wilayah lain dari daftar.'}
             </p>
           </section>
@@ -71,9 +71,9 @@ export function DistrictDetailsPage() {
   return (
     <>
       <AppNavbar />
-      <main className="bg-[#f4f0ea] px-5 py-8">
+      <main className="bg-[#f8fafc] px-5 py-8">
         <section className="mx-auto grid w-full max-w-[1180px] gap-6 lg:grid-cols-[0.86fr_1.14fr]">
-          <header className="flex min-h-[520px] flex-col justify-between overflow-hidden rounded-[38px] bg-[#111111] p-6 text-white sm:p-8 lg:p-10">
+          <header className="flex min-h-[520px] flex-col justify-between overflow-hidden rounded-[38px] bg-[#1b5e20] p-6 text-white sm:p-8 lg:p-10">
             <div className="flex items-center justify-between text-[10px] font-black uppercase tracking-[0.18em] text-white/45">
               <p>Kecamatan</p>
               <p>{district.code}</p>
@@ -87,15 +87,15 @@ export function DistrictDetailsPage() {
                 Lihat gelombang yang tersedia untuk wilayah ini, atau mulai pendaftaran untuk membuka gelombang pertama.
               </p>
             </div>
-            <Link to="/booking" className="w-fit rounded-full bg-[#ed3833] px-6 py-4 font-black text-white transition hover:bg-[#d92f2a]">
+            <Link to="/booking" className="w-fit rounded-full bg-[#c2410c] px-6 py-4 font-black text-white transition hover:bg-[#9a3412]">
               Mulai Pendaftaran
             </Link>
           </header>
 
           <div className="flex flex-col gap-6">
-            <div className="relative min-h-[300px] overflow-hidden rounded-[38px] bg-[#ed3833]">
+            <div className="relative min-h-[300px] overflow-hidden rounded-[38px] bg-[#c2410c]">
               <img src={district.imageUrl} className="absolute inset-0 h-full w-full object-cover mix-blend-multiply opacity-75" alt={district.name} />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(237,56,51,0.1),_rgba(17,17,17,0.72))]" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(194,65,12,0.1),_rgba(30,41,59,0.72))]" />
               <p className="absolute bottom-6 left-6 right-6 text-[34px] font-black leading-[0.96] tracking-[-0.055em] text-white sm:text-[48px]">
                 Gelombang wilayah dibuka saat pendaftaran pertama.
               </p>
@@ -108,11 +108,11 @@ export function DistrictDetailsPage() {
               </section>
             ) : (
               <section className="rounded-[36px] border border-black/10 bg-white p-6 shadow-[0_24px_90px_rgba(0,0,0,0.06)] sm:p-8">
-                <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ed3833]">Pendaftaran dibuka</p>
-                <h2 className="mt-4 text-[34px] font-black leading-[0.98] tracking-[-0.055em] text-[#111111]">
+                <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">Pendaftaran dibuka</p>
+                <h2 className="mt-4 text-[34px] font-black leading-[0.98] tracking-[-0.055em] text-[#1e293b]">
                   Gelombang pertama untuk Kecamatan {district.name} dibuka saat pendaftaran pertama.
                 </h2>
-                <p className="mt-4 text-base font-medium leading-7 text-[#111111]/62">
+                <p className="mt-4 text-base font-medium leading-7 text-[#1e293b]/62">
                   Anda tetap bisa mendaftar sekarang. Sistem akan membentuk gelombang baru secara otomatis, lalu kode pendaftaran dan nomor halaman Anda terbit setelah data tersimpan.
                 </p>
               </section>

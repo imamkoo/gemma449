@@ -11,7 +11,7 @@ type ProgressBarProps = {
 
 const toneClass: Record<ProgressTone, string> = {
   brand: 'bg-brand',
-  ink: 'bg-ink',
+  ink: 'bg-primary',
   amber: 'bg-amber-500',
 }
 

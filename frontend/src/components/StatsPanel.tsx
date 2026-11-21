@@ -19,7 +19,7 @@ export function StatsPanel({ stats, isLoading }: StatsPanelProps) {
           <div className="relative h-full overflow-hidden rounded-[28px] border border-white/70 bg-white/70 p-5 shadow-[0_30px_80px_-52px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:p-6">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(216,180,90,0.2),transparent_68%)] blur-2xl"
+              className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(234,179,8,0.2),transparent_68%)] blur-2xl"
             />
             <div className="relative flex items-start justify-between gap-4">
               <div>
@@ -76,11 +76,11 @@ export function StatsPanel({ stats, isLoading }: StatsPanelProps) {
           <div className="relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/70 bg-white/70 p-5 shadow-[0_30px_80px_-52px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:p-6">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(11,11,15,0.07)_1px,transparent_0)] [background-size:18px_18px] opacity-40"
+              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(20,71,26,0.07)_1px,transparent_0)] [background-size:18px_18px] opacity-40"
             />
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -left-20 bottom-0 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(237,56,51,0.12),transparent_68%)] blur-2xl"
+              className="pointer-events-none absolute -left-20 bottom-0 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(194,65,12,0.12),transparent_68%)] blur-2xl"
             />
             <div className="relative flex items-start justify-between gap-4">
               <h3 className="max-w-[24ch] text-[24px] font-black leading-[1.02] tracking-[-0.04em] text-ink">
