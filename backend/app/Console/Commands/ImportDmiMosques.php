@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Models\District;
 use App\Models\Mosque;
 use App\Support\DmiMosqueParser;
+use App\Support\SchoolNameNormalizer;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
@@ -204,6 +205,11 @@ class ImportDmiMosques extends Command
             }
 
             $mosque = Mosque::query()->where('dmi_code', $code)->first();
+
+            if ($mosque === null) {
+                $mosque = $this->findDuplicate($name, $row['address'] ?? null);
+            }
+
             $isNew = $mosque === null;
             $wasVerified = $isNew ? false : (bool) $mosque->is_verified;
             $mosque ??= new Mosque(['dmi_code' => $code]);
@@ -243,6 +249,37 @@ class ImportDmiMosques extends Command
         }
 
         return [$created, $updated, $skipped];
+    }
+
+    /**
+     * Sebagian data DMI memuat satu masjid lebih dari sekali dengan kode
+     * berbeda. Sebelum membuat baris baru, cari masjid DMI dengan nama dan
+     * alamat yang sama agar katalog tidak berisi duplikat.
+     */
+    private function findDuplicate(string $name, ?string $address): ?Mosque
+    {
+        $needle = $this->normalizeAddress($address);
+
+        if ($needle === '') {
+            return null;
+        }
+
+        $normalizedName = SchoolNameNormalizer::normalize($name);
+
+        if ($normalizedName === null) {
+            return null;
+        }
+
+        return Mosque::query()
+            ->where('source', 'dmi')
+            ->where('name_normalized', $normalizedName)
+            ->get()
+            ->first(fn (Mosque $mosque): bool => $this->normalizeAddress($mosque->address) === $needle);
+    }
+
+    private function normalizeAddress(?string $address): string
+    {
+        return Str::of((string) $address)->squish()->lower()->toString();
     }
 
     /**
