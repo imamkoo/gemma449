@@ -10,17 +10,17 @@ const statusConfig: Record<NonNullable<Batch['status']>, { label: string; descri
   available: {
     label: 'Tersedia',
     description: 'Gelombang ini siap dipilih peserta sesuai wilayah, jenjang, dan kuota tersisa.',
-    tone: 'bg-[#ed3833] text-white',
+    tone: 'bg-[#c2410c] text-white',
   },
   full: {
     label: 'Penuh',
     description: 'Kuota gelombang ini sudah terpenuhi. Pilih gelombang lain yang masih tersedia.',
-    tone: 'bg-[#111111] text-white',
+    tone: 'bg-[#1b5e20] text-white',
   },
   closed: {
     label: 'Ditutup',
     description: 'Pendaftaran gelombang ini sedang ditutup sementara.',
-    tone: 'bg-[#fff7f7] text-[#ed3833]',
+    tone: 'bg-[#fff7ed] text-[#c2410c]',
   },
 }
 
@@ -33,13 +33,13 @@ export function BatchDetailsPage() {
     return (
       <>
         <AppNavbar />
-        <main className="bg-[#f4f0ea] px-5 py-8">
+        <main className="bg-[#f8fafc] px-5 py-8">
           <section className="mx-auto rounded-[38px] bg-white p-6 shadow-[0_24px_90px_rgba(0,0,0,0.06)] sm:p-8 lg:max-w-[900px] lg:p-10">
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ed3833]">Data gelombang</p>
-            <h1 className="mt-4 text-[42px] font-black leading-[0.96] tracking-[-0.06em] text-[#111111] sm:text-[64px]">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">Data gelombang</p>
+            <h1 className="mt-4 text-[42px] font-black leading-[0.96] tracking-[-0.06em] text-[#1e293b] sm:text-[64px]">
               {isLoading ? 'Memuat data...' : error ? 'Data gelombang belum dapat dimuat.' : 'Data gelombang tidak ditemukan.'}
             </h1>
-            <p className="mt-5 text-base font-medium leading-7 text-[#111111]/62">
+            <p className="mt-5 text-base font-medium leading-7 text-[#1e293b]/62">
               {error || 'Informasi gelombang ini belum tersedia atau tautan tidak valid. Silakan kembali ke daftar gelombang.'}
             </p>
           </section>
@@ -56,11 +56,11 @@ export function BatchDetailsPage() {
   return (
     <>
       <AppNavbar />
-      <main className="bg-[#f4f0ea] px-5 py-8">
+      <main className="bg-[#f8fafc] px-5 py-8">
         <section className="mx-auto grid w-full max-w-[1180px] gap-6 lg:grid-cols-[1.12fr_0.88fr] lg:items-start">
           <div className="grid gap-4 sm:grid-cols-2">
             {[batch.imageUrl, photos.batches[1], photos.batches[2], photos.batches[3]].map((image, index) => (
-              <div key={`${image}-${index}`} className={index === 0 ? 'relative min-h-[360px] overflow-hidden rounded-[38px] bg-[#111111] sm:col-span-2' : 'relative min-h-[220px] overflow-hidden rounded-[30px] bg-[#111111]'}>
+              <div key={`${image}-${index}`} className={index === 0 ? 'relative min-h-[360px] overflow-hidden rounded-[38px] bg-[#1b5e20] sm:col-span-2' : 'relative min-h-[220px] overflow-hidden rounded-[30px] bg-[#1b5e20]'}>
                 <img src={image} className="absolute inset-0 h-full w-full object-cover opacity-90" alt={batch.name} />
               </div>
             ))}
@@ -69,11 +69,11 @@ export function BatchDetailsPage() {
           <aside className="sticky top-[96px] flex flex-col gap-6 rounded-[38px] border border-black/10 bg-white p-6 shadow-[0_24px_90px_rgba(0,0,0,0.06)] sm:p-8">
             <p className={`w-fit rounded-full px-4 py-2 text-sm font-black ${config.tone}`}>{config.label}</p>
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ed3833]">{batch.batchNumber}</p>
-              <h1 className="mt-4 text-[38px] font-black leading-[0.98] tracking-[-0.06em] text-[#111111] sm:text-[52px]">
+              <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">{batch.batchNumber}</p>
+              <h1 className="mt-4 text-[38px] font-black leading-[0.98] tracking-[-0.06em] text-[#1e293b] sm:text-[52px]">
                 {isLoading ? 'Memuat data gelombang...' : batch.name}
               </h1>
-              <p className="mt-5 text-base font-medium leading-7 text-[#111111]/62">
+              <p className="mt-5 text-base font-medium leading-7 text-[#1e293b]/62">
                 {error ? 'Informasi status gelombang belum dapat diperbarui saat ini.' : config.description}
               </p>
             </div>
@@ -84,11 +84,11 @@ export function BatchDetailsPage() {
               <Info label="Harga" value={formatRupiah(batch.basePrice)} />
             </div>
             {canRegister ? (
-              <Link to="/booking" className="flex items-center justify-center rounded-full bg-[#ed3833] px-6 py-4 font-black text-white transition hover:bg-[#d92f2a]">
+              <Link to="/booking" className="flex items-center justify-center rounded-full bg-[#c2410c] px-6 py-4 font-black text-white transition hover:bg-[#9a3412]">
                 Mulai Pendaftaran
               </Link>
             ) : (
-              <Link to="/#batches" className="flex items-center justify-center rounded-full border border-black/10 bg-white px-6 py-4 font-black text-[#111111] transition hover:border-[#ed3833] hover:text-[#ed3833]">
+              <Link to="/#batches" className="flex items-center justify-center rounded-full border border-black/10 bg-white px-6 py-4 font-black text-[#1e293b] transition hover:border-[#c2410c] hover:text-[#c2410c]">
                 Lihat Gelombang Lain
               </Link>
             )}
@@ -106,9 +106,9 @@ type InfoProps = {
 
 function Info({ label, value }: InfoProps) {
   return (
-    <div className="rounded-2xl bg-[#f7f7fd] p-4">
-      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#111111]/40">{label}</p>
-      <p className="mt-2 font-black text-[#111111]">{value}</p>
+    <div className="rounded-2xl bg-[#f8fafc] p-4">
+      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#1e293b]/40">{label}</p>
+      <p className="mt-2 font-black text-[#1e293b]">{value}</p>
     </div>
   )
 }

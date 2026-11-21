@@ -16,10 +16,10 @@ export const paymentStatusUi: Record<PaymentUiStatus, PaymentStatusUiConfig> = {
   pending: {
     label: 'Menunggu pembayaran',
     eyebrow: 'Selesaikan pembayaran',
-    badgeClass: 'bg-[#fff1f0] text-[#ed3833] ring-1 ring-[#ed3833]/12',
+    badgeClass: 'bg-[#fff7ed] text-[#c2410c] ring-1 ring-[#c2410c]/12',
     asideClass:
-      'border border-white/10 bg-gradient-to-br from-[#ef4444] via-[#ea3b35] to-[#c81e1a] shadow-[0_22px_60px_rgba(237,56,51,0.18)]',
-    iconClass: 'bg-[#ed3833] shadow-[0_14px_36px_rgba(237,56,51,0.24)]',
+      'border border-white/10 bg-gradient-to-br from-[#ef4444] via-[#ea3b35] to-[#c81e1a] shadow-[0_22px_60px_rgba(194,65,12,0.18)]',
+    iconClass: 'bg-[#c2410c] shadow-[0_14px_36px_rgba(194,65,12,0.24)]',
     bodyText:
       'Nominal ini perlu dibayar agar pendaftaran masuk tahap verifikasi panitia. Gunakan tombol di bawah untuk menyelesaikan pembayaran secara online.',
     actionNote: 'Status akan diperiksa otomatis setiap 15 detik selama halaman ini terbuka.',

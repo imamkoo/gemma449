@@ -72,7 +72,7 @@ export function BookingDetailsPage() {
   return (
     <>
       <AppNavbar />
-      <main className="min-h-[calc(100vh-73px)] bg-[#f4f0ea] px-5 py-6 sm:py-8">
+      <main className="min-h-[calc(100vh-73px)] bg-[#f8fafc] px-5 py-6 sm:py-8">
         <section className="mx-auto w-full max-w-[1020px]">
           <LookupHero />
           
@@ -108,7 +108,7 @@ type LookupFormProps = {
 
 function LookupHero() {
   return (
-    <header className="rounded-[28px] border border-black/8 bg-[#111111] p-5 text-white shadow-[0_18px_60px_rgba(0,0,0,0.16)] sm:p-7">
+    <header className="rounded-[28px] border border-black/8 bg-[#1b5e20] p-5 text-white shadow-[0_18px_60px_rgba(0,0,0,0.16)] sm:p-7">
       <div className="flex items-center justify-between text-[10px] font-black uppercase tracking-[0.18em] text-white/40">
         <p>Lacak Pendaftaran</p>
         <p>GEMMA449</p>
@@ -134,25 +134,25 @@ function LookupForm({ isLoading, lookup, message, onChange, onSubmit }: LookupFo
   return (
     <form
       onSubmit={onSubmit}
-      className="mx-auto mt-5 max-w-[1200px] rounded-[28px] border border-black/8 bg-white/95 p-5 shadow-[0_18px_60px_rgba(17,17,17,0.06)] sm:p-7"
+      className="mx-auto mt-5 max-w-[1200px] rounded-[28px] border border-black/8 bg-white/95 p-5 shadow-[0_18px_60px_rgba(30,41,59,0.06)] sm:p-7"
     >
-      <label className="flex flex-col gap-3 font-black text-[#111111]">
+      <label className="flex flex-col gap-3 font-black text-[#1e293b]">
         Kode Pendaftaran, Kode Belakang, atau Nomor WhatsApp
         <input
           value={lookup}
           onChange={(event) => onChange(event.target.value)}
           placeholder="Contoh: 3171030-REGULER-SMA..., XBV1, atau 628123456789"
-          className="rounded-full border border-black/15 px-5 py-4 font-semibold outline-none transition focus:border-[#ed3833] focus:ring-4 focus:ring-[#ed3833]/10"
+          className="rounded-full border border-black/15 px-5 py-4 font-semibold outline-none transition focus:border-[#c2410c] focus:ring-4 focus:ring-[#c2410c]/10"
         />
       </label>
       <button
         type="submit"
         disabled={isLoading}
-        className="mt-5 w-full rounded-full bg-[#ed3833] px-6 py-4 font-black text-white outline-none transition hover:bg-[#d92f2a] focus:ring-4 focus:ring-[#ed3833]/20 disabled:cursor-not-allowed disabled:opacity-60"
+        className="mt-5 w-full rounded-full bg-[#c2410c] px-6 py-4 font-black text-white outline-none transition hover:bg-[#9a3412] focus:ring-4 focus:ring-[#c2410c]/20 disabled:cursor-not-allowed disabled:opacity-60"
       >
         {isLoading ? 'Melacak...' : 'Lacak Pendaftaran'}
       </button>
-      {message ? <p className="mt-4 rounded-2xl bg-[#f7f7fd] p-4 text-sm font-bold text-[#111111]/70">{message}</p> : null}
+      {message ? <p className="mt-4 rounded-2xl bg-[#f8fafc] p-4 text-sm font-bold text-[#1e293b]/70">{message}</p> : null}
     </form>
   )
 }
@@ -169,10 +169,10 @@ function StatusModal({ statuses, onClose, onAfterPayment }: StatusModalProps) {
   const [activeIndex, setActiveIndex] = useState(0)
 
   return (
-    <div className="fixed inset-0 z-[90] flex items-center justify-center bg-[#111111]/62 px-4 py-6 backdrop-blur-md">
+    <div className="fixed inset-0 z-[90] flex items-center justify-center bg-[#1b5e20]/62 px-4 py-6 backdrop-blur-md">
       <section role="dialog" aria-modal="true" aria-label="Hasil lacak pendaftaran" className="max-h-[92vh] w-full max-w-[980px] overflow-y-auto rounded-[30px] bg-white/95 p-3 shadow-[0_34px_120px_rgba(0,0,0,0.24)] sm:p-4">
         <div className="overflow-hidden rounded-[26px] border border-black/6 bg-white">
-          <div className="flex flex-col gap-4 border-b border-white/10 bg-[#111111] p-5 text-white sm:flex-row sm:items-start sm:justify-between sm:p-6">
+          <div className="flex flex-col gap-4 border-b border-white/10 bg-[#1b5e20] p-5 text-white sm:flex-row sm:items-start sm:justify-between sm:p-6">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-white/42">Hasil Pelacakan</p>
               <h2 className="mt-4 max-w-[600px] text-[30px] font-black leading-[1] tracking-[-0.055em] sm:text-[44px]">
@@ -197,7 +197,7 @@ function StatusModal({ statuses, onClose, onAfterPayment }: StatusModalProps) {
               <button
                 type="button"
                 onClick={onClose}
-                className="h-11 w-11 shrink-0 rounded-full bg-white/10 text-xl font-black text-white outline-none transition hover:bg-[#ed3833] focus:ring-4 focus:ring-white/20"
+                className="h-11 w-11 shrink-0 rounded-full bg-white/10 text-xl font-black text-white outline-none transition hover:bg-[#c2410c] focus:ring-4 focus:ring-white/20"
                 aria-label="Tutup hasil pelacakan"
               >
                 X
@@ -255,25 +255,25 @@ function StatusResultCard({ status, index, total, onAfterPayment }: StatusResult
   const codeTail = extractCodeTail(status.registration_code)
 
   return (
-    <article className="overflow-hidden rounded-[28px] border border-black/8 bg-white shadow-[0_18px_60px_rgba(17,17,17,0.08)]">
+    <article className="overflow-hidden rounded-[28px] border border-black/8 bg-white shadow-[0_18px_60px_rgba(30,41,59,0.08)]">
       {total > 1 ? (
-        <div className="flex flex-col gap-2 border-b border-black/8 bg-[#faf8f4] px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-5">
-          <p className="text-xs font-black uppercase tracking-[0.14em] text-[#111111]/45">
+        <div className="flex flex-col gap-2 border-b border-black/8 bg-[#ffffff] px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-5">
+          <p className="text-xs font-black uppercase tracking-[0.14em] text-[#1e293b]/45">
             Pendaftaran {index + 1} dari {total}
           </p>
-          <p className="w-fit rounded-full border border-[#ed3833]/14 bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-[#ed3833] shadow-[0_10px_24px_rgba(17,17,17,0.04)]">
+          <p className="w-fit rounded-full border border-[#c2410c]/14 bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-[#c2410c] shadow-[0_10px_24px_rgba(30,41,59,0.04)]">
             Kode belakang: {codeTail}
           </p>
         </div>
       ) : null}
 
       <div className="grid gap-4 p-4 lg:grid-cols-[minmax(0,1fr)_320px] lg:p-5">
-        <div className="rounded-[24px] border border-black/8 bg-[#faf8f4] p-4 sm:p-5">
+        <div className="rounded-[24px] border border-black/8 bg-[#ffffff] p-4 sm:p-5">
           <div className="flex flex-col gap-3 border-b border-black/10 pb-5 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-[#ed3833]">Status Pendaftaran</p>
-              <p className="mt-2 text-sm font-semibold leading-6 text-[#111111]/58">
-                Data ditemukan. Kode belakang <span className="font-black text-[#111111]">{codeTail}</span> juga bisa dipakai untuk pelacakan cepat tanpa menyalin seluruh kode pendaftaran.
+              <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c2410c]">Status Pendaftaran</p>
+              <p className="mt-2 text-sm font-semibold leading-6 text-[#1e293b]/58">
+                Data ditemukan. Kode belakang <span className="font-black text-[#1e293b]">{codeTail}</span> juga bisa dipakai untuk pelacakan cepat tanpa menyalin seluruh kode pendaftaran.
               </p>
             </div>
             <p className={`w-fit shrink-0 rounded-full px-4 py-2 text-sm font-black ${statusUi.badgeClass}`}>
@@ -338,9 +338,9 @@ type InfoProps = {
 
 function Info({ label, value, wide = false }: InfoProps) {
   return (
-    <div className={`rounded-[20px] border border-black/6 bg-white/92 p-4 shadow-[0_10px_24px_rgba(17,17,17,0.04)] ${wide ? 'sm:col-span-2' : ''}`}>
-      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#111111]/40">{label}</p>
-      <p className="mt-2 break-words font-black leading-6 text-[#111111]">{value}</p>
+    <div className={`rounded-[20px] border border-black/6 bg-white/92 p-4 shadow-[0_10px_24px_rgba(30,41,59,0.04)] ${wide ? 'sm:col-span-2' : ''}`}>
+      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#1e293b]/40">{label}</p>
+      <p className="mt-2 break-words font-black leading-6 text-[#1e293b]">{value}</p>
     </div>
   )
 }

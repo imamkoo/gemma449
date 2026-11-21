@@ -42,11 +42,11 @@ export function BatchCard({ batch }: BatchCardProps) {
         <article className="flex h-full flex-col overflow-hidden rounded-[28px] border border-white/70 bg-white/80 shadow-[0_26px_80px_-54px_rgba(0,0,0,0.4)] backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-brand/20 hover:shadow-[0_34px_90px_-38px_rgba(0,0,0,0.35)]">
           <div className="relative h-[220px] w-full overflow-hidden">
             {status !== 'available' ? (
-              <p className="absolute left-5 top-5 z-10 w-fit rounded-full bg-ink px-4 py-1.5 text-sm font-black leading-[21px] text-white shadow-[0_12px_30px_-16px_rgba(0,0,0,0.8)]">
+              <p className="absolute left-5 top-5 z-10 w-fit rounded-full bg-primary px-4 py-1.5 text-sm font-black leading-[21px] text-white shadow-[0_12px_30px_-16px_rgba(0,0,0,0.8)]">
                 {statusLabel}
               </p>
             ) : (
-              <p className="absolute left-5 top-5 z-10 w-fit rounded-full bg-brand px-4 py-1.5 text-sm font-black leading-[21px] text-white shadow-[0_14px_30px_-16px_rgba(237,56,51,0.8)]">
+              <p className="absolute left-5 top-5 z-10 w-fit rounded-full bg-brand px-4 py-1.5 text-sm font-black leading-[21px] text-white shadow-[0_14px_30px_-16px_rgba(194,65,12,0.8)]">
                 {statusLabel}
               </p>
             )}
@@ -61,10 +61,10 @@ export function BatchCard({ batch }: BatchCardProps) {
             />
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-[radial-gradient(circle_at_82%_8%,rgba(216,180,90,0.22),transparent_42%)]"
+              className="absolute inset-0 bg-[radial-gradient(circle_at_82%_8%,rgba(234,179,8,0.22),transparent_42%)]"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(11,11,15,0.42)_100%)]" />
-            <span className="absolute bottom-4 right-4 flex h-10 w-10 translate-x-2 items-center justify-center rounded-full border border-white/20 bg-ink/55 text-white opacity-0 backdrop-blur-md transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(20,71,26,0.42)_100%)]" />
+            <span className="absolute bottom-4 right-4 flex h-10 w-10 translate-x-2 items-center justify-center rounded-full border border-white/20 bg-primary/55 text-white opacity-0 backdrop-blur-md transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
               <ArrowRight className="h-4 w-4" />
             </span>
           </div>

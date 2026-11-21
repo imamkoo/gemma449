@@ -549,12 +549,12 @@ export function BookingPage() {
   return (
     <>
       <AppNavbar />
-      <main className="min-h-[calc(100vh-73px)] bg-[#f4f0ea] px-5 py-6">
+      <main className="min-h-[calc(100vh-73px)] bg-[#f8fafc] px-5 py-6">
         <section className="mx-auto w-full max-w-[920px]">
-          <header className="relative overflow-hidden rounded-[32px] bg-ink p-5 text-white shadow-[0_30px_80px_-52px_rgba(0,0,0,0.8)] sm:p-7 lg:p-8">
+          <header className="relative overflow-hidden rounded-[32px] bg-primary p-5 text-white shadow-[0_30px_80px_-52px_rgba(0,0,0,0.8)] sm:p-7 lg:p-8">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(216,180,90,0.24),transparent_68%)] blur-2xl"
+              className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(234,179,8,0.24),transparent_68%)] blur-2xl"
             />
             <img
               src="/assets/images/logos/logo-gemma449.png"
@@ -582,14 +582,14 @@ export function BookingPage() {
           </header>
 
           {error ? (
-            <p className="mt-6 rounded-2xl bg-[#fff7f7] px-5 py-4 text-sm font-bold text-[#ed3833]">
+            <p className="mt-6 rounded-2xl bg-[#fff7ed] px-5 py-4 text-sm font-bold text-[#c2410c]">
               Data pendaftaran belum dapat dimuat. {error}
             </p>
           ) : null}
 
           {hasChosenEdition ? (
             <form onSubmit={handleSubmit} noValidate className="mt-5 rounded-[32px] border border-black/10 bg-white p-5 shadow-[0_24px_90px_rgba(0,0,0,0.06)] sm:p-7">
-              <div className="grid gap-4 rounded-[26px] bg-[#111111] p-5 text-white sm:grid-cols-[1fr_auto] sm:items-center">
+              <div className="grid gap-4 rounded-[26px] bg-[#1b5e20] p-5 text-white sm:grid-cols-[1fr_auto] sm:items-center">
                 <div>
                   <p className="text-sm font-black uppercase tracking-[0.16em] text-white/45">Jalur Pilihan</p>
                   <h2 className="mt-2 text-[28px] font-black leading-[0.95] tracking-[-0.05em]">{selectedEdition.title}</h2>
@@ -598,15 +598,15 @@ export function BookingPage() {
                 </div>
                 <div className="flex flex-col gap-3 sm:items-end">
                   <p className="text-[28px] font-black tracking-[-0.05em]">{formatRupiah(basePrice)}</p>
-                  <button type="button" onClick={() => setIsEditionModalOpen(true)} className="rounded-full bg-white px-5 py-3 text-sm font-black text-[#ed3833] transition hover:bg-[#fff7f7]">
+                  <button type="button" onClick={() => setIsEditionModalOpen(true)} className="rounded-full bg-white px-5 py-3 text-sm font-black text-[#c2410c] transition hover:bg-[#fff7ed]">
                     Ubah Kategori
                   </button>
                 </div>
               </div>
 
               <div className="mt-7">
-                <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ed3833]">Data Profil</p>
-                <h3 className="mt-3 text-[30px] font-black leading-[36px] tracking-[-0.05em] text-[#111111] sm:text-[40px] sm:leading-[46px]">
+                <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">Data Profil</p>
+                <h3 className="mt-3 text-[30px] font-black leading-[36px] tracking-[-0.05em] text-[#1e293b] sm:text-[40px] sm:leading-[46px]">
                   Lengkapi identitas peserta.
                 </h3>
               </div>
@@ -632,24 +632,24 @@ export function BookingPage() {
                       customOptionValue={customSchoolValue}
                       onChange={(next) => updateValue('school_name', next)}
                     />
-                    {schoolLoadError ? <p className="rounded-2xl bg-[#fff7f7] p-4 text-sm font-bold leading-6 text-[#ed3833]">{schoolLoadError}</p> : null}
-                    {schoolCatalogHint ? <p className="rounded-2xl bg-[#f7f7fd] p-4 text-sm font-semibold leading-6 text-[#111111]/65">{schoolCatalogHint}</p> : null}
+                    {schoolLoadError ? <p className="rounded-2xl bg-[#fff7ed] p-4 text-sm font-bold leading-6 text-[#c2410c]">{schoolLoadError}</p> : null}
+                    {schoolCatalogHint ? <p className="rounded-2xl bg-[#f8fafc] p-4 text-sm font-semibold leading-6 text-[#1e293b]/65">{schoolCatalogHint}</p> : null}
                     {values.school_name === customSchoolValue ? (
                       <div className="flex flex-col gap-3">
                         <Field label="Nama Instansi Spesifik" name="custom_school_name" value={values.custom_school_name} error={errors.custom_school_name} placeholder="Tuliskan nama instansi atau sekolah Anda" onChange={updateValue} />
                         {visibleCustomSchoolMatches.length > 0 && !didYouMeanDismissed ? (
-                          <div className="rounded-[20px] border border-[#ed3833]/25 bg-[#fff7f7]/70 p-4">
+                          <div className="rounded-[20px] border border-[#c2410c]/25 bg-[#fff7ed]/70 p-4">
                             <div className="flex items-start justify-between gap-3">
                               <div>
-                                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#ed3833]">Saran Penulisan</p>
-                                <p className="mt-1 text-sm font-semibold leading-6 text-[#111111]">
+                                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#c2410c]">Saran Penulisan</p>
+                                <p className="mt-1 text-sm font-semibold leading-6 text-[#1e293b]">
                                   Apakah maksud Anda salah satu sekolah berikut? Pilih agar peserta dari sekolah yang sama otomatis tergabung dalam satu gelombang.
                                 </p>
                               </div>
                               <button
                                 type="button"
                                 onClick={() => setDidYouMeanDismissed(true)}
-                                className="shrink-0 rounded-full border border-black/10 px-3 py-2 text-[11px] font-black uppercase tracking-[0.14em] text-[#111111]/65 transition hover:border-[#ed3833] hover:text-[#ed3833]"
+                                className="shrink-0 rounded-full border border-black/10 px-3 py-2 text-[11px] font-black uppercase tracking-[0.14em] text-[#1e293b]/65 transition hover:border-[#c2410c] hover:text-[#c2410c]"
                               >
                                 Nama Saya Benar
                               </button>
@@ -660,7 +660,7 @@ export function BookingPage() {
                                   key={`${match.value}-${match.score ?? ''}`}
                                   type="button"
                                   onClick={() => adoptSchoolSuggestion(match.value)}
-                                  className="rounded-full border border-[#ed3833]/40 bg-white px-4 py-2 text-sm font-bold text-[#ed3833] transition hover:bg-[#ed3833] hover:text-white"
+                                  className="rounded-full border border-[#c2410c]/40 bg-white px-4 py-2 text-sm font-bold text-[#c2410c] transition hover:bg-[#c2410c] hover:text-white"
                                 >
                                   {match.label}
                                 </button>
@@ -697,7 +697,7 @@ export function BookingPage() {
                       onChange={updateMosqueSelection}
                     />
                     {mosqueLoadError ? (
-                      <p className="rounded-2xl bg-[#fff7f7] p-4 text-sm font-bold leading-6 text-[#ed3833]">
+                      <p className="rounded-2xl bg-[#fff7ed] p-4 text-sm font-bold leading-6 text-[#c2410c]">
                         {mosqueLoadError}
                       </p>
                     ) : null}
@@ -733,14 +733,14 @@ export function BookingPage() {
                 <Field label="Alamat Email (Opsional)" name="email" value={values.email} error={errors.email} placeholder="Surat elektronik aktif" type="email" onChange={updateValue} />
 
                 {needsPersonalDocs ? (
-                  <div className="mt-2 rounded-[26px] border border-[#ed3833]/30 bg-[#fff7f7]/60 p-5">
+                  <div className="mt-2 rounded-[26px] border border-[#c2410c]/30 bg-[#fff7ed]/60 p-5">
                     <div className="flex items-start justify-between gap-3">
                       <div>
-                        <p className="text-xs font-black uppercase tracking-[0.16em] text-[#ed3833]">Data Identitas Pribadi</p>
-                        <h4 className="mt-2 text-[22px] font-black leading-tight tracking-[-0.04em] text-[#111111] sm:text-[26px]">
+                        <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c2410c]">Data Identitas Pribadi</p>
+                        <h4 className="mt-2 text-[22px] font-black leading-tight tracking-[-0.04em] text-[#1e293b] sm:text-[26px]">
                           Verifikasi identitas peserta non-sekolah.
                         </h4>
-                        <p className="mt-2 text-sm font-semibold leading-6 text-[#111111]/62">
+                        <p className="mt-2 text-sm font-semibold leading-6 text-[#1e293b]/62">
                           Data ini diperlukan karena Anda mendaftar sebagai {institutionPersonalDocsLabel(values.institution_type)}, sehingga verifikasi tidak melalui institusi sekolah formal.
                         </p>
                       </div>
@@ -770,53 +770,53 @@ export function BookingPage() {
                       />
                     </div>
 
-                    <div className="mt-5 rounded-[22px] border border-[#ed3833]/20 bg-white p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
-                      <p className="text-xs font-black uppercase tracking-[0.16em] text-[#ed3833]">Periksa Alamat Pengiriman</p>
-                      <p className="mt-2 text-sm font-semibold leading-6 text-[#111111]/70">
+                    <div className="mt-5 rounded-[22px] border border-[#c2410c]/20 bg-white p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
+                      <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c2410c]">Periksa Alamat Pengiriman</p>
+                      <p className="mt-2 text-sm font-semibold leading-6 text-[#1e293b]/70">
                         Alamat ini akan dipakai untuk pengiriman. Periksa kembali nama jalan, RT/RW, kelurahan, kecamatan, kota, dan kode pos sebelum melanjutkan.
                       </p>
 
-                      <div className="mt-4 rounded-[18px] bg-[#faf8f4] p-4">
-                        <p className="text-[11px] font-black uppercase tracking-[0.14em] text-[#111111]/42">Alamat yang akan disimpan</p>
-                        <p className={`mt-2 text-sm font-semibold leading-6 ${trimmedAddress ? 'text-[#111111]' : 'text-[#111111]/42'}`}>
+                      <div className="mt-4 rounded-[18px] bg-[#ffffff] p-4">
+                        <p className="text-[11px] font-black uppercase tracking-[0.14em] text-[#1e293b]/42">Alamat yang akan disimpan</p>
+                        <p className={`mt-2 text-sm font-semibold leading-6 ${trimmedAddress ? 'text-[#1e293b]' : 'text-[#1e293b]/42'}`}>
                           {trimmedAddress || 'Alamat lengkap Anda akan muncul di sini setelah diisi.'}
                         </p>
                       </div>
 
-                      <ul className="mt-4 grid gap-2 text-sm font-semibold leading-6 text-[#111111]/72">
+                      <ul className="mt-4 grid gap-2 text-sm font-semibold leading-6 text-[#1e293b]/72">
                         <li>Nama penerima dan detail lokasi harus cukup jelas untuk kurir.</li>
                         <li>Gunakan alamat yang benar-benar aktif untuk menerima pengiriman.</li>
                         <li>Jika ada kesalahan penulisan setelah formulir dikirim, segera hubungi layanan bantuan dengan kode pendaftaran.</li>
                       </ul>
 
-                      <label className="mt-4 flex items-start gap-3 rounded-[18px] border border-black/8 bg-[#fff7f7] p-4 text-sm font-bold leading-6 text-[#111111]">
+                      <label className="mt-4 flex items-start gap-3 rounded-[18px] border border-black/8 bg-[#fff7ed] p-4 text-sm font-bold leading-6 text-[#1e293b]">
                         <input
                           type="checkbox"
                           checked={hasConfirmedAddressReview}
                           onChange={(event) => updateAddressReviewConfirmation(event.target.checked)}
-                          className="mt-1 h-5 w-5 rounded border border-black/20 accent-[#ed3833]"
+                          className="mt-1 h-5 w-5 rounded border border-black/20 accent-[#c2410c]"
                         />
                         <span>Saya sudah memeriksa alamat pengiriman dan memastikan data yang saya tulis lengkap serta benar.</span>
                       </label>
-                      {errors.address_confirmation ? <p className="mt-3 text-sm font-bold text-[#ed3833]">{errors.address_confirmation}</p> : null}
+                      {errors.address_confirmation ? <p className="mt-3 text-sm font-bold text-[#c2410c]">{errors.address_confirmation}</p> : null}
                     </div>
                   </div>
                 ) : null}
               </div>
 
-              <button type="submit" disabled={isSubmitting} className="mt-8 flex w-full justify-center rounded-full bg-[#ed3833] px-6 py-4 font-black text-white transition hover:bg-[#111111] disabled:cursor-not-allowed disabled:opacity-60">
+              <button type="submit" disabled={isSubmitting} className="mt-8 flex w-full justify-center rounded-full bg-[#c2410c] px-6 py-4 font-black text-white transition hover:bg-[#1b5e20] disabled:cursor-not-allowed disabled:opacity-60">
                 {isSubmitting ? 'Memproses pendaftaran...' : 'Konfirmasi Pendaftaran'}
               </button>
-              {submitMessage ? <p className="mt-4 rounded-2xl bg-[#fff7f7] p-4 text-sm font-bold leading-6 text-[#ed3833]">{submitMessage}</p> : null}
-              {Object.keys(errors).length > 0 ? <p className="mt-4 rounded-2xl bg-[#fff7f7] p-4 text-sm font-bold leading-6 text-[#ed3833]">Ada isian yang perlu diperiksa. Periksa kembali kolom yang ditandai merah.</p> : null}
+              {submitMessage ? <p className="mt-4 rounded-2xl bg-[#fff7ed] p-4 text-sm font-bold leading-6 text-[#c2410c]">{submitMessage}</p> : null}
+              {Object.keys(errors).length > 0 ? <p className="mt-4 rounded-2xl bg-[#fff7ed] p-4 text-sm font-bold leading-6 text-[#c2410c]">Ada isian yang perlu diperiksa. Periksa kembali kolom yang ditandai merah.</p> : null}
             </form>
           ) : (
             <section className="mt-6 rounded-[38px] border border-black/10 bg-white p-6 text-center shadow-[0_24px_90px_rgba(0,0,0,0.06)] sm:p-8">
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ed3833]">Tahap Awal</p>
-              <h2 className="mx-auto mt-3 max-w-[620px] text-[36px] font-black leading-[0.96] tracking-[-0.055em] text-[#111111] sm:text-[54px]">
+              <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">Tahap Awal</p>
+              <h2 className="mx-auto mt-3 max-w-[620px] text-[36px] font-black leading-[0.96] tracking-[-0.055em] text-[#1e293b] sm:text-[54px]">
                 Pilih jalur partisipasi untuk melanjutkan.
               </h2>
-              <button type="button" onClick={() => setIsEditionModalOpen(true)} className="mt-8 rounded-full bg-[#ed3833] px-7 py-4 font-black text-white transition hover:bg-[#111111]">
+              <button type="button" onClick={() => setIsEditionModalOpen(true)} className="mt-8 rounded-full bg-[#c2410c] px-7 py-4 font-black text-white transition hover:bg-[#1b5e20]">
                 Buka Katalog Kategori
               </button>
             </section>
@@ -826,19 +826,19 @@ export function BookingPage() {
 
       {/* Modal Kategori */}
       {isEditionModalOpen ? (
-        <div className="fixed inset-0 z-[80] flex items-start justify-center overflow-y-auto bg-[#111111]/70 px-5 py-8 backdrop-blur-md lg:items-center">
+        <div className="fixed inset-0 z-[80] flex items-start justify-center overflow-y-auto bg-[#1b5e20]/70 px-5 py-8 backdrop-blur-md lg:items-center">
           <section className="w-full max-w-[1080px] rounded-[32px] bg-white p-5 shadow-[0_30px_120px_rgba(0,0,0,0.28)] sm:p-7">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ed3833]">Pilih Kategori</p>
-                <h2 className="mt-3 text-[34px] font-black leading-[0.96] tracking-[-0.06em] text-[#111111] sm:text-[50px]">
+                <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">Pilih Kategori</p>
+                <h2 className="mt-3 text-[34px] font-black leading-[0.96] tracking-[-0.06em] text-[#1e293b] sm:text-[50px]">
                   Tentukan Pilihan Anda
                 </h2>
-                <p className="mt-4 max-w-[560px] text-base font-medium leading-7 text-[#111111]/62">
+                <p className="mt-4 max-w-[560px] text-base font-medium leading-7 text-[#1e293b]/62">
                   Tentukan pilihan Anda untuk memastikan kuota tersedia.
                 </p>
               </div>
-              <button type="button" onClick={() => setIsEditionModalOpen(false)} className="rounded-full border border-black/10 px-5 py-3 text-sm font-black text-[#111111] transition hover:border-[#ed3833] hover:text-[#ed3833]">
+              <button type="button" onClick={() => setIsEditionModalOpen(false)} className="rounded-full border border-black/10 px-5 py-3 text-sm font-black text-[#1e293b] transition hover:border-[#c2410c] hover:text-[#c2410c]">
                 Tutup
               </button>
             </div>
@@ -846,7 +846,7 @@ export function BookingPage() {
             <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {isLoading ? (
                 <div className="col-span-full py-8 text-center">
-                   <p className="motion-safe:animate-pulse font-bold text-[#111111]/50">Memuat pilihan kategori...</p>
+                   <p className="motion-safe:animate-pulse font-bold text-[#1e293b]/50">Memuat pilihan kategori...</p>
                 </div>
               ) : (
                 editionChoices.map((option) => {
@@ -858,23 +858,23 @@ export function BookingPage() {
                       type="button"
                       onClick={() => chooseEdition(option.value)}
                       aria-pressed={isSelected}
-                      className={`group flex flex-col rounded-[26px] border p-5 text-left transition hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ed3833] focus-visible:ring-offset-2 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
-                        isSelected ? 'border-[#ed3833] bg-[#fff7f7]' : 'border-black/10 bg-white hover:border-[#ed3833]'
+                      className={`group flex flex-col rounded-[26px] border p-5 text-left transition hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c2410c] focus-visible:ring-offset-2 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
+                        isSelected ? 'border-[#c2410c] bg-[#fff7ed]' : 'border-black/10 bg-white hover:border-[#c2410c]'
                       }`}
                     >
                       <div className="flex items-start justify-between gap-4">
                         <div>
-                          <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ed3833]">{option.title}</p>
-                          <p className="mt-4 text-[34px] font-black tracking-[-0.06em] text-[#111111]">
+                          <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">{option.title}</p>
+                          <p className="mt-4 text-[34px] font-black tracking-[-0.06em] text-[#1e293b]">
                             {formatRupiah(priceBySlug[option.value] ?? getBasePrice(toEdition(option.value)))}
                           </p>
                         </div>
-                        <span className={`flex h-11 w-11 items-center justify-center rounded-full text-lg font-black transition ${isSelected ? 'bg-[#ed3833] text-white' : 'bg-[#111111] text-white group-hover:bg-[#ed3833]'}`}>
+                        <span className={`flex h-11 w-11 items-center justify-center rounded-full text-lg font-black transition ${isSelected ? 'bg-[#c2410c] text-white' : 'bg-[#1b5e20] text-white group-hover:bg-[#c2410c]'}`}>
                           →
                         </span>
                       </div>
-                      <p className="mt-5 text-sm font-semibold leading-6 text-[#111111]/58">{option.description}</p>
-                      <EditionBenefitList edition={option.value} className="mt-5 border-t border-black/10 pt-4 text-[#111111]/75" />
+                      <p className="mt-5 text-sm font-semibold leading-6 text-[#1e293b]/58">{option.description}</p>
+                      <EditionBenefitList edition={option.value} className="mt-5 border-t border-black/10 pt-4 text-[#1e293b]/75" />
                     </button>
                   )
                 })
@@ -890,7 +890,7 @@ export function BookingPage() {
 function EditionBenefitList({
   edition,
   className = '',
-  markerClassName = 'bg-[#ed3833]',
+  markerClassName = 'bg-[#c2410c]',
 }: {
   edition: string
   className?: string
@@ -1038,7 +1038,7 @@ type FieldProps = {
 
 function Field({ label, name, value, placeholder, error, type = 'text', inputMode, maxLength, onChange }: FieldProps) {
   return (
-    <label className="flex flex-col gap-2 font-bold text-[#111111]">
+    <label className="flex flex-col gap-2 font-bold text-[#1e293b]">
       {label}
       <input
         name={name}
@@ -1049,9 +1049,9 @@ function Field({ label, name, value, placeholder, error, type = 'text', inputMod
         inputMode={inputMode}
         maxLength={maxLength}
         onChange={(event) => onChange(name, event.target.value)}
-        className="rounded-full border border-black/15 px-5 py-4 font-semibold outline-none transition focus:border-[#ed3833] focus:ring-4 focus:ring-[#ed3833]/10 aria-[invalid=true]:border-[#ed3833]"
+        className="rounded-full border border-black/15 px-5 py-4 font-semibold outline-none transition focus:border-[#c2410c] focus:ring-4 focus:ring-[#c2410c]/10 aria-[invalid=true]:border-[#c2410c]"
       />
-      {error ? <span className="text-sm font-bold text-[#ed3833]">{error}</span> : null}
+      {error ? <span className="text-sm font-bold text-[#c2410c]">{error}</span> : null}
     </label>
   )
 }
@@ -1069,7 +1069,7 @@ type TextareaProps = {
 
 function Textarea({ label, name, value, placeholder, error, rows = 3, maxLength, onChange }: TextareaProps) {
   return (
-    <label className="flex flex-col gap-2 font-bold text-[#111111]">
+    <label className="flex flex-col gap-2 font-bold text-[#1e293b]">
       {label}
       <textarea
         name={name}
@@ -1079,12 +1079,12 @@ function Textarea({ label, name, value, placeholder, error, rows = 3, maxLength,
         maxLength={maxLength}
         aria-invalid={Boolean(error)}
         onChange={(event) => onChange(name, event.target.value)}
-        className="rounded-[24px] border border-black/15 px-5 py-4 font-semibold outline-none transition focus:border-[#ed3833] focus:ring-4 focus:ring-[#ed3833]/10 aria-[invalid=true]:border-[#ed3833]"
+        className="rounded-[24px] border border-black/15 px-5 py-4 font-semibold outline-none transition focus:border-[#c2410c] focus:ring-4 focus:ring-[#c2410c]/10 aria-[invalid=true]:border-[#c2410c]"
       />
-      <span className="self-end text-xs font-semibold text-[#111111]/45">
+      <span className="self-end text-xs font-semibold text-[#1e293b]/45">
         {value.length}{maxLength ? ` / ${maxLength}` : ''}
       </span>
-      {error ? <span className="text-sm font-bold text-[#ed3833]">{error}</span> : null}
+      {error ? <span className="text-sm font-bold text-[#c2410c]">{error}</span> : null}
     </label>
   )
 }
@@ -1106,14 +1106,14 @@ type SelectProps = {
 
 function Select({ label, name, value, options, error, placeholder, onChange }: SelectProps) {
   return (
-    <label className="flex flex-col gap-2 font-bold text-[#111111]">
+    <label className="flex flex-col gap-2 font-bold text-[#1e293b]">
       {label}
       <select
         name={name}
         value={value}
         aria-invalid={Boolean(error)}
         onChange={(event) => onChange(name, event.target.value)}
-        className="rounded-full border border-black/15 bg-white px-5 py-4 font-semibold outline-none transition focus:border-[#ed3833] focus:ring-4 focus:ring-[#ed3833]/10 aria-[invalid=true]:border-[#ed3833]"
+        className="rounded-full border border-black/15 bg-white px-5 py-4 font-semibold outline-none transition focus:border-[#c2410c] focus:ring-4 focus:ring-[#c2410c]/10 aria-[invalid=true]:border-[#c2410c]"
       >
         {placeholder ? (
           <option value="" disabled>
@@ -1126,7 +1126,7 @@ function Select({ label, name, value, options, error, placeholder, onChange }: S
           </option>
         ))}
       </select>
-      {error ? <span className="text-sm font-bold text-[#ed3833]">{error}</span> : null}
+      {error ? <span className="text-sm font-bold text-[#c2410c]">{error}</span> : null}
     </label>
   )
 }

@@ -101,7 +101,7 @@ export function HomeHero({ districtCount }: HomeHeroProps) {
           transformPerspective: 1200,
           transformStyle: 'preserve-3d',
         }}
-        className="relative flex h-full min-h-[560px] flex-col overflow-hidden rounded-[34px] bg-ink p-6 text-white shadow-[0_50px_120px_-60px_rgba(0,0,0,0.85)] sm:p-8"
+        className="relative flex h-full min-h-[560px] flex-col overflow-hidden rounded-[34px] bg-primary p-6 text-white shadow-[0_50px_120px_-60px_rgba(0,0,0,0.85)] sm:p-8"
       >
         <div
           aria-hidden="true"
@@ -117,11 +117,11 @@ export function HomeHero({ districtCount }: HomeHeroProps) {
         <m.div
           aria-hidden="true"
           style={{ y: reduce ? 0 : glowY }}
-          className="pointer-events-none absolute -right-28 -top-28 h-[380px] w-[380px] rounded-full bg-[radial-gradient(circle,rgba(216,180,90,0.24),rgba(216,180,90,0.06)_46%,transparent_70%)] blur-2xl"
+          className="pointer-events-none absolute -right-28 -top-28 h-[380px] w-[380px] rounded-full bg-[radial-gradient(circle,rgba(234,179,8,0.24),rgba(234,179,8,0.06)_46%,transparent_70%)] blur-2xl"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-32 -left-24 h-[340px] w-[340px] rounded-full bg-[radial-gradient(circle,rgba(237,56,51,0.2),transparent_68%)] blur-3xl"
+          className="pointer-events-none absolute -bottom-32 -left-24 h-[340px] w-[340px] rounded-full bg-[radial-gradient(circle,rgba(194,65,12,0.2),transparent_68%)] blur-3xl"
         />
 
         <m.div
@@ -145,7 +145,7 @@ export function HomeHero({ districtCount }: HomeHeroProps) {
 
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(115%_90%_at_18%_55%,rgba(11,11,15,0.9)_0%,rgba(11,11,15,0.55)_42%,rgba(11,11,15,0.08)_68%,transparent_82%)]"
+          className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(115%_90%_at_18%_55%,rgba(20,71,26,0.9)_0%,rgba(20,71,26,0.55)_42%,rgba(20,71,26,0.08)_68%,transparent_82%)]"
         />
 
         <m.div
@@ -206,7 +206,7 @@ export function HomeHero({ districtCount }: HomeHeroProps) {
             <Magnetic>
               <Link
                 to="/booking"
-                className="shine-sweep group relative flex min-w-[190px] items-center justify-center gap-3 rounded-full bg-brand px-7 py-4 text-base font-black text-white shadow-[0_26px_60px_-24px_rgba(237,56,51,0.9)] transition duration-300 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand/30"
+                className="shine-sweep group relative flex min-w-[190px] items-center justify-center gap-3 rounded-full bg-brand px-7 py-4 text-base font-black text-white shadow-[0_26px_60px_-24px_rgba(194,65,12,0.9)] transition duration-300 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand/30"
               >
                 <span className="relative z-10">Daftar Sekarang</span>
                 <ArrowRight className="relative z-10 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
