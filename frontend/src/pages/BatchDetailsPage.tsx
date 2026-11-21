@@ -10,7 +10,7 @@ const statusConfig: Record<NonNullable<Batch['status']>, { label: string; descri
   available: {
     label: 'Tersedia',
     description: 'Gelombang ini siap dipilih peserta sesuai wilayah, jenjang, dan kuota tersisa.',
-    tone: 'bg-[#c2410c] text-white',
+    tone: 'bg-[#b45309] text-white',
   },
   full: {
     label: 'Penuh',
@@ -20,7 +20,7 @@ const statusConfig: Record<NonNullable<Batch['status']>, { label: string; descri
   closed: {
     label: 'Ditutup',
     description: 'Pendaftaran gelombang ini sedang ditutup sementara.',
-    tone: 'bg-[#fff7ed] text-[#c2410c]',
+    tone: 'bg-[#fff7ed] text-[#b45309]',
   },
 }
 
@@ -35,11 +35,11 @@ export function BatchDetailsPage() {
         <AppNavbar />
         <main className="bg-[#f8fafc] px-5 py-8">
           <section className="mx-auto rounded-[38px] bg-white p-6 shadow-[0_24px_90px_rgba(0,0,0,0.06)] sm:p-8 lg:max-w-[900px] lg:p-10">
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">Data gelombang</p>
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#b45309]">Data gelombang</p>
             <h1 className="mt-4 text-[42px] font-black leading-[0.96] tracking-[-0.06em] text-[#1e293b] sm:text-[64px]">
               {isLoading ? 'Memuat data...' : error ? 'Data gelombang belum dapat dimuat.' : 'Data gelombang tidak ditemukan.'}
             </h1>
-            <p className="mt-5 text-base font-medium leading-7 text-[#1e293b]/62">
+            <p className="mt-5 text-base font-medium leading-7 text-[#1e293b]/70">
               {error || 'Informasi gelombang ini belum tersedia atau tautan tidak valid. Silakan kembali ke daftar gelombang.'}
             </p>
           </section>
@@ -69,11 +69,11 @@ export function BatchDetailsPage() {
           <aside className="sticky top-[96px] flex flex-col gap-6 rounded-[38px] border border-black/10 bg-white p-6 shadow-[0_24px_90px_rgba(0,0,0,0.06)] sm:p-8">
             <p className={`w-fit rounded-full px-4 py-2 text-sm font-black ${config.tone}`}>{config.label}</p>
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">{batch.batchNumber}</p>
+              <p className="text-sm font-black uppercase tracking-[0.16em] text-[#b45309]">{batch.batchNumber}</p>
               <h1 className="mt-4 text-[38px] font-black leading-[0.98] tracking-[-0.06em] text-[#1e293b] sm:text-[52px]">
                 {isLoading ? 'Memuat data gelombang...' : batch.name}
               </h1>
-              <p className="mt-5 text-base font-medium leading-7 text-[#1e293b]/62">
+              <p className="mt-5 text-base font-medium leading-7 text-[#1e293b]/70">
                 {error ? 'Informasi status gelombang belum dapat diperbarui saat ini.' : config.description}
               </p>
             </div>
@@ -84,11 +84,11 @@ export function BatchDetailsPage() {
               <Info label="Harga" value={formatRupiah(batch.basePrice)} />
             </div>
             {canRegister ? (
-              <Link to="/booking" className="flex items-center justify-center rounded-full bg-[#c2410c] px-6 py-4 font-black text-white transition hover:bg-[#9a3412]">
+              <Link to="/booking" className="flex items-center justify-center rounded-full bg-[#b45309] px-6 py-4 font-black text-white transition hover:bg-[#9a3412]">
                 Mulai Pendaftaran
               </Link>
             ) : (
-              <Link to="/#batches" className="flex items-center justify-center rounded-full border border-black/10 bg-white px-6 py-4 font-black text-[#1e293b] transition hover:border-[#c2410c] hover:text-[#c2410c]">
+              <Link to="/#batches" className="flex items-center justify-center rounded-full border border-black/10 bg-white px-6 py-4 font-black text-[#1e293b] transition hover:border-[#b45309] hover:text-[#b45309]">
                 Lihat Gelombang Lain
               </Link>
             )}
@@ -107,7 +107,7 @@ type InfoProps = {
 function Info({ label, value }: InfoProps) {
   return (
     <div className="rounded-2xl bg-[#f8fafc] p-4">
-      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#1e293b]/40">{label}</p>
+      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#1e293b]/70">{label}</p>
       <p className="mt-2 font-black text-[#1e293b]">{value}</p>
     </div>
   )

@@ -36,7 +36,7 @@ export function HomeAside() {
               <SealEmblem size={38} />
             </div>
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-white/55">Filosofi Program</p>
+              <p className="text-sm font-black uppercase tracking-[0.16em] text-white">Filosofi Program</p>
               <h2 className="mt-3 max-w-[12ch] text-[32px] font-black leading-[0.95] tracking-[-0.04em] sm:text-[44px]">
                 Satu mushaf, satu doa.
               </h2>
@@ -47,12 +47,12 @@ export function HomeAside() {
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
         <Reveal delay={0.06}>
-          <TiltCard tilt={2} spotlightColor="rgba(237, 56, 51, 0.12)" className="rounded-[34px]">
+          <TiltCard tilt={2} spotlightColor="rgba(194, 65, 12, 0.12)" className="rounded-[34px]">
             <Link
               to="/booking/details"
               className="group relative flex h-full flex-col rounded-[34px] border border-white/70 bg-white/70 p-5 shadow-[0_24px_80px_-50px_rgba(0,0,0,0.35)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-brand/20 hover:bg-brand hover:text-white hover:shadow-[0_30px_80px_-34px_rgba(194,65,12,0.55)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand/20"
             >
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-brand transition group-hover:text-white/65">
+              <p className="text-sm font-black uppercase tracking-[0.16em] text-brand transition group-hover:text-white/75">
                 Pusat Informasi
               </p>
               <p className="mt-4 max-w-[18ch] text-[28px] font-black leading-[1] tracking-[-0.04em] text-ink transition group-hover:text-white">
@@ -66,7 +66,7 @@ export function HomeAside() {
         </Reveal>
 
         <Reveal delay={0.12}>
-          <TiltCard tilt={2} spotlightColor="rgba(216, 180, 90, 0.18)" className="rounded-[34px]">
+          <TiltCard tilt={2} spotlightColor="rgba(234, 179, 8, 0.18)" className="rounded-[34px]">
             <a
               href="#districts"
               className="group relative flex h-full flex-col rounded-[34px] border border-white/70 bg-white/70 p-5 shadow-[0_24px_80px_-50px_rgba(0,0,0,0.35)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-gold/50 hover:bg-primary hover:text-white hover:shadow-[0_30px_80px_-34px_rgba(0,0,0,0.6)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-gold/30"

@@ -15,7 +15,7 @@ export function TiltCard({
   className = '',
   tilt = 4,
   spotlight = true,
-  spotlightColor = 'rgba(216, 180, 90, 0.16)',
+  spotlightColor = 'rgba(234, 179, 8, 0.16)',
 }: TiltCardProps) {
   const reduce = useReducedMotion()
   const canHover = useMediaQuery('(hover: hover) and (pointer: fine)')

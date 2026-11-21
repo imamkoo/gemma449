@@ -92,7 +92,7 @@ function LegalDocView({
           aria-label="Daftar Bagian"
           className="mb-12 rounded-2xl bg-white p-5"
         >
-          <p className="text-xs font-bold text-ink/60">
+          <p className="text-xs font-bold text-ink/70">
             Daftar Bagian
           </p>
           <ol className="mt-3 grid gap-2 text-sm font-bold text-brand-dark sm:grid-cols-2">
@@ -102,7 +102,7 @@ function LegalDocView({
                   href={`#${sec.id}`}
                   className="inline-flex items-center gap-1.5 transition hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
                 >
-                  <span aria-hidden="true" className="text-xs text-ink/60">§{idx + 1}</span>
+                  <span aria-hidden="true" className="text-xs text-ink/70">§{idx + 1}</span>
                   <span>{sec.title}</span>
                 </a>
               </li>
@@ -193,7 +193,7 @@ function LegalDocView({
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-ink/65">
+          <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-ink/70">
             <Link
               to="/terms"
               className="transition hover:text-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/20"

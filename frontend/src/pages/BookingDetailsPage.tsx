@@ -109,7 +109,7 @@ type LookupFormProps = {
 function LookupHero() {
   return (
     <header className="rounded-[28px] border border-black/8 bg-[#1b5e20] p-5 text-white shadow-[0_18px_60px_rgba(0,0,0,0.16)] sm:p-7">
-      <div className="flex items-center justify-between text-[10px] font-black uppercase tracking-[0.18em] text-white/40">
+      <div className="flex items-center justify-between text-[10px] font-black uppercase tracking-[0.18em] text-white/75">
         <p>Lacak Pendaftaran</p>
         <p>GEMMA449</p>
       </div>
@@ -122,7 +122,7 @@ function LookupHero() {
             Lacak dengan kode lengkap, kode belakang, atau WhatsApp.
           </h1>
         </div>
-        <p className="max-w-[430px] text-sm font-semibold leading-7 text-white/58 md:justify-self-end md:text-base">
+        <p className="max-w-[430px] text-sm font-semibold leading-7 text-white/75 md:justify-self-end md:text-base">
           Masukkan salah satu: kode pendaftaran lengkap, 4 huruf/angka terakhir yang acak, atau nomor WhatsApp terdaftar. Jika satu nomor punya beberapa pendaftaran, hasilnya akan tampil sebagai kartu yang bisa digeser.
         </p>
       </div>
@@ -142,13 +142,13 @@ function LookupForm({ isLoading, lookup, message, onChange, onSubmit }: LookupFo
           value={lookup}
           onChange={(event) => onChange(event.target.value)}
           placeholder="Contoh: 3171030-REGULER-SMA..., XBV1, atau 628123456789"
-          className="rounded-full border border-black/15 px-5 py-4 font-semibold outline-none transition focus:border-[#c2410c] focus:ring-4 focus:ring-[#c2410c]/10"
+          className="rounded-full border border-black/15 px-5 py-4 font-semibold outline-none transition focus:border-[#b45309] focus:ring-4 focus:ring-[#b45309]/10"
         />
       </label>
       <button
         type="submit"
         disabled={isLoading}
-        className="mt-5 w-full rounded-full bg-[#c2410c] px-6 py-4 font-black text-white outline-none transition hover:bg-[#9a3412] focus:ring-4 focus:ring-[#c2410c]/20 disabled:cursor-not-allowed disabled:opacity-60"
+        className="mt-5 w-full rounded-full bg-[#b45309] px-6 py-4 font-black text-white outline-none transition hover:bg-[#9a3412] focus:ring-4 focus:ring-[#b45309]/20 disabled:cursor-not-allowed disabled:opacity-60"
       >
         {isLoading ? 'Melacak...' : 'Lacak Pendaftaran'}
       </button>
@@ -174,16 +174,16 @@ function StatusModal({ statuses, onClose, onAfterPayment }: StatusModalProps) {
         <div className="overflow-hidden rounded-[26px] border border-black/6 bg-white">
           <div className="flex flex-col gap-4 border-b border-white/10 bg-[#1b5e20] p-5 text-white sm:flex-row sm:items-start sm:justify-between sm:p-6">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-white/42">Hasil Pelacakan</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-white/75">Hasil Pelacakan</p>
               <h2 className="mt-4 max-w-[600px] text-[30px] font-black leading-[1] tracking-[-0.055em] sm:text-[44px]">
                 {hasMultiple ? 'Beberapa kode pendaftaran ditemukan.' : primaryName}
               </h2>
               {hasMultiple ? (
-                <p className="mt-3 max-w-[560px] text-sm font-semibold leading-6 text-white/58">
+                <p className="mt-3 max-w-[560px] text-sm font-semibold leading-6 text-white/75">
                   Ditemukan {statuses.length} kode dari nomor yang sama. Geser kartu atau gunakan panah untuk melihat detail masing-masing.
                 </p>
               ) : primaryName ? (
-                <p className="mt-3 max-w-[560px] text-sm font-semibold leading-6 text-white/58">
+                <p className="mt-3 max-w-[560px] text-sm font-semibold leading-6 text-white/75">
                   Gunakan kode pendaftaran lengkap, kode belakang, atau nomor WhatsApp untuk membuka data ini kembali.
                 </p>
               ) : null}
@@ -197,7 +197,7 @@ function StatusModal({ statuses, onClose, onAfterPayment }: StatusModalProps) {
               <button
                 type="button"
                 onClick={onClose}
-                className="h-11 w-11 shrink-0 rounded-full bg-white/10 text-xl font-black text-white outline-none transition hover:bg-[#c2410c] focus:ring-4 focus:ring-white/20"
+                className="h-11 w-11 shrink-0 rounded-full bg-white/10 text-xl font-black text-white outline-none transition hover:bg-[#b45309] focus:ring-4 focus:ring-white/20"
                 aria-label="Tutup hasil pelacakan"
               >
                 X
@@ -258,10 +258,10 @@ function StatusResultCard({ status, index, total, onAfterPayment }: StatusResult
     <article className="overflow-hidden rounded-[28px] border border-black/8 bg-white shadow-[0_18px_60px_rgba(30,41,59,0.08)]">
       {total > 1 ? (
         <div className="flex flex-col gap-2 border-b border-black/8 bg-[#ffffff] px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-5">
-          <p className="text-xs font-black uppercase tracking-[0.14em] text-[#1e293b]/45">
+          <p className="text-xs font-black uppercase tracking-[0.14em] text-[#1e293b]/70">
             Pendaftaran {index + 1} dari {total}
           </p>
-          <p className="w-fit rounded-full border border-[#c2410c]/14 bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-[#c2410c] shadow-[0_10px_24px_rgba(30,41,59,0.04)]">
+          <p className="w-fit rounded-full border border-[#b45309]/14 bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-[#b45309] shadow-[0_10px_24px_rgba(30,41,59,0.04)]">
             Kode belakang: {codeTail}
           </p>
         </div>
@@ -271,8 +271,8 @@ function StatusResultCard({ status, index, total, onAfterPayment }: StatusResult
         <div className="rounded-[24px] border border-black/8 bg-[#ffffff] p-4 sm:p-5">
           <div className="flex flex-col gap-3 border-b border-black/10 pb-5 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c2410c]">Status Pendaftaran</p>
-              <p className="mt-2 text-sm font-semibold leading-6 text-[#1e293b]/58">
+              <p className="text-xs font-black uppercase tracking-[0.16em] text-[#b45309]">Status Pendaftaran</p>
+              <p className="mt-2 text-sm font-semibold leading-6 text-[#1e293b]/70">
                 Data ditemukan. Kode belakang <span className="font-black text-[#1e293b]">{codeTail}</span> juga bisa dipakai untuk pelacakan cepat tanpa menyalin seluruh kode pendaftaran.
               </p>
             </div>
@@ -293,7 +293,7 @@ function StatusResultCard({ status, index, total, onAfterPayment }: StatusResult
         </div>
 
         <aside className={`rounded-[24px] p-5 text-white ${statusUi.asideClass}`}>
-          <p className="text-xs font-black uppercase tracking-[0.16em] text-white/65">{statusUi.eyebrow}</p>
+          <p className="text-xs font-black uppercase tracking-[0.16em] text-white/75">{statusUi.eyebrow}</p>
           <p className="mt-4 text-[34px] font-black leading-none tracking-[-0.06em] sm:text-[42px]">{formatRupiah(status.total_payment)}</p>
           <p className="mt-2 text-lg font-black text-white">{statusUi.label}</p>
           <p className="mt-4 text-sm font-semibold leading-6 text-white/70">
@@ -307,7 +307,7 @@ function StatusResultCard({ status, index, total, onAfterPayment }: StatusResult
           <div className="mt-5 border-t border-white/15 pt-5">
             {status.status === 'pending' ? (
               <>
-                <p className="mb-3 text-xs font-black uppercase tracking-[0.14em] text-white/60">Pembayaran</p>
+                <p className="mb-3 text-xs font-black uppercase tracking-[0.14em] text-white/75">Pembayaran</p>
                 <MidtransPayButton
                   registrationCode={status.registration_code}
                   onFlowEnd={onAfterPayment}
@@ -318,7 +318,7 @@ function StatusResultCard({ status, index, total, onAfterPayment }: StatusResult
             ) : (
               <StatusAction status={status.status} label={statusUi.actionLabel ?? statusUi.label} />
             )}
-            <p className="mt-3 text-xs font-semibold leading-5 text-white/60">
+            <p className="mt-3 text-xs font-semibold leading-5 text-white/75">
               {status.status === 'pending'
                 ? 'Setelah menyelesaikan pembayaran di jendela yang terbuka, status "Lunas" biasanya muncul dalam beberapa detik. Tutup jendela bila sudah selesai, lalu segarkan halaman atau lacak ulang.'
                 : statusUi.actionNote}
@@ -339,7 +339,7 @@ type InfoProps = {
 function Info({ label, value, wide = false }: InfoProps) {
   return (
     <div className={`rounded-[20px] border border-black/6 bg-white/92 p-4 shadow-[0_10px_24px_rgba(30,41,59,0.04)] ${wide ? 'sm:col-span-2' : ''}`}>
-      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#1e293b]/40">{label}</p>
+      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#1e293b]/70">{label}</p>
       <p className="mt-2 break-words font-black leading-6 text-[#1e293b]">{value}</p>
     </div>
   )
@@ -348,7 +348,7 @@ function Info({ label, value, wide = false }: InfoProps) {
 function PaymentInfo({ label, value }: InfoProps) {
   return (
     <div className="rounded-[20px] border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
-      <p className="text-xs font-black uppercase tracking-[0.12em] text-white/50">{label}</p>
+      <p className="text-xs font-black uppercase tracking-[0.12em] text-white/75">{label}</p>
       <p className="mt-2 break-words font-black leading-6 text-white">{value}</p>
     </div>
   )

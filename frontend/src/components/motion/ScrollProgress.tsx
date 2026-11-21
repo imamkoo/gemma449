@@ -8,7 +8,7 @@ export function ScrollProgress() {
   return (
     <m.div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-x-0 top-0 z-[80] h-[2px] origin-left bg-[linear-gradient(90deg,#c2410c,#ea580c_48%,#eab308)]"
+      className="pointer-events-none fixed inset-x-0 top-0 z-[80] h-[2px] origin-left bg-[linear-gradient(90deg,#b45309,#ea580c_48%,#eab308)]"
       style={{ scaleX: reduce ? scrollYProgress : smooth }}
     />
   )

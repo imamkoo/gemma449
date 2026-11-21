@@ -41,7 +41,7 @@ export function HomeHero({ districtCount }: HomeHeroProps) {
   const springY = useSpring(rotateY, { stiffness: 150, damping: 22, mass: 0.5 })
   const pointerX = useMotionValue(50)
   const pointerY = useMotionValue(50)
-  const spotlight = useMotionTemplate`radial-gradient(540px circle at ${pointerX}% ${pointerY}%, rgba(216, 180, 90, 0.15), transparent 46%)`
+  const spotlight = useMotionTemplate`radial-gradient(540px circle at ${pointerX}% ${pointerY}%, rgba(234, 179, 8, 0.15), transparent 46%)`
 
   function handlePointerMove(event: PointerEvent<HTMLDivElement>) {
     if (!interactive) {
@@ -152,7 +152,7 @@ export function HomeHero({ districtCount }: HomeHeroProps) {
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="relative z-10 flex items-center justify-between gap-4 text-[10px] font-black uppercase tracking-[0.18em] text-white/45"
+          className="relative z-10 flex items-center justify-between gap-4 text-[10px] font-black uppercase tracking-[0.18em] text-white/75"
         >
           <p>Sebaran Kecamatan Sumedang</p>
           <p className="flex items-center gap-2">
@@ -200,7 +200,7 @@ export function HomeHero({ districtCount }: HomeHeroProps) {
             variants={fadeUp}
             className="mt-7 grid max-w-[770px] gap-6 border-t border-white/10 pt-6 sm:grid-cols-[1fr_auto] sm:items-end"
           >
-            <p className="max-w-[52ch] text-base font-medium leading-7 text-white/60 sm:text-lg sm:leading-8">
+            <p className="max-w-[52ch] text-base font-medium leading-7 text-white/75 sm:text-lg sm:leading-8">
               Tentukan titik partisipasi Anda, amankan kuota pendaftaran yang tersedia, dan pantau status kontribusi Anda secara langsung.
             </p>
             <Magnetic>
@@ -219,10 +219,10 @@ export function HomeHero({ districtCount }: HomeHeroProps) {
           <div className="flex items-center gap-3">
             <SealEmblem size={56} eager />
             <div className="min-w-0">
-              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-gold sm:text-[10px]">
+              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-gold-soft sm:text-[10px]">
                 Gerakan Menulis Al-Qur'an · Sumedang
               </p>
-              <p className="mt-1 text-xs font-semibold leading-5 text-white/50">
+              <p className="mt-1 text-xs font-semibold leading-5 text-white/75">
                 Satu Kampung · Satu Gerakan Menulis
               </p>
             </div>

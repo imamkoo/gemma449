@@ -68,7 +68,7 @@ class AppErrorBoundary extends Component<{ children: ReactNode }, AppErrorBounda
         <div className="max-w-sm">
           <p className="text-sm font-black uppercase tracking-[0.18em] text-brand">Terjadi kendala</p>
           <h1 className="mt-3 text-3xl font-black tracking-[-0.04em] text-ink">Halaman gagal dimuat.</h1>
-          <p className="mt-3 text-sm font-medium leading-6 text-ink/60">
+          <p className="mt-3 text-sm font-medium leading-6 text-ink/70">
             Periksa koneksi Anda, lalu muat ulang halaman ini.
           </p>
           <button
