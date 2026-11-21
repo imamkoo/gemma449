@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Universitas Padjadjaran",
+    "type": "PTN",
+    "city": "Sumedang"
+  },
+  {
+    "name": "Institut Teknologi Bandung",
+    "type": "PTN",
+    "city": "Sumedang"
+  },
+  {
+    "name": "Institut Pemerintahan Dalam Negeri",
+    "type": "PTN",
+    "city": "Sumedang"
+  },
+  {
+    "name": "Universitas Pendidikan Indonesia Kampus Sumedang",
+    "type": "PTN",
+    "city": "Sumedang"
+  },
+  {
+    "name": "Institut Manajemen Koperasi Indonesia",
+    "type": "PTS",
+    "city": "Sumedang"
+  },
+  {
+    "name": "Universitas Sebelas April",
+    "type": "PTS",
+    "city": "Sumedang"
+  },
+  {
+    "name": "Universitas Muhammadiyah Sumedang",
+    "type": "PTS",
+    "city": "Sumedang"
+  },
+  {
+    "name": "Universitas Ma'soem",
+    "type": "PTS",
+    "city": "Sumedang"
+  }
+]

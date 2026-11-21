@@ -1,3 +1,7 @@
+# Tidak dipakai untuk GEMMA449: deploy produksi memakai cPanel
+# (lihat backend/deploy/cpanel/CPANEL-DEPLOY.md). Blueprint ini
+# disimpan hanya sebagai alternatif; `plan: free` TIDAK mendukung
+# disk 1GB sehingga tidak bisa dipakai apa adanya.
 services:
   - type: web
     name: gemma449-api

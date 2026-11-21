@@ -29,7 +29,7 @@ class UniversityForm
                             ->required(),
                         TextInput::make('city')
                             ->label('Kota/Wilayah')
-                            ->default('Cimanggung')
+                            ->default('Sumedang')
                             ->required(),
                     ])->columns(2),
             ]);

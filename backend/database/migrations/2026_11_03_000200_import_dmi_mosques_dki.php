@@ -7,9 +7,13 @@ use Illuminate\Support\Facades\DB;
 return new class extends Migration
 {
     /**
-     * Snapshot data DMI DKI (9.344 masjid) diimpor sekali saat deploy produksi.
-     * Data tidak dimasukkan pada test/local agar suite tetap cepat dan bersih.
-     * Setelah migrasi ini, sinkronisasi berikutnya memakai `php artisan mosque:import`.
+     * Snapshot DMI (jejaka500: 9.344 masjid DKI) diimpor sekali saat deploy
+     * produksi BILA snapshot tersedia di `database/data/`.
+     *
+     * GEMMA449 tidak membawa snapshot Jakarta. Katalog masjid Sumedang diisi
+     * lewat panel admin (Mosques) atau `php artisan mosque:import`, jadi
+     * migrasi ini harus tetap sukses tanpa snapshot — kalau tidak, deploy
+     * produksi gagal pada langkah `migrate --force`.
      */
     public function up(): void
     {
@@ -20,7 +24,7 @@ return new class extends Migration
         $path = database_path('data/dmi-mosques-dki.csv.gz');
 
         if (! is_file($path)) {
-            throw new RuntimeException("Snapshot DMI tidak ditemukan: {$path}");
+            return;
         }
 
         $handle = @fopen('compress.zlib://'.$path, 'rb');

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('type')->nullable(); // PTN atau PTS
-            $table->string('city')->default('Jakarta');
+            $table->string('city')->default('Sumedang');
             $table->timestamps();
         });
 
