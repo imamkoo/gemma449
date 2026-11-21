@@ -109,7 +109,7 @@ jobs:
           ls -lh "$GITHUB_WORKSPACE"/gemma449-backend-*.zip
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: gemma449-backend
           path: gemma449-backend-*.zip
@@ -164,7 +164,7 @@ jobs:
           ls -lh "$GITHUB_WORKSPACE"/gemma449-frontend-*.zip
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: gemma449-frontend
           path: gemma449-frontend-*.zip
@@ -178,7 +178,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v8
         with:
           path: assets
           merge-multiple: true
