@@ -1,4 +1,4 @@
-# Konfigurasi Apache/LiteSpeed untuk SPA JEJAKA500 di cPanel.
+# Konfigurasi Apache/LiteSpeed untuk SPA GEMMA449 di cPanel.
 # Disalin menjadi dist/.htaccess oleh .github/workflows/release.yml.
 # Padanan dari frontend/vercel.json (rewrites + headers).
 
