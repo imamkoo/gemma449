@@ -136,7 +136,7 @@ export function PwaUpdatePrompt() {
         <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start">
           <div className="flex min-w-0 items-start gap-3">
             <div
-              className={`mt-0.5 h-2 w-2 shrink-0 rounded-full bg-[#c2410c] ${
+              className={`mt-0.5 h-2 w-2 shrink-0 rounded-full bg-[#b45309] ${
                 isUpdating ? 'motion-safe:animate-pulse' : ''
               }`}
               aria-hidden="true"
@@ -145,12 +145,12 @@ export function PwaUpdatePrompt() {
               {needRefresh ? (
                 <>
                   <p className="font-black">{updateCopy.title}</p>
-                  <p className="text-white/65">{updateCopy.description}</p>
+                  <p className="text-white/75">{updateCopy.description}</p>
                 </>
               ) : (
                 <>
                   <p className="font-black">Siap dipakai offline</p>
-                  <p className="text-white/65">Konten utama sudah tersimpan di perangkat Anda.</p>
+                  <p className="text-white/75">Konten utama sudah tersimpan di perangkat Anda.</p>
                 </>
               )}
             </div>
@@ -170,7 +170,7 @@ export function PwaUpdatePrompt() {
                 disabled={isUpdating}
                 aria-busy={isUpdating}
                 onClick={handlePrimaryAction}
-                className="inline-flex items-center gap-1.5 rounded-full bg-[#c2410c] px-3 py-1.5 text-xs font-black text-white transition hover:bg-[#9a3412] disabled:cursor-wait disabled:opacity-70"
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#b45309] px-3 py-1.5 text-xs font-black text-white transition hover:bg-[#9a3412] disabled:cursor-wait disabled:opacity-70"
               >
                 {isUpdating ? <Spinner /> : null}
                 {isUpdating
@@ -189,7 +189,7 @@ export function PwaUpdatePrompt() {
             type="button"
             onClick={() => setOfflineReady(false)}
             aria-label="Tutup pesan"
-            className="absolute right-3 top-3 rounded-full px-2 py-1 text-xs font-bold text-white/65 transition hover:text-white"
+            className="absolute right-3 top-3 rounded-full px-2 py-1 text-xs font-bold text-white/75 transition hover:text-white"
           >
             ×
           </button>
@@ -199,7 +199,7 @@ export function PwaUpdatePrompt() {
             aria-hidden="true"
             className="absolute inset-x-0 bottom-0 h-0.5 overflow-hidden bg-white/10"
           >
-            <span className="pwa-update-progress block h-full w-1/3 rounded-full bg-[#c2410c]" />
+            <span className="pwa-update-progress block h-full w-1/3 rounded-full bg-[#b45309]" />
           </div>
         ) : null}
       </div>

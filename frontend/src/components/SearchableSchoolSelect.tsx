@@ -99,7 +99,7 @@ export function SearchableSchoolSelect({
   return (
     <div ref={rootRef} className="relative flex flex-col gap-2 font-bold text-[#1e293b]">
       <span id={`${id}-label`}>{label}</span>
-      <p className="-mt-1 text-xs font-semibold leading-5 text-[#1e293b]/50">{helperText}</p>
+      <p className="-mt-1 text-xs font-semibold leading-5 text-[#1e293b]/70">{helperText}</p>
 
       <button
         type="button"
@@ -114,9 +114,9 @@ export function SearchableSchoolSelect({
             setIsOpen((open) => !open)
           }
         }}
-        className="flex min-h-[52px] w-full items-center rounded-full border border-black/15 bg-white px-5 py-3 text-left font-semibold outline-none transition focus:border-[#c2410c] focus:ring-4 focus:ring-[#c2410c]/10 disabled:cursor-not-allowed disabled:bg-black/[0.04] disabled:text-[#1e293b]/45 aria-[invalid=true]:border-[#c2410c]"
+        className="flex min-h-[52px] w-full items-center rounded-full border border-black/15 bg-white px-5 py-3 text-left font-semibold outline-none transition focus:border-[#b45309] focus:ring-4 focus:ring-[#b45309]/10 disabled:cursor-not-allowed disabled:bg-black/[0.04] disabled:text-[#1e293b]/70 aria-[invalid=true]:border-[#b45309]"
       >
-        <span className={selectedLabel ? 'text-[#1e293b]' : 'text-[#1e293b]/45'}>{selectedLabel || placeholder}</span>
+        <span className={selectedLabel ? 'text-[#1e293b]' : 'text-[#1e293b]/70'}>{selectedLabel || placeholder}</span>
       </button>
 
       {isOpen && !disabled ? (
@@ -143,10 +143,10 @@ export function SearchableSchoolSelect({
                   setIsOpen(false)
                 }
               }}
-              className="w-full rounded-full border border-black/12 px-4 py-3 text-sm font-semibold outline-none focus:border-[#c2410c] focus:ring-2 focus:ring-[#c2410c]/15"
+              className="w-full rounded-full border border-black/12 px-4 py-3 text-sm font-semibold outline-none focus:border-[#b45309] focus:ring-2 focus:ring-[#b45309]/15"
             />
             {totalRegular > 0 ? (
-              <p className="mt-2 px-1 text-xs font-semibold text-[#1e293b]/45">
+              <p className="mt-2 px-1 text-xs font-semibold text-[#1e293b]/70">
                 {remote
                   ? `Menampilkan ${shownRegular} hasil${searchQuery.trim() ? ` untuk “${searchQuery.trim()}”` : ''}`
                   : `Menampilkan ${shownRegular} dari ${totalRegular} ${entityLabel}${searchQuery.trim() ? ` untuk “${searchQuery.trim()}”` : ''}`}
@@ -156,7 +156,7 @@ export function SearchableSchoolSelect({
 
           <ul className="max-h-[min(280px,40vh)] overflow-y-auto overscroll-contain py-1">
             {filteredRegular.length === 0 ? (
-              <li className="px-4 py-3 text-sm font-semibold text-[#1e293b]/45">
+              <li className="px-4 py-3 text-sm font-semibold text-[#1e293b]/70">
                 {emptyText ??
                   (totalRegular === 0
                     ? `Belum ada entri ${entityLabel} untuk disaring. Pilih Lainnya di bawah jika nama tidak tercantum.`
@@ -170,7 +170,7 @@ export function SearchableSchoolSelect({
                     role="option"
                     aria-selected={value === option.value}
                     onClick={() => choose(option.value)}
-                    className={`flex w-full px-4 py-3 text-left text-sm font-semibold transition hover:bg-[#fff7ed] ${value === option.value ? 'bg-[#fff7ed] text-[#c2410c]' : 'text-[#1e293b]'}`}
+                    className={`flex w-full px-4 py-3 text-left text-sm font-semibold transition hover:bg-[#fff7ed] ${value === option.value ? 'bg-[#fff7ed] text-[#b45309]' : 'text-[#1e293b]'}`}
                   >
                     {option.label}
                   </button>
@@ -186,7 +186,7 @@ export function SearchableSchoolSelect({
                 role="option"
                 aria-selected={value === customOption.value}
                 onClick={() => choose(customOption.value)}
-                className={`w-full rounded-2xl px-4 py-3 text-left text-sm font-black transition hover:bg-white ${value === customOption.value ? 'bg-white text-[#c2410c] ring-2 ring-[#c2410c]/25' : 'text-[#1e293b]'}`}
+                className={`w-full rounded-2xl px-4 py-3 text-left text-sm font-black transition hover:bg-white ${value === customOption.value ? 'bg-white text-[#b45309] ring-2 ring-[#b45309]/25' : 'text-[#1e293b]'}`}
               >
                 {customOption.label}
               </button>
@@ -195,7 +195,7 @@ export function SearchableSchoolSelect({
         </div>
       ) : null}
 
-      {error ? <span className="text-sm font-bold text-[#c2410c]">{error}</span> : null}
+      {error ? <span className="text-sm font-bold text-[#b45309]">{error}</span> : null}
     </div>
   )
 }

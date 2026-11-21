@@ -26,7 +26,7 @@ export function StatsPanel({ stats, isLoading }: StatsPanelProps) {
                 <h3 className="max-w-[18ch] text-[24px] font-black leading-[1.02] tracking-[-0.04em] text-ink">
                   Kontribusi yang sudah tercatat.
                 </h3>
-                <p className="mt-2 text-sm font-semibold leading-6 text-ink/65">
+                <p className="mt-2 text-sm font-semibold leading-6 text-ink/70">
                   Ringkasan partisipasi dari gelombang yang sedang berjalan.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export function StatsPanel({ stats, isLoading }: StatsPanelProps) {
 
             <div className="relative mt-4 flex items-center gap-3">
               <SealEmblem size={34} glow={false} />
-              <p className="text-[10px] font-black uppercase leading-4 tracking-[0.16em] text-ink/55">
+              <p className="text-[10px] font-black uppercase leading-4 tracking-[0.16em] text-ink/70">
                 Gerakan Menulis Al-Qur'an · Sumedang
               </p>
             </div>
@@ -97,20 +97,20 @@ export function StatsPanel({ stats, isLoading }: StatsPanelProps) {
               ) : stats.byLevel.length > 0 ? (
                 stats.byLevel.map((row) => <LevelRow key={row.level} row={row} />)
               ) : (
-                <p className="text-sm font-semibold text-ink/65">Belum ada data jenjang yang aktif.</p>
+                <p className="text-sm font-semibold text-ink/70">Belum ada data jenjang yang aktif.</p>
               )}
-              <p className="text-xs font-semibold text-ink/55">Dihitung dari gelombang yang aktif.</p>
+              <p className="text-xs font-semibold text-ink/70">Dihitung dari gelombang yang aktif.</p>
             </div>
 
             <div className="relative mt-auto flex items-end justify-between gap-4 border-t border-black/[0.08] pt-5">
               <div>
-                <p className="text-[10px] font-black uppercase tracking-[0.16em] text-ink/55">Total kapasitas</p>
+                <p className="text-[10px] font-black uppercase tracking-[0.16em] text-ink/70">Total kapasitas</p>
                 {isLoading ? (
                   <span className="mt-2 block h-7 w-24 motion-safe:animate-pulse rounded-lg bg-black/[0.07]" />
                 ) : (
                   <p className="mt-1 text-[28px] font-black leading-none tracking-[-0.04em] text-ink">
                     {numberFormat.format(stats.totalCapacity)}{' '}
-                    <span className="text-sm font-bold text-ink/55">kursi</span>
+                    <span className="text-sm font-bold text-ink/70">kursi</span>
                   </p>
                 )}
               </div>
@@ -134,7 +134,7 @@ type MetricProps = {
 function Metric({ label, value, loading, tone = 'default', format }: MetricProps) {
   return (
     <div className="bg-white/80 p-4 sm:p-5">
-      <p className="text-[10px] font-black uppercase tracking-[0.16em] text-ink/60">{label}</p>
+      <p className="text-[10px] font-black uppercase tracking-[0.16em] text-ink/70">{label}</p>
       {loading ? (
         <span className="mt-3 block h-8 w-20 motion-safe:animate-pulse rounded-lg bg-black/[0.07]" />
       ) : (
@@ -158,7 +158,7 @@ function LevelRow({ row }: { row: EducationLevelStat }) {
     <div>
       <div className="flex items-baseline justify-between gap-3 text-sm">
         <p className="font-black text-ink">{row.level}</p>
-        <p className="font-semibold text-ink/65">
+        <p className="font-semibold text-ink/70">
           {numberFormat.format(row.filled)} / {numberFormat.format(row.capacity)} (
           {row.filled > 0 && row.filledPct === 0 ? '<1' : row.filledPct}%)
         </p>

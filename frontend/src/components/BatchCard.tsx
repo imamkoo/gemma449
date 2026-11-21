@@ -38,7 +38,7 @@ export function BatchCard({ batch }: BatchCardProps) {
       to={batch.href}
       className="card block h-full rounded-[28px] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand/20"
     >
-      <TiltCard tilt={3} className="h-full rounded-[28px]" spotlightColor="rgba(237, 56, 51, 0.11)">
+      <TiltCard tilt={3} className="h-full rounded-[28px]" spotlightColor="rgba(194, 65, 12, 0.11)">
         <article className="flex h-full flex-col overflow-hidden rounded-[28px] border border-white/70 bg-white/80 shadow-[0_26px_80px_-54px_rgba(0,0,0,0.4)] backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-brand/20 hover:shadow-[0_34px_90px_-38px_rgba(0,0,0,0.35)]">
           <div className="relative h-[220px] w-full overflow-hidden">
             {status !== 'available' ? (
@@ -79,11 +79,11 @@ export function BatchCard({ batch }: BatchCardProps) {
 
             <div className="grid grid-cols-2 gap-3 text-sm">
               <div className="rounded-2xl border border-black/[0.05] bg-cream/80 p-3">
-                <p className="text-ink/55">Kategori</p>
+                <p className="text-ink/70">Kategori</p>
                 <p className="mt-1 font-black text-ink">{category}</p>
               </div>
               <div className="rounded-2xl border border-black/[0.05] bg-cream/80 p-3">
-                <p className="text-ink/55">Harga</p>
+                <p className="text-ink/70">Harga</p>
                 <p className="mt-1 font-black text-ink">{price}</p>
               </div>
             </div>
@@ -100,7 +100,7 @@ export function BatchCard({ batch }: BatchCardProps) {
                 </div>
               </div>
               <div className="space-y-1">
-                <div className="flex items-center justify-between text-xs font-black uppercase tracking-[0.12em] text-ink/55">
+                <div className="flex items-center justify-between text-xs font-black uppercase tracking-[0.12em] text-ink/70">
                   <span>Terisi</span>
                   <span>{batch.registrationsCount > 0 && filledPct === 0 ? '<1' : filledPct}%</span>
                 </div>

@@ -11,20 +11,20 @@ export function BatchFullPage() {
       <AppNavbar />
       <main className="min-h-[calc(100vh-73px)] bg-[#f8fafc] px-5 py-8">
         <section className="mx-auto flex min-h-[620px] w-full max-w-[980px] flex-col justify-between rounded-[38px] bg-[#1b5e20] p-6 text-white sm:p-8 lg:p-10">
-          <div className="flex items-center justify-between text-[10px] font-black uppercase tracking-[0.18em] text-white/45">
+          <div className="flex items-center justify-between text-[10px] font-black uppercase tracking-[0.18em] text-white/75">
             <p>Gelombang</p>
             <p>Penuh</p>
           </div>
           <div>
-            <p className="mb-5 w-fit rounded-full bg-[#c2410c] px-4 py-2 text-sm font-black text-white">Kuota habis</p>
+            <p className="mb-5 w-fit rounded-full bg-[#b45309] px-4 py-2 text-sm font-black text-white">Kuota habis</p>
             <h1 className="max-w-[760px] text-[48px] font-black leading-[0.94] tracking-[-0.06em] sm:text-[76px]">
               {fullBatch ? `${fullBatch.name} sudah penuh.` : isLoading ? 'Memuat data gelombang...' : 'Belum ada gelombang yang penuh.'}
             </h1>
-            <p className="mt-6 max-w-[620px] text-base font-medium leading-7 text-white/62 sm:text-lg sm:leading-8">
+            <p className="mt-6 max-w-[620px] text-base font-medium leading-7 text-white/75 sm:text-lg sm:leading-8">
               {fullBatch ? `Kuota ${fullBatch.maxCapacity} peserta telah terpenuhi.` : 'Seluruh kuota pada gelombang ini telah terisi.'} Silakan pilih gelombang aktif lainnya agar proses pendaftaran tetap lanjut.
             </p>
           </div>
-          <Link to="/#batches" className="w-fit rounded-full bg-[#c2410c] px-6 py-4 font-black text-white transition hover:bg-[#9a3412]">
+          <Link to="/#batches" className="w-fit rounded-full bg-[#b45309] px-6 py-4 font-black text-white transition hover:bg-[#9a3412]">
             Lihat Gelombang Aktif
           </Link>
         </section>

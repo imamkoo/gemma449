@@ -116,7 +116,7 @@ export function BookingFinishedPage() {
     ? 'bg-emerald-600 shadow-[0_18px_48px_rgba(5,150,105,0.18)] hover:bg-emerald-700'
     : registration?.status === 'failed'
       ? 'bg-[#1b5e20] shadow-[0_18px_48px_rgba(30,41,59,0.16)] hover:bg-black'
-      : 'bg-[#c2410c] shadow-[0_18px_48px_rgba(194,65,12,0.2)] hover:bg-[#9a3412]'
+      : 'bg-[#b45309] shadow-[0_18px_48px_rgba(194,65,12,0.2)] hover:bg-[#9a3412]'
 
   return (
     <>
@@ -124,16 +124,16 @@ export function BookingFinishedPage() {
       <main className="min-h-[calc(100vh-73px)] bg-[#f8fafc] px-5 py-8">
         <section className="mx-auto grid w-full max-w-[1040px] gap-6 rounded-[36px] border border-black/6 bg-white/96 p-6 shadow-[0_24px_80px_rgba(30,41,59,0.07)] sm:p-8 lg:p-10">
           <div
-            className={`flex h-14 w-14 items-center justify-center rounded-full text-2xl font-black text-white ${registration ? statusUi?.iconClass : 'bg-[#c2410c]'}`}
+            className={`flex h-14 w-14 items-center justify-center rounded-full text-2xl font-black text-white ${registration ? statusUi?.iconClass : 'bg-[#b45309]'}`}
           >
             ✓
           </div>
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#c2410c]">Pendaftaran tersimpan</p>
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#b45309]">Pendaftaran tersimpan</p>
             <h1 className="mt-4 max-w-[760px] text-[40px] font-black leading-[0.95] tracking-[-0.06em] text-[#1e293b] sm:text-[64px]">
               Kode pendaftaran sudah dibuat.
             </h1>
-            <p className="mt-5 max-w-[640px] text-base font-medium leading-7 text-[#1e293b]/62 sm:text-lg sm:leading-8">
+            <p className="mt-5 max-w-[640px] text-base font-medium leading-7 text-[#1e293b]/70 sm:text-lg sm:leading-8">
               Simpan kode pendaftaran Anda dengan aman. Kode ini digunakan untuk memeriksa status pembayaran kapan saja melalui halaman lacak status.
             </p>
           </div>
@@ -143,7 +143,7 @@ export function BookingFinishedPage() {
               <div className="rounded-[30px] border border-black/6 bg-[#ffffff] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] sm:p-6">
                 <div className="flex flex-col gap-3 border-b border-black/8 pb-5 sm:flex-row sm:items-end sm:justify-between">
                   <div>
-                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#1e293b]/38">Kode Pendaftaran</p>
+                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#1e293b]/70">Kode Pendaftaran</p>
                     <p className="mt-3 break-words text-2xl font-black leading-8 tracking-[-0.03em] text-[#1e293b]">{registration.registration_code}</p>
                   </div>
                   <p className={`w-fit rounded-full px-4 py-2 text-sm font-black ${statusUi?.badgeClass}`}>{statusUi?.label}</p>
@@ -160,8 +160,8 @@ export function BookingFinishedPage() {
                   {registration.address ? <Info label="Alamat" value={registration.address} /> : null}
                 </div>
                 {registration.address ? (
-                  <div className="mt-5 rounded-[22px] border border-[#c2410c]/14 bg-[#fff7ed] p-4">
-                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c2410c]">Cek Alamat Pengiriman</p>
+                  <div className="mt-5 rounded-[22px] border border-[#b45309]/14 bg-[#fff7ed] p-4">
+                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#b45309]">Cek Alamat Pengiriman</p>
                     <p className="mt-2 text-sm font-semibold leading-6 text-[#1e293b]/72">
                       Pastikan alamat di atas sudah benar dan lengkap untuk pengiriman. Bila ada kekeliruan, segera hubungi layanan bantuan sambil menyertakan kode pendaftaran ini.
                     </p>
@@ -169,7 +169,7 @@ export function BookingFinishedPage() {
                 ) : null}
               </div>
               <div className={`rounded-[30px] p-5 text-white sm:p-6 ${statusUi?.asideClass}`}>
-                <p className="text-xs font-black uppercase tracking-[0.16em] text-white/60">{statusUi?.eyebrow}</p>
+                <p className="text-xs font-black uppercase tracking-[0.16em] text-white/75">{statusUi?.eyebrow}</p>
                 <p className="mt-3 text-[38px] font-black tracking-[-0.06em]">{formatRupiah(registration.financial.total_payment)}</p>
                 <p className="mt-2 text-lg font-black text-white">{statusUi?.label}</p>
                 <p className="mt-4 text-sm font-semibold leading-6 text-white/72">
@@ -180,7 +180,7 @@ export function BookingFinishedPage() {
                   <PaymentMeta label="Nomor Halaman" value={pageLabel ?? '-'} />
                 </div>
                 <div className="mt-6 border-t border-white/15 pt-6">
-                  <p className="mb-3 text-xs font-black uppercase tracking-[0.14em] text-white/60">Pembayaran</p>
+                  <p className="mb-3 text-xs font-black uppercase tracking-[0.14em] text-white/75">Pembayaran</p>
                   {registration.status === 'pending' ? (
                     <MidtransPayButton
                       registrationCode={registration.registration_code}
@@ -192,16 +192,16 @@ export function BookingFinishedPage() {
                   ) : (
                     <StatusAction status={registration.status} label={statusUi?.actionLabel ?? statusUi?.label ?? ''} />
                   )}
-                  <p className="mt-3 text-xs font-semibold leading-5 text-white/65">
+                  <p className="mt-3 text-xs font-semibold leading-5 text-white/75">
                     {statusUi?.actionNote}
                   </p>
                 </div>
               </div>
             </div>
           ) : (
-            <div className="rounded-[28px] border border-[#c2410c]/10 bg-[#fff7ed] p-6 text-[#1e293b]">
+            <div className="rounded-[28px] border border-[#b45309]/10 bg-[#fff7ed] p-6 text-[#1e293b]">
               <p className="font-black">Belum ada data pendaftaran di perangkat ini.</p>
-              <p className="mt-2 text-sm font-medium text-[#1e293b]/60">Silakan daftar terlebih dahulu untuk melihat bukti dan kode pendaftaran Anda.</p>
+              <p className="mt-2 text-sm font-medium text-[#1e293b]/70">Silakan daftar terlebih dahulu untuk melihat bukti dan kode pendaftaran Anda.</p>
             </div>
           )}
 
@@ -214,7 +214,7 @@ export function BookingFinishedPage() {
             </Link>
             <Link
               to="/"
-              className="rounded-full border border-black/10 bg-white px-6 py-4 text-center font-black text-[#1e293b] shadow-[0_16px_42px_rgba(30,41,59,0.06)] transition hover:border-[#c2410c] hover:text-[#c2410c]"
+              className="rounded-full border border-black/10 bg-white px-6 py-4 text-center font-black text-[#1e293b] shadow-[0_16px_42px_rgba(30,41,59,0.06)] transition hover:border-[#b45309] hover:text-[#b45309]"
             >
               Kembali ke Beranda
             </Link>
@@ -233,7 +233,7 @@ type InfoProps = {
 function Info({ label, value }: InfoProps) {
   return (
     <div className="rounded-[20px] border border-black/6 bg-white/92 p-4 shadow-[0_10px_24px_rgba(30,41,59,0.04)]">
-      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#1e293b]/40">{label}</p>
+      <p className="text-xs font-black uppercase tracking-[0.12em] text-[#1e293b]/70">{label}</p>
       <p className="mt-2 break-words font-black text-[#1e293b]">{value}</p>
     </div>
   )
@@ -247,7 +247,7 @@ type PaymentMetaProps = {
 function PaymentMeta({ label, value }: PaymentMetaProps) {
   return (
     <div className="rounded-[18px] border border-white/14 bg-white/10 p-4 backdrop-blur-sm">
-      <p className="text-[11px] font-black uppercase tracking-[0.14em] text-white/55">{label}</p>
+      <p className="text-[11px] font-black uppercase tracking-[0.14em] text-white/75">{label}</p>
       <p className="mt-2 font-black text-white">{value}</p>
     </div>
   )

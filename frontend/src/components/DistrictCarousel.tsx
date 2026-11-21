@@ -43,7 +43,7 @@ export function DistrictCarousel({ districts }: DistrictCarouselProps) {
               to={district.href}
               className="card block rounded-[28px] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-gold/40"
             >
-              <TiltCard tilt={4} className="h-[320px] w-[240px] rounded-[28px]" spotlightColor="rgba(216, 180, 90, 0.16)">
+              <TiltCard tilt={4} className="h-[320px] w-[240px] rounded-[28px]" spotlightColor="rgba(234, 179, 8, 0.16)">
                 <article className="relative flex h-full w-full overflow-hidden rounded-[28px] bg-primary shadow-[0_30px_80px_-46px_rgba(0,0,0,0.7)]">
                   <img
                     src={district.imageUrl}
@@ -54,7 +54,7 @@ export function DistrictCarousel({ districts }: DistrictCarouselProps) {
                     loading="lazy"
                     decoding="async"
                   />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(12,27,58,0.28)_0%,_rgba(20,71,26,0.5)_44%,_rgba(20,71,26,0.96)_100%)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(20,71,26,0.28)_0%,_rgba(20,71,26,0.5)_44%,_rgba(20,71,26,0.96)_100%)]" />
                   <div
                     aria-hidden="true"
                     className="absolute inset-0 bg-[radial-gradient(circle_at_78%_12%,rgba(234,179,8,0.18),transparent_44%)]"

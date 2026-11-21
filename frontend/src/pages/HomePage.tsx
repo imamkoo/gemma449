@@ -45,7 +45,7 @@ export function HomePage() {
               <h2 className="max-w-[700px] text-balance text-[38px] font-black leading-[0.94] tracking-[-0.04em] text-ink sm:text-[58px]">
                 Kecamatan pendaftaran.
               </h2>
-              <p className="mt-4 flex items-center gap-2 text-sm font-bold text-ink/60">
+              <p className="mt-4 flex items-center gap-2 text-sm font-bold text-ink/70">
                 <span className="h-2 w-2 rounded-full bg-brand motion-safe:animate-pulse" />
                 {districts.length || 44} wilayah aktif · diperbarui langsung dari lapangan
               </p>
@@ -74,7 +74,7 @@ export function HomePage() {
           ) : isLoading ? (
             <DistrictSkeleton />
           ) : (
-            <p className="glass-light mx-auto w-full max-w-[1180px] rounded-2xl px-5 py-4 text-sm font-bold text-ink/60">
+            <p className="glass-light mx-auto w-full max-w-[1180px] rounded-2xl px-5 py-4 text-sm font-bold text-ink/70">
               Belum ada wilayah pendaftaran tersedia.
             </p>
           )}
@@ -87,7 +87,7 @@ export function HomePage() {
           className="mx-auto grid w-full max-w-[1180px] scroll-mt-24 gap-8 px-5 pb-20 lg:grid-cols-[0.72fr_1.28fr] lg:items-start"
         >
           <Reveal className="static z-10 lg:sticky lg:top-[96px]">
-            <div className="relative overflow-hidden rounded-[36px] bg-[linear-gradient(145deg,#c2410c_0%,#9a3412_54%,#7c2d12_100%)] p-6 text-white shadow-[0_34px_90px_-38px_rgba(194,65,12,0.55)] sm:p-8">
+            <div className="relative overflow-hidden rounded-[36px] bg-[linear-gradient(145deg,#9a3412_0%,#7c2d12_54%,#5f2109_100%)] p-6 text-white shadow-[0_34px_90px_-38px_rgba(194,65,12,0.55)] sm:p-8">
               <div
                 aria-hidden="true"
                 className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-[radial-gradient(circle,rgba(234,179,8,0.32),transparent_68%)] blur-2xl"
@@ -108,7 +108,7 @@ export function HomePage() {
               />
 
               <div className="relative flex items-center justify-between gap-4">
-                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-white/65">Kuota Partisipasi</p>
+                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-white/75">Kuota Partisipasi</p>
                 <SealEmblem size={42} />
               </div>
               <h2 className="relative mt-5 text-[42px] font-black leading-[0.94] tracking-[-0.04em] sm:text-[46px]">
@@ -169,7 +169,7 @@ export function HomePage() {
             ) : isLoading ? (
               Array.from({ length: 4 }).map((_, index) => <BatchCardSkeleton key={index} />)
             ) : (
-              <p className="glass-light rounded-2xl px-5 py-4 text-sm font-bold text-ink/60">
+              <p className="glass-light rounded-2xl px-5 py-4 text-sm font-bold text-ink/70">
                 Pendaftaran dibuka. Gelombang pertama dibuat otomatis saat pendaftaran pertama masuk.
               </p>
             )}
@@ -185,13 +185,13 @@ export function HomePage() {
               <p className="text-sm font-black tracking-[-0.03em] text-ink">
                 GEMMA<span className="text-gold-deep">449</span>
               </p>
-              <p className="mt-1 text-[9px] font-black uppercase tracking-[0.18em] text-ink/55">
+              <p className="mt-1 text-[9px] font-black uppercase tracking-[0.18em] text-ink/70">
                 Gerakan Menulis Al-Qur'an · Sumedang
               </p>
             </div>
           </div>
           <div className="flex flex-col gap-2 sm:items-end">
-            <p className="text-xs font-semibold text-ink/60">Satu Kampung · Satu Gerakan Menulis</p>
+            <p className="text-xs font-semibold text-ink/70">Satu Kampung · Satu Gerakan Menulis</p>
             <a
               href={whatsappUrl}
               target="_blank"
@@ -201,7 +201,7 @@ export function HomePage() {
               Hubungi Kami
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-black/[0.08] pt-3 text-xs font-bold text-ink/60 sm:justify-end">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-black/[0.08] pt-3 text-xs font-bold text-ink/70 sm:justify-end">
               <Link to="/terms" className="transition hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/20">Syarat & Ketentuan</Link>
               <Link to="/privacy" className="transition hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/20">Kebijakan Privasi</Link>
             </div>

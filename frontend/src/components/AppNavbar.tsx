@@ -28,8 +28,8 @@ export function AppNavbar() {
     <nav
       className={`sticky top-0 z-50 border-b border-white/10 backdrop-blur-2xl transition-[background-color,box-shadow,padding] duration-500 ${
         scrolled
-          ? 'bg-primary/95 shadow-[0_18px_50px_-26px_rgba(0,0,0,0.55)]'
-          : 'bg-primary/90 shadow-[0_10px_40px_-30px_rgba(0,0,0,0.45)]'
+          ? 'bg-primary-strong shadow-[0_18px_50px_-26px_rgba(0,0,0,0.55)]'
+          : 'bg-primary-strong shadow-[0_10px_40px_-30px_rgba(0,0,0,0.45)]'
       }`}
     >
       <div
@@ -51,7 +51,7 @@ export function AppNavbar() {
             <span className="text-[15px] font-black leading-none tracking-[-0.03em] text-white sm:text-base">
               GEMMA<span className="text-gold">449</span>
             </span>
-            <span className="mt-1 hidden text-[8px] font-black uppercase leading-none tracking-[0.2em] text-white/60 sm:block">
+            <span className="mt-1 hidden text-[8px] font-black uppercase leading-none tracking-[0.2em] text-white/75 sm:block">
               Gerakan Menulis Al-Qur'an · Sumedang
             </span>
           </span>
