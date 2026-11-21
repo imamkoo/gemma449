@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\District;
 use App\Models\Mosque;
 use Illuminate\Support\Facades\Http;
 
@@ -27,6 +28,7 @@ beforeEach(function () {
             ['M-9101', 'Masjid Al Ikhlas', 'Jl. Raya Sumedang No. 1', 'Sumedang, Jawa Barat'],
             ['M-9102', 'Masjid Al Falah', 'Jl. Ahmad Yani No. 2', 'Bekasi, Jawa Barat'],
             ['M-9103', 'Masjid Nurul Huda', 'Jl. Cimalaka No. 3', 'Cimalaka, Sumedang, Jawa Barat'],
+            ['M-9104', 'Masjid Al Barokah', 'Jl. Raya Tanjungsari No. 9', 'KAB. SUMEDANG, Jawa Barat'],
         ]), 200),
     ]);
 });
@@ -41,7 +43,7 @@ test('city filter only persists rows mentioning the requested city', function ()
         ->assertSuccessful();
 
     expect(Mosque::query()->pluck('dmi_code')->sort()->values()->all())
-        ->toBe(['M-9101', 'M-9103']);
+        ->toBe(['M-9101', 'M-9103', 'M-9104']);
 });
 
 test('without city filter every parsed row is persisted', function () {
@@ -50,7 +52,23 @@ test('without city filter every parsed row is persisted', function () {
         '--delay' => '0',
     ])->assertSuccessful();
 
-    expect(Mosque::query()->count())->toBe(3);
+    expect(Mosque::query()->count())->toBe(4);
+});
+
+test('district name is resolved from the address outside the Jakarta city map', function () {
+    District::query()->create([
+        'name' => 'Tanjungsari',
+        'code' => '3211030',
+    ]);
+
+    $this->artisan('mosque:import', [
+        '--province' => '9',
+        '--city' => 'Sumedang',
+        '--delay' => '0',
+    ])->assertSuccessful();
+
+    expect(Mosque::query()->where('dmi_code', 'M-9104')->value('district_name'))
+        ->toBe('Tanjungsari');
 });
 
 test('dry run with city filter writes nothing', function () {
