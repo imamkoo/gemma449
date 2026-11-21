@@ -35,21 +35,4 @@ return [
         ],
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Direktori sekolah (referensi luar)
-    |--------------------------------------------------------------------------
-    |
-    | Referensi API direktori sekolah eksternal — tidak lagi dipakai oleh
-    | seeders (DistrictSeeder & SchoolSuggestionSeeder kini membaca JSON lokal
-    | di database/data/). Dibiarkan agar kompatibel bila dipakai ulang nanti.
-    |
-    */
-    'school_directory' => [
-        'url' => env('SCHOOL_DIRECTORY_API_URL', 'https://api-sekolah-indonesia.vercel.app'),
-        'provinsi_kode' => env('SCHOOL_DIRECTORY_PROVINSI_KODE', '010000'),
-        'per_page' => (int) env('SCHOOL_DIRECTORY_PER_PAGE', 100),
-        'pause_ms' => (int) env('SCHOOL_DIRECTORY_PAUSE_MS', 50),
-    ],
-
 ];

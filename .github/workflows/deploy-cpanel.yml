@@ -1,25 +1,10 @@
-name: Deploy (cPanel via SSH)
+name: Deploy (cPanel via arsip bertahap)
 
-# Deploy otomatis ke hosting cPanel setiap CI di `main` selesai sukses.
-# Butuh: rsync + SSH ke akun hosting.
-#
-# Nonaktif secara otomatis (job di-skip) selama variabel CPANEL_HOST belum diisi
-# di Settings → Secrets and variables → Actions → Variables.
-#
-# Variabel (Variables, bukan secret):
-#   CPANEL_HOST            api.jejaka500.id
-#   CPANEL_PORT            22 (opsional, default 22)
-#   CPANEL_USER            username cPanel
-#   CPANEL_BACKEND_PATH    /home/USER/jejaka500
-#   CPANEL_FRONTEND_PATH   /home/USER/jejaka500-web
-#   CPANEL_PHP_BIN         /opt/cpanel/ea-php84/root/usr/bin/php (opsional)
-#   CPANEL_API_BASE_URL    https://api.jejaka500.id/api (opsional)
-#   CPANEL_PUBLIC_URL      https://api.jejaka500.id (opsional, untuk smoke test)
-#
-# Secret (pilih salah satu):
-#   CPANEL_SSH_KEY         private key deploy (disarankan)
-#   CPANEL_PASSWORD        password SSH (bila key tidak bisa dipakai)
-#   CPANEL_SSH_KNOWN_HOSTS isi output `ssh-keyscan -p PORT HOST` (disarankan)
+# Deploy otomatis ke cPanel setiap CI di `main` selesai sukses.
+# Mengirim arsip ZIP bertahap lewat HTTPS ke endpoint ber-HMAC (lihat
+# `backend/deploy/cpanel/CPANEL-DEPLOY.md`). Tidak ada flag delete, sehingga
+# `.env`, folder storage, dan `.htaccess` milik server tetap aman.
+# Job hanya berjalan setelah `vars.CPANEL_DEPLOY_READY=true`.
 
 on:
   workflow_run:
@@ -28,13 +13,10 @@ on:
     branches: [main]
   workflow_dispatch:
     inputs:
-      dry_run:
-        description: 'Dry-run (tampilkan file yang akan berubah, tanpa upload)'
+      force_upload:
+        description: Upload all files even when the remote manifest marks them unchanged
         type: boolean
-        default: false
-      skip_migrate:
-        description: 'Lewati php artisan migrate'
-        type: boolean
+        required: false
         default: false
 
 permissions:
@@ -46,24 +28,65 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  BACKEND_PATH: ${{ vars.CPANEL_BACKEND_PATH }}
-  FRONTEND_PATH: ${{ vars.CPANEL_FRONTEND_PATH }}
-  PHP_BIN: ${{ vars.CPANEL_PHP_BIN || 'php' }}
-  API_BASE_URL: ${{ vars.CPANEL_API_BASE_URL || 'https://api.jejaka500.id/api' }}
-  SSH_PORT: ${{ vars.CPANEL_PORT || '22' }}
+  API_BASE_URL: ${{ vars.CPANEL_API_BASE_URL || 'https://gemma449.followtheline.id/api' }}
+  PUBLIC_URL: ${{ vars.CPANEL_PUBLIC_URL || 'https://gemma449.followtheline.id' }}
+  DEPLOY_ENDPOINT: ${{ vars.CPANEL_DEPLOY_ENDPOINT || 'https://gemma449.followtheline.id/api/public/cpanel-deploy.php' }}
 
 jobs:
   deploy:
-    name: Build & deploy ke cPanel
-    # Aman: tidak jalan sama sekali sebelum host dikonfigurasi.
+    name: Build & deploy ke cPanel (arsip bertahap)
+    # Job hanya berjalan bila prasyarat server sudah siap. Penanda sengaja
+    # memakai `vars`, bukan `secrets`: context `secrets` tidak tersedia di
+    # `jobs.<id>.if`. Token sendiri tetap dikirim lewat env di step.
     if: |
-      vars.CPANEL_HOST != '' && (
-        github.event_name == 'workflow_dispatch' ||
-        github.event.workflow_run.conclusion == 'success'
+      vars.CPANEL_DEPLOY_READY == 'true' && (
+        (
+          github.event_name == 'workflow_run' &&
+          github.event.workflow_run.event == 'push' &&
+          github.event.workflow_run.head_branch == 'main' &&
+          github.event.workflow_run.conclusion == 'success'
+        ) || (
+          github.event_name == 'workflow_dispatch' &&
+          github.ref == 'refs/heads/main'
+        )
       )
     runs-on: ubuntu-latest
 
     steps:
+      - name: Preflight deploy secret
+        env:
+          CPANEL_DEPLOY_SECRET: ${{ secrets.CPANEL_DEPLOY_SECRET }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CPANEL_DEPLOY_SECRET:-}" ]; then
+            echo "::error::CPANEL_DEPLOY_SECRET belum diisi di Settings -> Secrets and variables -> Actions."
+            echo "Pasang endpoint dulu (sekali saja, lihat backend/deploy/cpanel/CPANEL-DEPLOY.md):"
+            echo "  mkdir -p ~/followtheline.id/gemma449/api/storage/cpanel-deploy"
+            echo "  # unggah cpanel-deploy-handler.php + deploy-lib.php ke folder itu"
+            echo "  php ~/followtheline.id/gemma449/api/storage/cpanel-deploy/cpanel-deploy-handler.php --generate-secret"
+            echo "  cp cpanel-deploy.php ~/followtheline.id/gemma449/api/public/cpanel-deploy.php"
+            exit 1
+          fi
+
+      - name: Preflight deploy endpoint
+        run: |
+          set -euo pipefail
+          # Endpoint harus MENOLAK tanpa tanda tangan: 405 untuk GET dan 403
+          # untuk POST. Status 404 berarti berkas tidak ada di server (deploy
+          # akan gagal setelah build 2 menit), 200 berarti endpoint tidak
+          # terpasang dan request jatuh ke halaman lain.
+          get_code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$DEPLOY_ENDPOINT" || true)
+          post_code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 -X POST "$DEPLOY_ENDPOINT" || true)
+          echo "endpoint: GET=$get_code POST=$post_code"
+
+          if [ "$get_code" = "405" ] && [ "$post_code" = "403" ]; then
+            exit 0
+          fi
+
+          echo "::error::$DEPLOY_ENDPOINT tidak dalam kondisi siap (GET=$get_code, POST=$post_code; harap 405/403)."
+          echo "Pasang/recover endpoint di server: lihat backend/deploy/cpanel/CPANEL-DEPLOY.md"
+          exit 1
+
       - name: Checkout code
         uses: actions/checkout@v7
         with:
@@ -84,7 +107,14 @@ jobs:
 
       - name: Install Composer dependencies (production)
         working-directory: backend
-        run: composer install --no-dev --no-interaction --no-scripts --prefer-dist --optimize-autoloader
+        run: |
+          # `composer` di bawah ini memicu workflow `Update Composer Lock`; CI
+          # bukan commit. Tanpa ini, setiap deploy memunculkan run workflow lain
+          # yang gagal (GITHUB_TOKEN tidak boleh push), dan filter nama di
+          # `workflow_run` membuat deploy berikutnya tidak terpicu.
+          composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
+          # Dokumentasi vendor tidak dipakai saat runtime dan menambah ribuan file.
+          find vendor -type d -name docs -prune -exec rm -rf {} + 2>/dev/null || true
 
       - name: Install Node dependencies (backend assets)
         working-directory: backend
@@ -92,21 +122,24 @@ jobs:
 
       - name: Dump optimized autoloader
         working-directory: backend
-        run: composer dump-autoload --no-dev --optimize --no-scripts
+        run: composer dump-autoload --no-dev --optimize
 
-      - name: Generate Wayfinder routes + Vite build
+      - name: Generate Wayfinder routes + Filament assets + Vite build
         working-directory: backend
         env:
           APP_KEY: 'base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA='
         run: |
           mkdir -p storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache
           php artisan wayfinder:generate --with-form
+          # Aset Filament tidak di-commit di repo ini, jadi dipublikasikan saat
+          # build. Tanpa langkah ini `/admin` tampil tanpa CSS/JS.
+          php artisan filament:assets
           npm run build
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
-          version: 9
+          version: 12
 
       - name: Setup Node cache for frontend
         uses: actions/setup-node@v7
@@ -125,126 +158,48 @@ jobs:
           VITE_API_URL: ${{ env.API_BASE_URL }}
         run: pnpm run build
 
-      - name: Attach SPA .htaccess
-        working-directory: frontend
+      - name: Verify deployment and Service Worker tests
         run: |
-          cp deploy/cpanel/spa.htaccess dist/.htaccess
-          test -f dist/index.html || { echo "dist/index.html hilang"; exit 1; }
+          python3 -m unittest discover -s .github/scripts -p 'test_*.py' -v
+          node --test frontend/scripts/test-sw-denylist.mjs
 
-      - name: Configure SSH
+      - name: Package backend archive
+        run: |
+          python3 .github/scripts/build_archive.py backend "$RUNNER_TEMP/backend.zip" "$RUNNER_TEMP/backend-manifest.json" backend
+
+      - name: Deploy backend (chunked HTTPS -> /api)
         env:
-          CPANEL_SSH_KEY: ${{ secrets.CPANEL_SSH_KEY }}
-          CPANEL_SSH_KNOWN_HOSTS: ${{ secrets.CPANEL_SSH_KNOWN_HOSTS }}
-          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }}
+          CPANEL_DEPLOY_SECRET: ${{ secrets.CPANEL_DEPLOY_SECRET }}
         run: |
-          mkdir -p "$HOME/.ssh"
-          chmod 700 "$HOME/.ssh"
+          python3 .github/scripts/upload_chunks.py "$RUNNER_TEMP/backend-manifest.json"
 
-          if [ -n "$CPANEL_SSH_KEY" ]; then
-            printf '%s\n' "$CPANEL_SSH_KEY" > "$HOME/.ssh/deploy_key"
-            chmod 600 "$HOME/.ssh/deploy_key"
-            echo "SSH_KEY_FILE=$HOME/.ssh/deploy_key" >> "$GITHUB_ENV"
-          elif [ -n "$CPANEL_PASSWORD" ]; then
-            sudo apt-get install -y sshpass >/dev/null
-          else
-            echo "Tidak ada CPANEL_SSH_KEY maupun CPANEL_PASSWORD."; exit 1
-          fi
+      - name: Package frontend archive
+        run: |
+          python3 .github/scripts/build_archive.py frontend/dist "$RUNNER_TEMP/spa.zip" "$RUNNER_TEMP/spa-manifest.json" web
 
-          if [ -n "$CPANEL_SSH_KNOWN_HOSTS" ]; then
-            printf '%s\n' "$CPANEL_SSH_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
-          else
-            ssh-keyscan -p "$SSH_PORT" -H "${{ vars.CPANEL_HOST }}" > "$HOME/.ssh/known_hosts" 2>/dev/null
-          fi
-          chmod 600 "$HOME/.ssh/known_hosts"
-
-      - name: Deploy backend (rsync)
+      - name: Deploy frontend (chunked HTTPS -> docroot)
         env:
-          SSHPASS: ${{ secrets.CPANEL_PASSWORD }}
+          CPANEL_DEPLOY_SECRET: ${{ secrets.CPANEL_DEPLOY_SECRET }}
         run: |
-          RSYNC_SSH="ssh -p $SSH_PORT -o StrictHostKeyChecking=yes -o ConnectTimeout=20"
-          if [ -n "${SSH_KEY_FILE:-}" ]; then
-            RSYNC_SSH="$RSYNC_SSH -i $SSH_KEY_FILE"
-          else
-            RSYNC_SSH="sshpass -e $RSYNC_SSH"
-          fi
-
-          DRY=""
-          if [ "${{ inputs.dry_run }}" = "true" ]; then DRY="--dry-run"; fi
-
-          rsync -az --itemize-changes $DRY --delete \
-            -e "$RSYNC_SSH" \
-            --exclude='.env' \
-            --exclude='.env.*' \
-            --exclude='storage/' \
-            --exclude='public/storage' \
-            --exclude='node_modules/' \
-            --exclude='tests/' \
-            --exclude='docker/' \
-            --exclude='.git/' \
-            --exclude='.github/' \
-            --exclude='phpunit.xml' \
-            --exclude='.phpunit.result.cache' \
-            --exclude='bootstrap/cache/*.php' \
-            backend/ "${{ vars.CPANEL_USER }}@${{ vars.CPANEL_HOST }}:$BACKEND_PATH/"
-
-      - name: Deploy frontend (rsync)
-        env:
-          SSHPASS: ${{ secrets.CPANEL_PASSWORD }}
-        run: |
-          RSYNC_SSH="ssh -p $SSH_PORT -o StrictHostKeyChecking=yes -o ConnectTimeout=20"
-          if [ -n "${SSH_KEY_FILE:-}" ]; then
-            RSYNC_SSH="$RSYNC_SSH -i $SSH_KEY_FILE"
-          else
-            RSYNC_SSH="sshpass -e $RSYNC_SSH"
-          fi
-
-          DRY=""
-          if [ "${{ inputs.dry_run }}" = "true" ]; then DRY="--dry-run"; fi
-
-          rsync -az --itemize-changes $DRY --delete \
-            -e "$RSYNC_SSH" \
-            frontend/dist/ "${{ vars.CPANEL_USER }}@${{ vars.CPANEL_HOST }}:$FRONTEND_PATH/"
-
-      - name: Migrate + cache (di server)
-        if: ${{ inputs.dry_run != true }}
-        env:
-          SSHPASS: ${{ secrets.CPANEL_PASSWORD }}
-        run: |
-          SSH_OPTS="-p $SSH_PORT -o StrictHostKeyChecking=yes -o ConnectTimeout=20"
-          if [ -n "${SSH_KEY_FILE:-}" ]; then
-            SSH_CMD="ssh $SSH_OPTS -i $SSH_KEY_FILE"
-          else
-            SSH_CMD="sshpass -e ssh $SSH_OPTS"
-          fi
-
-          MIGRATE="1"
-          if [ "${{ inputs.skip_migrate }}" = "true" ]; then MIGRATE="0"; fi
-
-          $SSH_CMD "${{ vars.CPANEL_USER }}@${{ vars.CPANEL_HOST }}" bash -s <<EOF
-          set -euo pipefail
-          cd "$BACKEND_PATH"
-
-          PHP="$PHP_BIN"
-          if ! command -v "\$PHP" >/dev/null 2>&1; then PHP="php"; fi
-
-          echo "==> PHP: \$(\$PHP -v | head -n 1)"
-
-          \$PHP artisan optimize:clear
-          if [ "$MIGRATE" = "1" ]; then
-            \$PHP artisan migrate --force
-          fi
-          \$PHP artisan storage:link || true
-          \$PHP artisan config:cache
-          \$PHP artisan view:cache
-          EOF
+          python3 .github/scripts/upload_chunks.py "$RUNNER_TEMP/spa-manifest.json"
 
       - name: Smoke test
-        if: ${{ inputs.dry_run != true && vars.CPANEL_PUBLIC_URL != '' }}
         run: |
+          set -euo pipefail
+          check_url() {
+            local path="$1"
+            local expected="$2"
+            local code
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${PUBLIC_URL}${path}" || true)
+            echo "${path} -> ${code}"
+            [ "$code" = "$expected" ]
+          }
+
           for i in 1 2 3 4 5; do
-            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${{ vars.CPANEL_PUBLIC_URL }}/up" || true)
-            echo "percobaan $i: /up -> $code"
-            [ "$code" = "200" ] && exit 0
+            if check_url "/up" 200 && check_url "/" 200 && check_url "/api/price-categories" 200 && check_url "/admin/login" 200; then
+              exit 0
+            fi
+            echo "smoke test retry $i"
             sleep 10
           done
-          echo "Health check gagal setelah 5 percobaan"; exit 1
+          echo "Smoke test cPanel gagal setelah 5 percobaan"; exit 1

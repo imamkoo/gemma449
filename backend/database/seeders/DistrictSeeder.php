@@ -8,6 +8,13 @@ use Illuminate\Support\Str;
 
 class DistrictSeeder extends Seeder
 {
+    /**
+     * Seed 26 kecamatan Kabupaten Sumedang dari data lokal (kode BPS).
+     *
+     * Sumber: Daftar_26_Kecamatan_Kabupaten_Sumedang.docx, disimpan sebagai
+     * database/data/sumedang_districts.json. Idempoten lewat firstOrCreate
+     * pada kolom code.
+     */
     public function run(): void
     {
         $jsonPath = database_path('data/sumedang_districts.json');
